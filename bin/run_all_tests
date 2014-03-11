@@ -1,0 +1,9 @@
+#!/bin/bash
+exercises=$(find . -name '*.spec.coffee' | perl -pe 's#^\./([^/]*).*#$1#')
+echo $exercises
+for dir in $exercises; do
+  echo ===========================================
+  echo $dir
+  echo ===========================================
+  bin/test_exercise `echo $dir | perl -pe 's#/##'`
+done
