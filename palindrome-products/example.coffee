@@ -25,7 +25,7 @@ class Palindromes
     return results
 
   largest: =>
-    biggest = @generate().reduce (a,b) -> Math.max a, b
+    biggest = Math.max.apply(Math, @palindromes)
     low = @min
     high = @max
     return {
@@ -35,7 +35,7 @@ class Palindromes
     }
 
   smallest: =>
-    littlest = @generate().reduce (a,b) -> Math.min a, b
+    littlest = Math.min.apply(Math, @palindromes)
     low = @min
     high = @max
     return {
@@ -45,12 +45,7 @@ class Palindromes
     }
 
   isPalindrome: (number) ->
-    digits = number.toString().split('')
-    size = digits.length
-    half1 = digits[0..(size / 2)]
-    half2 = digits[(size / 2)..size - 1]
-    half1.pop() if half1.length > half2.length
-    return arrayEqual(half1, half2.reverse())
+    return parseInt("".split.call(number, "").reverse().join("")) == number
 
 Array::unique = ->
   output = {}
