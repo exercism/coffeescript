@@ -45,7 +45,7 @@ class Palindromes
     }
 
   isPalindrome: (number) ->
-    return parseInt("".split.call(number, "").reverse().join("")) == number
+    return `"".split.call(number, "").reverse().join("") == number`
 
 Array::unique = ->
   output = {}
