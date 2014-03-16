@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - 0.10
+before_script:
+  - npm install coffee-script -g
+  - npm install jasmine-node -g
+script:
+  - ./bin/run_all_tests
