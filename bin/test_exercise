@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 cd $1
 mv example.coffee `ls *spec* | xargs cat | grep 'require' | perl -pe 's/.*["'"'"'](.*?)["'"'"'].*/$1.coffee/'`
 perl -pi -e 's/xit/it/' *spec*
