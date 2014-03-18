@@ -1,4 +1,4 @@
-require './example'
+require './accumulate'
 
 describe '[].accumulate()', ->
 
@@ -6,23 +6,23 @@ describe '[].accumulate()', ->
     accumulator = (e) -> e * e
     expect([]).toEqual [].accumulate(accumulator)
 
-  xit 'accumulate squares', ->
+  it 'accumulate squares', ->
     accumulator = (number) -> number * number
     expect([1, 4, 9]).toEqual [1, 2, 3].accumulate accumulator
 
-  xit 'accumulate upcases', ->
+  it 'accumulate upcases', ->
     accumulator = (word) -> word.toUpperCase()
     result      = 'hello world'.split(/\s/).accumulate accumulator
 
     expect(['HELLO', 'WORLD']).toEqual result
 
-  xit 'accumulate reversed strings', ->
+  it 'accumulate reversed strings', ->
     accumulator = (word) -> word.split('').reverse().join('')
     result      = 'the quick brown fox etc'.split(/\s/).accumulate accumulator
 
     expect(["eht", "kciuq", "nworb", "xof", "cte"]).toEqual result
 
-  xit 'accumulate recursively', ->
+  it 'accumulate recursively', ->
     result = 'a b c'.split(/\s+/).accumulate (char)  ->
       '1 2 3'.split(/\s+/).accumulate (digit) -> "#{char}#{digit}"
 
