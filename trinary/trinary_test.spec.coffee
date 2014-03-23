@@ -1,4 +1,4 @@
-Trinary = require './example'
+Trinary = require './trinary'
 
 describe 'Trinary', ->
 
