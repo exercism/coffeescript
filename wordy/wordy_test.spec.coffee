@@ -1,4 +1,4 @@
-WordProblem = require './example'
+WordProblem = require './wordy'
 
 describe 'Word Problem', ->
 
