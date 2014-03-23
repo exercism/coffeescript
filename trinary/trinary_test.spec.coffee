@@ -3,29 +3,28 @@ Trinary = require './example'
 describe 'Trinary', ->
 
   it '1 is decimal 1', ->
-    expect(1).toEqual new Trinary('1').toDecimal()
+    expect(new Trinary('1').toDecimal()).toEqual 1
 
   xit '2 is decimal 2', ->
-    expect(2).toEqual new Trinary('2').toDecimal()
+    expect(new Trinary('2').toDecimal()).toEqual 2
 
   xit '10 is decimal 3', ->
-    expect(3).toEqual new Trinary('10').toDecimal()
+    expect(new Trinary('10').toDecimal()).toEqual 3
 
   xit '11 is decimal 4', ->
-    expect(4).toEqual new Trinary('11').toDecimal()
+    expect(new Trinary('11').toDecimal()).toEqual 4
 
   xit '100 is decimal 9', ->
-    expect(9).toEqual new Trinary('100').toDecimal()
+    expect(new Trinary('100').toDecimal()).toEqual 9
 
   xit '112 is decimal 14', ->
-    expect(14).toEqual new Trinary('112').toDecimal()
+    expect(new Trinary('112').toDecimal()).toEqual 14
 
   xit '222 is 26', ->
-    expect(26).toEqual new Trinary('222').toDecimal()
+    expect(new Trinary('222').toDecimal()).toEqual 26
 
   xit '1122000120 is 32091', ->
-    expect(32091).toEqual new Trinary('1122000120').toDecimal()
+    expect(new Trinary('1122000120').toDecimal()).toEqual 32091
 
   xit 'invalid trinary is decimal 0', ->
-    expect(0).toEqual new Trinary('carrot').toDecimal()
-
+    expect(new Trinary('carrot').toDecimal()).toEqual 0
