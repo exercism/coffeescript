@@ -4,7 +4,28 @@ class Clock
     new Clock(hour, minute)
 
   constructor: (@hour, @minute) ->
-    @to_s = "#{clean(@hour)}:#{clean(@minute)}"
+
+  toString:->
+    "#{clean(@hour)}:#{clean(@minute)}"
+
+  plus: (num) ->
+    @minute += num
+    if @minute > 59
+      @hour += Math.floor(@minute / 60)
+      @minute = @minute % 60
+    if @hour > 23
+      @hour = @hour % 24
+    this
+
+  minus: (num) ->
+    @minute -= num
+    while @minute < 0
+      @minute = 60 + @minute
+      @hour -= 1
+    this
+
+  equals: (otherClock) ->
+    this.toString() == otherClock.toString()
 
   clean = (num) ->
     str = num.toString()
