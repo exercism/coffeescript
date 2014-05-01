@@ -1,11 +1,17 @@
 class Clock
 
-  constructor -> (@hour) ->
+  @at: (hour, minute=0) =>
+    new Clock(hour, minute)
 
-  @at: (hour) ->
-    new Clock(hour)
+  constructor: (@hour, @minute) ->
+    @to_s = "#{clean(@hour)}:#{clean(@minute)}"
 
-  to_s:
-    "08:00"
+  clean = (num) ->
+    str = num.toString()
+    if str.length < 2
+      '0' + str
+    else
+      str
+
 
 module.exports = Clock
