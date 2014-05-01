@@ -10,10 +10,10 @@ class Clock
 
   plus: (num) ->
     @minute += num
-    if @minute > 59
+    while @minute > 59
       @hour += Math.floor(@minute / 60)
       @minute = @minute % 60
-    if @hour > 23
+    while @hour > 23
       @hour = @hour % 24
     this
 
@@ -22,6 +22,8 @@ class Clock
     while @minute < 0
       @minute = 60 + @minute
       @hour -= 1
+    while @hour < 0
+      @hour = 24 + @hour
     this
 
   equals: (otherClock) ->
