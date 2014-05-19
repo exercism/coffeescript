@@ -1,0 +1,21 @@
+{
+  "slug": "coffeescript",
+  "language": "CoffeeScript",
+  "repository": "https://github.com/exercism/xcoffeescript",
+  "active": true,
+  "problems": [
+    "bob",
+    "word-count",
+    "binary",
+    "anagram",
+    "trinary",
+    "hexadecimal",
+    "luhn",
+    "binary-search-tree",
+    "nth-prime",
+    "palindrome-products",
+    "queen-attack",
+    "wordy",
+    "beer-song"
+  ]
+}
