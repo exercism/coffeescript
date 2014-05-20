@@ -17,5 +17,8 @@
     "queen-attack",
     "wordy",
     "beer-song"
+  ],
+  "ignore": [
+
   ]
 }
