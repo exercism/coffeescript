@@ -18,7 +18,10 @@
     "wordy",
     "beer-song"
   ],
-  "ignore": [
+  "deprecated": [
 
+  ],
+  "ignore": [
+    "bin"
   ]
 }
