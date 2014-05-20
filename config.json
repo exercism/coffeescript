@@ -6,17 +6,20 @@
   "problems": [
     "bob",
     "word-count",
+    "accumulate",
     "binary",
     "anagram",
     "trinary",
     "hexadecimal",
+    "triangle",
     "luhn",
     "binary-search-tree",
     "nth-prime",
     "palindrome-products",
     "queen-attack",
     "wordy",
-    "beer-song"
+    "beer-song",
+    "atbash-cipher"
   ],
   "deprecated": [
 
