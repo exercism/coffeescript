@@ -20,7 +20,8 @@
     "wordy",
     "clock",
     "beer-song",
-    "atbash-cipher"
+    "atbash-cipher",
+    "linked-list"
   ],
   "deprecated": [
 
