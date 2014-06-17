@@ -45,22 +45,22 @@ describe "Triangle", ->
     try
       new Triangle(2,3,-5)
     catch error
-      expect(error).toBe "negative sides are illegal"
+    expect(error).toBe "negative sides are illegal"
 
   xit 'is illegal when violating triangle inequality', ->
     try
       new Triangle(1,1,3)
     catch error
-      expect(error).toBe "violation of triangle inequality"
+    expect(error).toBe "violation of triangle inequality"
 
   xit 'is illegal when violating triangle inequality 2', ->
     try
       new Triangle(2,2,4)
     catch error
-      expect(error).toBe "violation of triangle inequality"
+    expect(error).toBe "violation of triangle inequality"
 
   xit 'is illegal when violating triangle inequality 3', ->
     try
       new Triangle(7,3,2)
     catch error
-      expect(error).toBe "violation of triangle inequality"
+    expect(error).toBe "violation of triangle inequality"
