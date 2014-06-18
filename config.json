@@ -27,5 +27,8 @@
   ],
   "ignored": [
     "bin"
+  ],
+  "foregone": [
+
   ]
 }
