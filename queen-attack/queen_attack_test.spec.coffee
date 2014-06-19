@@ -18,7 +18,7 @@ describe "Queens", ->
     try
       queens = new Queens(positioning)
     catch error
-      expect(error).toEqual("Queens cannot share the same space")
+    expect(error).toEqual("Queens cannot share the same space")
 
 
   xit "toString representation", ->
