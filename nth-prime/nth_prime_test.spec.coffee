@@ -22,4 +22,4 @@ describe 'Prime', ->
     try
       Prime.nth(0)
     catch error
-      expect(error).toEqual("Prime is not possible")
+    expect(error).toEqual("Prime is not possible")
