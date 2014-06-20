@@ -49,18 +49,14 @@ class LinkedList
       @front = @current
       @count--
       return shiftVal
-    shiftVal = @front.value
-    if @front.next != undefined
+    else
+      shiftVal = @front.value
+      node = @front
       @front = @front.next
       @front.prev = undefined
+      node.next = undefined
       @count--
-    else
-      front = @front
-      @front = @front.next
-      @current = @front
-
-      @count--
-    shiftVal
+      return shiftVal
 
 
   unshiftNode: (@value) ->
@@ -77,16 +73,26 @@ class LinkedList
     @count
 
   deleteNode: (@value) ->
+    if @count is 0
+      return undefined
+    else if @count is 1
+      return @shiftNode()
     @current = @front
-    while(!@current.value is @value)
-      @current = @current.next
-    if @current.prev is undefined
-      @shiftNode()
+    while (@current.value isnt @value)
+      if @current.next isnt undefined
+        @current = @current.next
+
+    if @current.next is undefined
+      return @popNode()
+    else if @current.prev is undefined
+      return @shiftNode()
     else
       @current.prev.next = @current.next
       @current.next.prev = @current.prev
-      @current = @current.prev
+      deleteValue = @current.value
+      @current = undefined
       @count--
+      return deleteValue
 
 
   countNodes: ->
