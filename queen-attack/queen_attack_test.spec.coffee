@@ -14,11 +14,7 @@ describe "Queens", ->
 
   xit "cannot occupy the same space", ->
     positioning = { white: [2,4], black: [2,4] }
-
-    try
-      queens = new Queens(positioning)
-    catch error
-    expect(error).toEqual("Queens cannot share the same space")
+    expect(-> new Queens(positioning)).toThrow("Queens cannot share the same space")
 
 
   xit "toString representation", ->
