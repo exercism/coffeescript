@@ -29,6 +29,10 @@ describe "Bob", ->
     result = bob.hey "1, 2, 3 GO!"
     expect(result).toEqual "Woah, chill out!"
 
+  xit "only number", ->
+    result = bob.hey "1, 2, 3"
+    expect(result).toEqual "Whatever."
+
   xit "shouting with special characters", ->
     result = bob.hey "ZOMG THE %^*@#$(*^ ZOMBIES ARE COMING!!11!!1!"
     expect(result).toEqual "Woah, chill out!"
