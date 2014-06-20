@@ -2,7 +2,7 @@ Node = require('./node')
 
 class LinkedList
 
-  constructor: -> 
+  constructor: ->
     @count = 0
     @front = undefined
     @current = undefined
@@ -20,12 +20,19 @@ class LinkedList
       node.prev = @current
       @current = node
       @count++
-      
+
 
   popNode: ->
+    if @count is 0
+      return undefined
+    if @count is 1
+      popVal = @current.value
+      @current = undefined
+      @front = @current
+      return popVal
     while(@current.next != undefined)
         @current = @current.next
-        
+
     popVal = @current.value
     @current = @current.prev
     @current.next = undefined
@@ -34,6 +41,14 @@ class LinkedList
 
 
   shiftNode: ->
+    if @count is 0
+      return undefined
+    if @count is 1
+      shiftVal = @current.value
+      @current = undefined
+      @front = @current
+      @count--
+      return shiftVal
     shiftVal = @front.value
     if @front.next != undefined
       @front = @front.next
@@ -55,13 +70,23 @@ class LinkedList
       @count++
     else
       node = new Node(@value)
+      node.next = @front
       @front.prev = node
-      node.next = @current
       @front = node
       @count++
     @count
 
-
+  deleteNode: (@value) ->
+    @current = @front
+    while(!@current.value is @value)
+      @current = @current.next
+    if @current.prev is undefined
+      @shiftNode()
+    else
+      @current.prev.next = @current.next
+      @current.next.prev = @current.prev
+      @current = @current.prev
+      @count--
 
 
   countNodes: ->
