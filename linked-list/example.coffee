@@ -1,4 +1,5 @@
-Node = require('./node')
+class Node 
+    constructor: (@value, @prev, @next) ->
 
 class LinkedList
 
