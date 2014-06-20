@@ -19,7 +19,4 @@ describe 'Prime', ->
     expect(prime).toEqual(104743)
 
   xit 'weird case', ->
-    try
-      Prime.nth(0)
-    catch error
-    expect(error).toEqual("Prime is not possible")
+    expect(-> Prime.nth(0)).toThrow("Prime is not possible")
