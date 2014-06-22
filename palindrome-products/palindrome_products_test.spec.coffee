@@ -2,7 +2,7 @@ Palindromes = require('./palindromes')
 
 describe "Palindrome", ->
 
-  xit "largest palindrome from single digit factors", ->
+  it "largest palindrome from single digit factors", ->
     palindromes = new Palindromes({maxFactor: 9})
     palindromes.generate()
     largest = palindromes.largest()
