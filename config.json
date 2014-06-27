@@ -22,7 +22,8 @@
     "beer-song",
     "atbash-cipher",
     "linked-list",
-    "pascals-triangle"
+    "pascals-triangle",
+    "nucleotide-count"
   ],
   "deprecated": [
 
