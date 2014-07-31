@@ -21,7 +21,8 @@
     "clock",
     "beer-song",
     "atbash-cipher",
-    "linked-list"
+    "linked-list",
+    "pascals-triangle"
   ],
   "deprecated": [
 
