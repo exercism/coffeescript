@@ -1,18 +1,16 @@
 class DNA
   constructor: (@strand) ->
     @nucleotideCounts =
-      A: @_count 'A'
-      T: @_count 'T'
-      C: @_count 'C'
-      G: @_count 'G'
+      A: @value 'A'
+      T: @value 'T'
+      C: @value 'C'
+      G: @value 'G'
+
+  value: (nucleotide) ->
+    if nucleotide is 'U' then 0 else @strand.split(nucleotide).length - 1
 
   count: (nucleotide) ->
-    nucleotideTypes = Object.keys(@nucleotideCounts)
-    if nucleotideTypes.indexOf(nucleotide) is -1
-      throw new Error('Invalid Nucleotide')
+    throw new Error('Invalid Nucleotide') if nucleotide not of @nucleotideCounts
     @nucleotideCounts[nucleotide]
-
-  _count: (nucleotide) ->
-    if nucleotide is 'U' then 0 else @strand.split(nucleotide).length - 1
 
 module.exports = DNA

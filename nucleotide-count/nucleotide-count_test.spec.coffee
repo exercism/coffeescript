@@ -10,15 +10,15 @@ describe 'DNA', ->
     dna = new DNA('')
     expect(dna.nucleotideCounts).toEqual expected
 
-  it 'has no adoenosine', ->
+  xit 'has no adoenosine', ->
     dna = new DNA('')
     expect(dna.count('A')).toEqual 0
 
-  it 'repetitive cytidine gets counts', ->
+  xit 'repetitive cytidine gets counts', ->
     dna = new DNA('CCCCC')
     expect(dna.count('C')).toEqual 5
 
-  it 'repetitive sequence has only gaunosine', ->
+  xit 'repetitive sequence has only gaunosine', ->
     dna = new DNA('GGGGGGGG')
     expected =
       A: 0
@@ -27,26 +27,26 @@ describe 'DNA', ->
       G: 8
     expect(dna.nucleotideCounts).toEqual expected
 
-  it 'counts only thymidine', ->
+  xit 'counts only thymidine', ->
     dna = new DNA('GGGGTAACCCGG')
     expect(dna.count('T')).toEqual 1
 
-  it 'counts a nucleotide only once', ->
+  xit 'counts a nucleotide only once', ->
     dna = new DNA('GGTTGG')
     dna.count('T')
     expect(dna.count('T')).toEqual 2
 
-  it 'has no uracil', ->
+  xit 'has no uracil', ->
     dna = new DNA('GGTTGG')
-    expect(dna._count('U')).toEqual 0
+    expect(dna.value('U')).toEqual 0
 
-  it 'validates nucleotides', ->
+  xit 'validates nucleotides', ->
     dna = new DNA('GGTTGG')
     expect ->
       dna.count 'X'
     .toThrow new Error('Invalid Nucleotide')
 
-  it 'counts all nucleotides', ->
+  xit 'counts all nucleotides', ->
     dna = new DNA('AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC')
     expected =
       A: 20
