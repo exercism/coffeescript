@@ -36,10 +36,6 @@ describe 'DNA', ->
     dna.count('T')
     expect(dna.count('T')).toEqual 2
 
-  xit 'has no uracil', ->
-    dna = new DNA('GGTTGG')
-    expect(dna.value('U')).toEqual 0
-
   xit 'validates nucleotides', ->
     dna = new DNA('GGTTGG')
     expect ->
