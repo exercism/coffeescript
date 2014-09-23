@@ -7,7 +7,7 @@ describe "Bob", ->
 
   xit "shouting", ->
     result = bob.hey "WATCH OUT!"
-    expect(result).toEqual "Woah, chill out!"
+    expect(result).toEqual "Whoa, chill out!"
 
   xit "asking a question", ->
     result = bob.hey "Does this cryogenic chamber make me look fat?"
@@ -23,7 +23,7 @@ describe "Bob", ->
 
   xit "forceful questions", ->
     result = bob.hey "WHAT THE HELL WERE YOU THINKING?"
-    expect(result).toEqual "Woah, chill out!"
+    expect(result).toEqual "Whoa, chill out!"
 
   xit "shouting numbers", ->
     result = bob.hey "1, 2, 3 GO!"
@@ -35,11 +35,11 @@ describe "Bob", ->
 
   xit "shouting with special characters", ->
     result = bob.hey "ZOMG THE %^*@#$(*^ ZOMBIES ARE COMING!!11!!1!"
-    expect(result).toEqual "Woah, chill out!"
+    expect(result).toEqual "Whoa, chill out!"
 
   xit "shouting with no exclamation mark", ->
     result = bob.hey "I HATE YOU"
-    expect(result).toEqual "Woah, chill out!"
+    expect(result).toEqual "Whoa, chill out!"
 
   xit "statement containing question mark", ->
     result = bob.hey "Ending with a ? means a question."
