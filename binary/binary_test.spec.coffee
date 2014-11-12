@@ -25,3 +25,6 @@ describe 'binary', ->
 
   xit 'carrot is decimal 0', ->
     expect(new Binary('carrot').toDecimal()).toEqual 0
+
+  xit 'numeric but non-binary string is decimal 0', ->
+    expect(new Binary('42').toDecimal()).toEqual 0
