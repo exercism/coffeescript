@@ -29,7 +29,8 @@
 
   ],
   "ignored": [
-    "bin"
+    "bin",
+    "docs"
   ],
   "foregone": [
 
