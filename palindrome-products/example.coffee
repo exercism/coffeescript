@@ -30,7 +30,7 @@ class Palindromes
     high = @max
     return {
       value: biggest,
-      factors: @uniqueFactors(biggest).filter (pair) -> 
+      factors: @uniqueFactors(biggest).filter (pair) ->
         pair.every (factor) -> low <= factor <= high
     }
 
@@ -40,7 +40,7 @@ class Palindromes
     high = @max
     return {
       value: littlest,
-      factors: @uniqueFactors(littlest).filter (pair) -> 
+      factors: @uniqueFactors(littlest).filter (pair) ->
         pair.every (factor) -> low <= factor <= high
     }
 
