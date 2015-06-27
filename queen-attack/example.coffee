@@ -35,7 +35,7 @@ module.exports = class Queens
     else if @black[0] == rowNumber && @black[1] == rowColumn
       "B"
     else
-      "O"
+      "_"
 
   boardRepresentation: ->
     boardRepresentation = (@boardRow row for row in [0..7])
