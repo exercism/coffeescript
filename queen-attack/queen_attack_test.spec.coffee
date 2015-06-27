@@ -20,8 +20,8 @@ describe "Queens", ->
   xit "toString representation", ->
     positioning = {white: [2, 4], black: [6, 6]}
     queens = new Queens(positioning)
-    board = "O O O O O O O O\nO O O O O O O O\nO O O O O O O O\nO O O O O O O O\n" +
-      "O O W O O O O O\nO O O O O O O O\nO O O O O O B O\nO O O O O O O O"
+    board = "_ _ _ _ _ _ _ _\n_ _ _ _ _ _ _ _\n_ _ _ _ _ _ _ _\n_ _ _ _ _ _ _ _\n" +
+      "_ _ W _ _ _ _ _\n_ _ _ _ _ _ _ _\n_ _ _ _ _ _ B _\n_ _ _ _ _ _ _ _"
     expect(queens.toString()).toEqual(board)
 
   xit "queens cannot attack", ->
