@@ -14,7 +14,7 @@ You can find more information about modules in the [Node documentation](http://n
 
 If you have a paid version of Visual Studio, you can download a Visual Studio solution that is already set up to work with CoffeeScript and the other languages that Visual Studio supports.
 
-![Solution Explorer](/img/SolutionExplorer.png)
+![Solution Explorer](http://x.exercism.io/v3/tracks/coffeescript/docs/img/SolutionExplorer.png)
 
 1. Download the [Exercism.io Visual Studio Template](https://github.com/rprouse/Exercism.VisualStudio) from GitHub by clicking the Download Zip button on the page.
 2. Unzip the template into your exercises directory, for example `C:\src\exercises`
@@ -29,7 +29,7 @@ If you have a paid version of Visual Studio, you can download a Visual Studio so
 10. The exercise you just fetched will appear greyed out. Right click on the folder and **Include In Project**
 11. Get coding...
 
-![Add files](/img/AddFiles.png)
+![Add files](http://x.exercism.io/v3/tracks/coffeescript/docs/img/AddFiles.png)
 
 To work with CoffeeScript in Visual Studio, you should install the [Web Essentials](http://vswebessentials.com/) extension. It will also make working with Javascript much easier.
 
