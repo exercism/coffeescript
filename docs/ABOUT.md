@@ -1,4 +1,4 @@
-JavaScript is a great language, but not everyone likes writing in it. Thus, people and organizations have started to write languages that transpile(transpiling keeps the same level of abstraction, compiling decreases the level of abstraction) into JavaScript, that they feel are nicer to write in than JavaScript. CoffeeScript is one example, another is Microsoft's TypeScript.
+JavaScript is a great language, but not everyone likes writing in it. Thus, people and organizations have started to write languages that transpile (transpiling keeps the same level of abstraction, compiling decreases the level of abstraction) into JavaScript, that they feel are nicer to write in than JavaScript. CoffeeScript is one example, another is Microsoft's TypeScript.
 
 What are the specific advantages of CoffeeScript? From [coffeescript.org](http://www.coffeescript.org):
 
