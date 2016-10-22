@@ -3,29 +3,6 @@
   "language": "CoffeeScript",
   "repository": "https://github.com/exercism/xcoffeescript",
   "active": true,
-  "problems": [
-    "hello-world",
-    "bob",
-    "word-count",
-    "accumulate",
-    "binary",
-    "anagram",
-    "trinary",
-    "hexadecimal",
-    "triangle",
-    "luhn",
-    "binary-search-tree",
-    "nth-prime",
-    "palindrome-products",
-    "queen-attack",
-    "wordy",
-    "clock",
-    "beer-song",
-    "atbash-cipher",
-    "linked-list",
-    "pascals-triangle",
-    "nucleotide-count"
-  ],
   "deprecated": [
 
   ],
@@ -36,5 +13,112 @@
   ],
   "foregone": [
 
+  ],
+  "exercises": [
+    {
+      "difficulty": 1,
+      "slug": "hello-world",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "bob",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "word-count",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "accumulate",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "binary",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "anagram",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "trinary",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "hexadecimal",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "triangle",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "luhn",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "binary-search-tree",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "nth-prime",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "palindrome-products",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "queen-attack",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "wordy",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "clock",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "beer-song",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "atbash-cipher",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "linked-list",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "pascals-triangle",
+      "topics": []
+    },
+    {
+      "difficulty": 1,
+      "slug": "nucleotide-count",
+      "topics": []
+    }
   ]
 }
