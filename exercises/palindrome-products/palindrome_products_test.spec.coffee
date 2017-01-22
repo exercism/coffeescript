@@ -9,7 +9,7 @@ describe "Palindrome", ->
     expect(largest.value).toEqual(9)
     expect([[[3, 3], [1, 9]], [[1, 9], [3, 3]]]).toContain(largest.factors)
 
-  xit "largets palindrome from double digit factors", ->
+  xit "largest palindrome from double digit factors", ->
     palindromes = new Palindromes({ maxFactor: 99, minFactor: 10 })
     palindromes.generate()
     largest = palindromes.largest()
