@@ -26,11 +26,11 @@ describe 'Luhn', ->
     luhn = new Luhn(201773)
     expect(luhn.checksum).toEqual(21)
 
-  xit "valid number", ->
+  xit "invalid number", ->
     luhn = new Luhn(738)
     expect(luhn.valid).toEqual(false)
 
-  xit "invalid number", ->
+  xit "valid number", ->
     luhn = new Luhn(8739567)
     expect(luhn.valid).toEqual(true)
 
