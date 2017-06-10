@@ -18,107 +18,149 @@
     {
       "difficulty": 1,
       "slug": "hello-world",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "bob",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "word-count",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "accumulate",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "binary",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "anagram",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "trinary",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "hexadecimal",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "triangle",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "luhn",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "binary-search-tree",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "nth-prime",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "palindrome-products",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "queen-attack",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "wordy",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "clock",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "beer-song",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "atbash-cipher",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "linked-list",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "pascals-triangle",
-      "topics": []
+      "topics": [
+
+      ]
     },
     {
       "difficulty": 1,
       "slug": "nucleotide-count",
-      "topics": []
+      "topics": [
+
+      ]
     }
   ]
 }
