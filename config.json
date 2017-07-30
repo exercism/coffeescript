@@ -1,6 +1,7 @@
 {
   "language": "CoffeeScript",
   "active": true,
+  "test_pattern": "spec.coffee",
   "foregone": [
 
   ],
