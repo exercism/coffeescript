@@ -1,15 +1,9 @@
 {
+  "docs_url": "https://github.com/exercism/docs/blob/master/maintaining-a-track/maintainer-configuration.md",
   "maintainers": [
     {
-      "github_username": "markijbema",
-      "show_on_website": false,
-      "alumnus": false,
-      "name": null,
-      "bio": null,
-      "link_text": null,
-      "link_url": null,
-      "avatar_url": null
+      "alumnus": true,
+      "github_username": "markijbema"
     }
-  ],
-  "docs_url": "https://github.com/exercism/docs/blob/master/maintaining-a-track/maintainer-configuration.md"
+  ]
 }
