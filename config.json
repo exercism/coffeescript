@@ -1,220 +1,176 @@
 {
-  "language": "CoffeeScript",
   "active": true,
-  "test_pattern": "spec.coffee",
-  "foregone": [
-
-  ],
   "exercises": [
     {
-      "uuid": "0d1ce0cd-f7f2-4843-82ac-b0b4d995fa16",
+      "core": false,
+      "difficulty": 1,
       "slug": "hello-world",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "0d1ce0cd-f7f2-4843-82ac-b0b4d995fa16"
     },
     {
-      "uuid": "a8e713a1-e8b9-48b2-b20d-7121b0ecf6c0",
+      "core": false,
+      "difficulty": 1,
       "slug": "bob",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "a8e713a1-e8b9-48b2-b20d-7121b0ecf6c0"
     },
     {
-      "uuid": "e80080ca-04a9-40b5-affe-88f1d617dc97",
+      "core": false,
+      "difficulty": 1,
       "slug": "word-count",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "e80080ca-04a9-40b5-affe-88f1d617dc97"
     },
     {
-      "uuid": "b4670a87-1436-4e83-a641-76a6ec00fab8",
+      "core": false,
+      "difficulty": 1,
       "slug": "accumulate",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "b4670a87-1436-4e83-a641-76a6ec00fab8"
     },
     {
-      "uuid": "414dcffe-029a-4558-aabe-d933cd148abf",
+      "core": false,
+      "difficulty": 1,
       "slug": "binary",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "414dcffe-029a-4558-aabe-d933cd148abf"
     },
     {
-      "uuid": "22fe2f9c-71af-4ce0-b3cb-690a93654fe6",
+      "core": false,
+      "difficulty": 1,
       "slug": "anagram",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "22fe2f9c-71af-4ce0-b3cb-690a93654fe6"
     },
     {
-      "uuid": "3b225ecc-1321-476d-8aa7-db352f952c61",
+      "core": false,
+      "difficulty": 1,
       "slug": "trinary",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "3b225ecc-1321-476d-8aa7-db352f952c61"
     },
     {
-      "uuid": "bad8f00c-a480-4cf9-8939-2ec45f59ff42",
+      "core": false,
+      "difficulty": 1,
       "slug": "hexadecimal",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "bad8f00c-a480-4cf9-8939-2ec45f59ff42"
     },
     {
-      "uuid": "42292f42-ccfe-4103-a6f3-a057bca32c49",
+      "core": false,
+      "difficulty": 1,
       "slug": "triangle",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "42292f42-ccfe-4103-a6f3-a057bca32c49"
     },
     {
-      "uuid": "85c6c117-0173-4a1a-ae33-86427d6512dd",
+      "core": false,
+      "difficulty": 1,
       "slug": "luhn",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "85c6c117-0173-4a1a-ae33-86427d6512dd"
     },
     {
-      "uuid": "bf14de70-e231-48a1-b208-2d54d3398171",
+      "core": false,
+      "difficulty": 1,
       "slug": "binary-search-tree",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "bf14de70-e231-48a1-b208-2d54d3398171"
     },
     {
-      "uuid": "df9e580c-3a05-4d6c-b0d0-375df3af4d6c",
+      "core": false,
+      "difficulty": 1,
       "slug": "nth-prime",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "df9e580c-3a05-4d6c-b0d0-375df3af4d6c"
     },
     {
-      "uuid": "803690cc-a7cc-4c2f-b767-4c14a399f13a",
+      "core": false,
+      "difficulty": 1,
       "slug": "palindrome-products",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "803690cc-a7cc-4c2f-b767-4c14a399f13a"
     },
     {
-      "uuid": "563c81d1-8673-41b8-8302-15f7edb22321",
+      "core": false,
+      "difficulty": 1,
       "slug": "queen-attack",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "563c81d1-8673-41b8-8302-15f7edb22321"
     },
     {
-      "uuid": "86826aa0-f4b0-444c-a5c9-287a6590027e",
+      "core": false,
+      "difficulty": 1,
       "slug": "wordy",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "86826aa0-f4b0-444c-a5c9-287a6590027e"
     },
     {
-      "uuid": "4b3977e2-0e32-49ac-b3df-5c1d2600c079",
+      "core": false,
+      "difficulty": 1,
       "slug": "clock",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "4b3977e2-0e32-49ac-b3df-5c1d2600c079"
     },
     {
-      "uuid": "3256e251-89ab-4a48-91a4-b4d314b77bec",
+      "core": false,
+      "difficulty": 1,
       "slug": "beer-song",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "3256e251-89ab-4a48-91a4-b4d314b77bec"
     },
     {
-      "uuid": "a38d0644-42b5-4f01-b110-b723be1fa8a1",
+      "core": false,
+      "difficulty": 1,
       "slug": "atbash-cipher",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "a38d0644-42b5-4f01-b110-b723be1fa8a1"
     },
     {
-      "uuid": "34661cc2-6d88-4e36-8c3e-87744be307ef",
+      "core": false,
+      "difficulty": 1,
       "slug": "linked-list",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "34661cc2-6d88-4e36-8c3e-87744be307ef"
     },
     {
-      "uuid": "ee80988f-f1df-4958-b164-0e7fba9d1305",
+      "core": false,
+      "difficulty": 1,
       "slug": "pascals-triangle",
-      "core": false,
+      "topics": null,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-
-      ]
+      "uuid": "ee80988f-f1df-4958-b164-0e7fba9d1305"
     },
     {
-      "uuid": "6952588f-22fb-493e-b252-d62c404ad9ca",
-      "slug": "nucleotide-count",
       "core": false,
-      "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "slug": "nucleotide-count",
+      "topics": null,
+      "unlocked_by": null,
+      "uuid": "6952588f-22fb-493e-b252-d62c404ad9ca"
     }
-  ]
+  ],
+  "foregone": [],
+  "language": "CoffeeScript",
+  "test_pattern": "spec.coffee"
 }
