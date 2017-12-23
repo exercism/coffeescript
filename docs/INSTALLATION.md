@@ -7,13 +7,13 @@
 Install `jasmine-node` and `coffee`:
 
 ```bash
-$ npm install jasmine-node coffee -g
+$ npm install jasmine-node coffeescript -g
 ```
 
 Depending on your setup, you may need super user privileges to install an `npm` module globally. This is the case if you've used the official installer linked to above. If NPM gives you an error saying you don't have access, add `sudo` to the command above:
 
 ```bash
-$ sudo npm install jasmine-node coffee -g
+$ sudo npm install jasmine-node coffeescript -g
 ```
 
 If you've used the official installer, your `PATH` should have been automatically configured, but if your shell has trouble locating your globally installed modules--or if you build Node.js from source--update your `PATH` to include the `npm` binaries by adding the following to either `~/.bash_profile` or `~/.zshrc`:
