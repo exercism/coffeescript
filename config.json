@@ -11,7 +11,12 @@
       "auto_approve": true,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": []
+      "topics": [
+        "conditionals",
+        "control_flow_if_statements",
+        "optional_values",
+        "text_formatting"
+      ]
     },
     {
       "slug": "bob",
@@ -19,7 +24,11 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 5,
-      "topics": []
+      "topics": [
+        "conditionals",
+        "control_flow_switch",
+        "text_formatting"
+      ]
     },
     {
       "slug": "word-count",
@@ -27,7 +36,13 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 3,
-      "topics": []
+      "topics": [
+        "maps",
+        "strings",
+        "text_formatting",
+        "transforming",
+        "variables"
+      ]
     },
     {
       "slug": "accumulate",
@@ -35,7 +50,11 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 3,
-      "topics": []
+      "topics": [
+        "arrays",
+        "maps",
+        "transforming"
+      ]
     },
     {
       "slug": "binary",
@@ -43,7 +62,10 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 2,
-      "topics": []
+      "topics": [
+        "integers",
+        "transforming"
+      ]
     },
     {
       "slug": "anagram",
@@ -51,7 +73,11 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 2,
-      "topics": []
+      "topics": [
+        "sorting",
+        "strings",
+        "text_formatting"
+      ]
     },
     {
       "slug": "trinary",
@@ -59,7 +85,10 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 3,
-      "topics": []
+      "topics": [
+        "integers",
+        "transforming"
+      ]
     },
     {
       "slug": "hexadecimal",
@@ -67,7 +96,10 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 3,
-      "topics": []
+      "topics": [
+        "integers",
+        "transforming"
+      ]
     },
     {
       "slug": "triangle",
@@ -75,7 +107,11 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 2,
-      "topics": []
+      "topics": [
+        "arrays",
+        "equality",
+        "mathematics"
+      ]
     },
     {
       "slug": "luhn",
@@ -83,7 +119,13 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 2,
-      "topics": []
+      "topics": [
+        "algorithms",
+        "arrays",
+        "integers",
+        "mathematics",
+        "pattern_recognition"
+      ]
     },
     {
       "slug": "binary-search-tree",
@@ -91,7 +133,12 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 5,
-      "topics": []
+      "topics": [
+        "algorithms",
+        "arrays",
+        "integers",
+        "trees"
+      ]
     },
     {
       "slug": "nth-prime",
@@ -99,7 +146,13 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 4,
-      "topics": []
+      "topics": [
+        "arrays",
+        "filter",
+        "loops",
+        "map",
+        "mathematics"
+      ]
     },
     {
       "slug": "palindrome-products",
@@ -107,7 +160,11 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 2,
-      "topics": []
+      "topics": [
+        "arrays",
+        "integers",
+        "mathematics"
+      ]
     },
     {
       "slug": "queen-attack",
@@ -115,7 +172,12 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": []
+      "topics": [
+        "algorithms",
+        "arrays",
+        "games",
+        "logic"
+      ]
     },
     {
       "slug": "wordy",
@@ -123,7 +185,13 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 4,
-      "topics": []
+      "topics": [
+        "integers",
+        "mathematics",
+        "pattern_recognition",
+        "regular_expressions",
+        "strings"
+      ]
     },
     {
       "slug": "clock",
@@ -131,7 +199,12 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 3,
-      "topics": []
+      "topics": [
+        "integers",
+        "loops",
+        "mathematics",
+        "text_formatting"
+      ]
     },
     {
       "slug": "beer-song",
@@ -139,7 +212,11 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 2,
-      "topics": []
+      "topics": [
+        "control_flow_switch",
+        "loops",
+        "text_formatting"
+      ]
     },
     {
       "slug": "atbash-cipher",
@@ -147,7 +224,12 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 5,
-      "topics": []
+      "topics": [
+        "arrays",
+        "cryptography",
+        "strings",
+        "text_formatting"
+      ]
     },
     {
       "slug": "linked-list",
@@ -155,7 +237,12 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 3,
-      "topics": []
+      "topics": [
+        "algorithms",
+        "classes",
+        "object_oriented_programming",
+        "variables"
+      ]
     },
     {
       "slug": "pascals-triangle",
@@ -163,7 +250,12 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 2,
-      "topics": []
+      "topics": [
+        "algorithms",
+        "arrays",
+        "integers",
+        "mathematics"
+      ]
     },
     {
       "slug": "nucleotide-count",
@@ -171,7 +263,11 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 2,
-      "topics": []
+      "topics": [
+        "filtering",
+        "maps",
+        "strings"
+      ]
     }
   ]
 }
