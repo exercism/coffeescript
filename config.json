@@ -1,220 +1,176 @@
 {
   "language": "CoffeeScript",
   "active": true,
+  "blurb": "",
   "test_pattern": "spec.coffee",
-  "foregone": [
-
-  ],
   "exercises": [
     {
-      "uuid": "0d1ce0cd-f7f2-4843-82ac-b0b4d995fa16",
       "slug": "hello-world",
+      "uuid": "0d1ce0cd-f7f2-4843-82ac-b0b4d995fa16",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "a8e713a1-e8b9-48b2-b20d-7121b0ecf6c0",
       "slug": "bob",
+      "uuid": "a8e713a1-e8b9-48b2-b20d-7121b0ecf6c0",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "e80080ca-04a9-40b5-affe-88f1d617dc97",
       "slug": "word-count",
+      "uuid": "e80080ca-04a9-40b5-affe-88f1d617dc97",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "b4670a87-1436-4e83-a641-76a6ec00fab8",
       "slug": "accumulate",
+      "uuid": "b4670a87-1436-4e83-a641-76a6ec00fab8",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "414dcffe-029a-4558-aabe-d933cd148abf",
       "slug": "binary",
+      "uuid": "414dcffe-029a-4558-aabe-d933cd148abf",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "22fe2f9c-71af-4ce0-b3cb-690a93654fe6",
       "slug": "anagram",
+      "uuid": "22fe2f9c-71af-4ce0-b3cb-690a93654fe6",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "3b225ecc-1321-476d-8aa7-db352f952c61",
       "slug": "trinary",
+      "uuid": "3b225ecc-1321-476d-8aa7-db352f952c61",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "bad8f00c-a480-4cf9-8939-2ec45f59ff42",
       "slug": "hexadecimal",
+      "uuid": "bad8f00c-a480-4cf9-8939-2ec45f59ff42",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "42292f42-ccfe-4103-a6f3-a057bca32c49",
       "slug": "triangle",
+      "uuid": "42292f42-ccfe-4103-a6f3-a057bca32c49",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "85c6c117-0173-4a1a-ae33-86427d6512dd",
       "slug": "luhn",
+      "uuid": "85c6c117-0173-4a1a-ae33-86427d6512dd",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "bf14de70-e231-48a1-b208-2d54d3398171",
       "slug": "binary-search-tree",
+      "uuid": "bf14de70-e231-48a1-b208-2d54d3398171",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "df9e580c-3a05-4d6c-b0d0-375df3af4d6c",
       "slug": "nth-prime",
+      "uuid": "df9e580c-3a05-4d6c-b0d0-375df3af4d6c",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "803690cc-a7cc-4c2f-b767-4c14a399f13a",
       "slug": "palindrome-products",
+      "uuid": "803690cc-a7cc-4c2f-b767-4c14a399f13a",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "563c81d1-8673-41b8-8302-15f7edb22321",
       "slug": "queen-attack",
+      "uuid": "563c81d1-8673-41b8-8302-15f7edb22321",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "86826aa0-f4b0-444c-a5c9-287a6590027e",
       "slug": "wordy",
+      "uuid": "86826aa0-f4b0-444c-a5c9-287a6590027e",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "4b3977e2-0e32-49ac-b3df-5c1d2600c079",
       "slug": "clock",
+      "uuid": "4b3977e2-0e32-49ac-b3df-5c1d2600c079",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "3256e251-89ab-4a48-91a4-b4d314b77bec",
       "slug": "beer-song",
+      "uuid": "3256e251-89ab-4a48-91a4-b4d314b77bec",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "a38d0644-42b5-4f01-b110-b723be1fa8a1",
       "slug": "atbash-cipher",
+      "uuid": "a38d0644-42b5-4f01-b110-b723be1fa8a1",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "34661cc2-6d88-4e36-8c3e-87744be307ef",
       "slug": "linked-list",
+      "uuid": "34661cc2-6d88-4e36-8c3e-87744be307ef",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "ee80988f-f1df-4958-b164-0e7fba9d1305",
       "slug": "pascals-triangle",
+      "uuid": "ee80988f-f1df-4958-b164-0e7fba9d1305",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     },
     {
-      "uuid": "6952588f-22fb-493e-b252-d62c404ad9ca",
       "slug": "nucleotide-count",
+      "uuid": "6952588f-22fb-493e-b252-d62c404ad9ca",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": [
-
-      ]
+      "topics": []
     }
   ]
 }

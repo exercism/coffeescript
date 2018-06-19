@@ -2,8 +2,14 @@
   "docs_url": "https://github.com/exercism/docs/blob/master/maintaining-a-track/maintainer-configuration.md",
   "maintainers": [
     {
+      "github_username": "markijbema",
       "alumnus": true,
-      "github_username": "markijbema"
+      "show_on_website": false,
+      "name": null,
+      "link_text": null,
+      "link_url": null,
+      "avatar_url": null,
+      "bio": null
     }
   ]
 }
