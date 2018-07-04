@@ -1,9 +1,5 @@
-JavaScript is a great language, but not everyone likes writing in it. Thus, people and organizations have started to write languages that transpile (transpiling keeps the same level of abstraction, compiling decreases the level of abstraction) into JavaScript, that they feel are nicer to write in than JavaScript. CoffeeScript is one example, another is Microsoft's TypeScript.
+CoffeeScript is a language which transpiles into JavaScript, used for making dynamic websites (both in the web browser, and on the server). The transpiler is used to transform CoffeeScript code into JavaScript before running, to keep compability and the same performance of JavaScript while providing many new features!
 
-CoffeeScript is a little language that compiles into JavaScript. Underneath that awkward Java-esque patina, JavaScript has always had a gorgeous heart. CoffeeScript is an attempt to expose the good parts of JavaScript in a simple way.
+CoffeeScript was created to provide a simplified way to write JavaScript, based on a blend of the Ruby and Python languages. One difference is the use of indentation and arrows to replace JavaScript's verbose function code, and introduces useful features from functional languages including pattern matching.
 
-The golden rule of CoffeeScript is: "It's just JavaScript". The code compiles one-to-one into the equivalent JS, and there is no interpretation at runtime. You can use any existing JavaScript library seamlessly from CoffeeScript (and vice-versa). The compiled output is readable and pretty-printed, will work in every JavaScript runtime, and tends to run as fast or faster than the equivalent handwritten JavaScript.
-
-You should learn CoffeeScript if you like programming in JavaScript, and want to experiment with a different way to write it. With transpiled versions of JavaScript (ECMA 2015, TypeScript, etc) becoming more popular, this is a valuable skill for a coder.
-
-_(Info taken from [coffeescript.org](http://www.coffeescript.org))_
+CoffeeScript is one of many new languages that transpiles to JavaScript, including TypeScript and Flow - the community is  growing, and these types of languages are very popular.
