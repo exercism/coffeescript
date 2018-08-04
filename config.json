@@ -64,6 +64,7 @@
       "difficulty": 2,
       "topics": [
         "integers",
+        "math",
         "transforming"
       ]
     },
@@ -87,6 +88,7 @@
       "difficulty": 3,
       "topics": [
         "integers",
+        "math",
         "transforming"
       ]
     },
@@ -98,6 +100,7 @@
       "difficulty": 3,
       "topics": [
         "integers",
+        "math",
         "transforming"
       ]
     },
@@ -109,8 +112,7 @@
       "difficulty": 2,
       "topics": [
         "arrays",
-        "equality",
-        "mathematics"
+        "equality"
       ]
     },
     {
@@ -123,7 +125,6 @@
         "algorithms",
         "arrays",
         "integers",
-        "mathematics",
         "pattern_recognition"
       ]
     },
@@ -151,7 +152,7 @@
         "filter",
         "loops",
         "map",
-        "mathematics"
+        "math"
       ]
     },
     {
@@ -163,7 +164,7 @@
       "topics": [
         "arrays",
         "integers",
-        "mathematics"
+        "math"
       ]
     },
     {
@@ -187,7 +188,6 @@
       "difficulty": 4,
       "topics": [
         "integers",
-        "mathematics",
         "pattern_recognition",
         "regular_expressions",
         "strings"
@@ -202,7 +202,6 @@
       "topics": [
         "integers",
         "loops",
-        "mathematics",
         "text_formatting"
       ]
     },
@@ -254,7 +253,7 @@
         "algorithms",
         "arrays",
         "integers",
-        "mathematics"
+        "math"
       ]
     },
     {
