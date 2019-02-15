@@ -1,4 +1,4 @@
 class HelloWorld
-    hello: (name = '') ->
-      if name == '' then 'Hello, World!' else "Hello, #{name}!"
+  hello: -> 'Hello, World!'
+
 module.exports = HelloWorld
