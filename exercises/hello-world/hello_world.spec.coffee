@@ -1,16 +1,8 @@
 HelloWorld = require "./hello_world"
 
-describe "HelloWorld", ->
+describe 'HelloWorld', ->
   hello_world = new HelloWorld()
 
-  it "given no name", ->
+  it "says 'Hello, World!'", ->
     result = hello_world.hello()
-    expect(result).toEqual "Hello, World!"
-
-  it "given the name 'Alice'", ->
-    result = hello_world.hello 'Alice'
-    expect(result).toEqual "Hello, Alice!"
-
-  it "given the name 'Bob'", ->
-    result = hello_world.hello 'Bob'
-    expect(result).toEqual "Hello, Bob!"
+    expect(result).toEqual 'Hello, World!'
