@@ -48,7 +48,7 @@ describe "Triangle", ->
     expect(-> new Triangle(1,1,3)).toThrow("violation of triangle inequality")
 
   xit 'is illegal when violating triangle inequality 2', ->
-    expect(-> new Triangle(2,2,4)).toThrow("violation of triangle inequality")
+    expect(-> new Triangle(2,2,5)).toThrow("violation of triangle inequality")
 
   xit 'is illegal when violating triangle inequality 3', ->
     expect(-> new Triangle(7,3,2)).toThrow("violation of triangle inequality")
