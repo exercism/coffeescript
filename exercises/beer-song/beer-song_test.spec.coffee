@@ -1,4 +1,4 @@
-Beer = require("./beer")
+Beer = require("./beer-song")
 describe "Beer", ->
   it "prints an arbitrary verse", ->
     expect(Beer.verse 8).toEqual """
@@ -46,5 +46,3 @@ describe "Beer", ->
     Go to the store and buy some more, 99 bottles of beer on the wall.
 
     """
-
-
