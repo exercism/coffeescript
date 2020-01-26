@@ -36,11 +36,17 @@ describe 'DNA', ->
     dna.count('T')
     expect(dna.count('T')).toEqual 2
 
+  xit 'validates strand', ->
+    dna = new DNA('AGTXCG')
+    expect ->
+      dna.count 'G'
+    .toThrow new Error('Invalid nucleotide strand')
+
   xit 'validates nucleotides', ->
     dna = new DNA('GGTTGG')
     expect ->
       dna.count 'X'
-    .toThrow new Error('Invalid Nucleotide')
+    .toThrow new Error('Invalid nucleotide')
 
   xit 'counts all nucleotides', ->
     dna = new DNA('AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC')
