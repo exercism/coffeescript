@@ -1,4 +1,4 @@
-BST = require './binary-search-tree'
+BinarySearchTree = require './binary-search-tree'
 
 recordAllData = (bst) ->
   out = []
@@ -8,31 +8,31 @@ recordAllData = (bst) ->
 describe 'BinarySearchTree', ->
 
   it 'data is retained', ->
-    expect(4).toEqual new BST(4).data
+    expect(4).toEqual new BinarySearchTree(4).data
 
   xit 'inserting less', ->
-    four = new BST(4)
+    four = new BinarySearchTree(4)
     four.insert(2)
 
     expect(four.data).toEqual 4
     expect(four.left.data).toEqual 2
 
   xit 'inserting same', ->
-    four = new BST(4)
+    four = new BinarySearchTree(4)
     four.insert(4)
 
     expect(four.data).toEqual 4
     expect(four.left.data).toEqual 4
 
   xit 'inserting right', ->
-    four = new BST(4)
+    four = new BinarySearchTree(4)
     four.insert(5)
 
     expect(four.data).toEqual 4
     expect(four.right.data).toEqual
 
   xit 'complex tree', ->
-    four = new BST(4)
+    four = new BinarySearchTree(4)
     four.insert(2)
     four.insert(6)
     four.insert(1)
@@ -49,22 +49,22 @@ describe 'BinarySearchTree', ->
     expect(four.right.right.data).toEqual 7
 
   xit 'iterating one element', ->
-    expect(recordAllData(new BST(4))).toEqual [4]
+    expect(recordAllData(new BinarySearchTree(4))).toEqual [4]
 
   xit 'iterating over smaller element', ->
-    four = new BST(4)
+    four = new BinarySearchTree(4)
     four.insert(2)
 
     expect(recordAllData(four)).toEqual [2, 4]
 
   xit 'iterating over larger element', ->
-    four = new BST(4)
+    four = new BinarySearchTree(4)
     four.insert(5)
 
     expect(recordAllData(four)).toEqual [4, 5]
 
   xit 'iterating over complex tree', ->
-    four = new BST(4)
+    four = new BinarySearchTree(4)
     four.insert(2)
     four.insert(1)
     four.insert(3)

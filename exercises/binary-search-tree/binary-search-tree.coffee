@@ -1,9 +1,9 @@
 # This is a stub file for the CoffeeScript track
-class BST
+class BinarySearchTree
   constructor: (args) ->
 
   insert: (args) ->
 
   data: ->
 
-module.exports = BST
+module.exports = BinarySearchTree
