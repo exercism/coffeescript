@@ -45,4 +45,11 @@ describe 'Beer', ->
     No more bottles of beer on the wall, no more bottles of beer.
     Go to the store and buy some more, 99 bottles of beer on the wall.
 
+<<<<<<< HEAD:exercises/beer-song/beer-song.spec.coffee
     '
+=======
+    """
+<<<<<<< HEAD:exercises/beer-song/beer-song.spec.coffee
+>>>>>>> beer-song stub file:exercises/beer-song/beer-song_test.spec.coffee
+=======
+>>>>>>> b04a45190849e2f4cb3f56024234c4da51df9ab7:exercises/beer-song/beer-song_test.spec.coffee

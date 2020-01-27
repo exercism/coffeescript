@@ -1,5 +1,4 @@
-# Simply return the string 'Hello, World!'
-
+# This is a stub file for the CoffeeScript track
 class HelloWorld
   hello: -> ''
 
