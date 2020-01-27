@@ -1,4 +1,4 @@
-# xCoffeeScript
+# CoffeeScript
 
 Exercism exercises in CoffeeScript
 
