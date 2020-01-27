@@ -2,8 +2,8 @@
 class BST
   constructor: (args) ->
 
-  @insert: (args) ->
+  insert: (args) ->
 
-  @data: ->
+  data: ->
 
 module.exports = BST
