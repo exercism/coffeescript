@@ -66,6 +66,6 @@ describe 'Luhn', ->
     luhn = new Luhn('055b 444 285')
     expect(luhn.valid).toEqual(false)
 
-  xit 'using ascii value for non-doubled non-digit isn\'t allowed', ->
+  xit 'using ascii value for doubled non-digit isn\'t allowed', ->
     luhn = new Luhn(':9')
     expect(luhn.valid).toEqual(false)
