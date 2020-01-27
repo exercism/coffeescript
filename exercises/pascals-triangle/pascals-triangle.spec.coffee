@@ -1,4 +1,4 @@
-Pascal = require './example.coffee'
+Pascal = require './pascals-triangle'
 
 describe 'Pascal', ->
   it 'with one row', ->
@@ -24,4 +24,3 @@ describe 'Pascal', ->
   xit 'should equal 20th row', ->
     arr = new Pascal(20)
     expect(arr.array[19]).toEqual [1, 19, 171, 969, 3876, 11628, 27132, 50388, 75582, 92378, 92378, 75582, 50388, 27132, 11628, 3876, 969, 171, 19, 1]
-

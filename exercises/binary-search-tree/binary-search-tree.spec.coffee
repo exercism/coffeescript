@@ -1,4 +1,4 @@
-Bst = require './bst'
+Bst = require './binary-search-tree'
 
 recordAllData = (bst) ->
   out = []

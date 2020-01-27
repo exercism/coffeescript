@@ -1,4 +1,4 @@
-Prime = require './prime'
+Prime = require './nth-prime'
 
 describe 'Prime', ->
 
@@ -19,4 +19,4 @@ describe 'Prime', ->
     expect(prime).toEqual(104743)
 
   xit 'weird case', ->
-    expect(-> Prime.nth(0)).toThrow("Prime is not possible")
+    expect(-> Prime.nth(0)).toThrow('Prime is not possible')

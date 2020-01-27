@@ -1,4 +1,4 @@
-LinkedList = require('./linkedList')
+LinkedList = require './linked-list'
 
 describe 'LinkedList', ->
     it 'init', ->
@@ -66,4 +66,3 @@ describe 'LinkedList', ->
         list.pushNode(10)
         list.deleteNode(10)
         expect(list.countNodes()).toBe 0
-
