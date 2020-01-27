@@ -19,7 +19,7 @@ describe 'Luhn', ->
     expect(luhn.valid()).toBe true
 
   xit 'a valid Canadian SIN', ->
-    luhn = new Luhn('055 444 286')
+    luhn = new Luhn('055 444 285')
     expect(luhn.valid()).toBe true
 
   xit 'invalid credit card', ->
