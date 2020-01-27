@@ -3,4 +3,4 @@
 class Binary
   constructor: (args) ->
 
-  @toDecimal: ->
+  toDecimal: ->
