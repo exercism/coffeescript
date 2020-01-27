@@ -20,10 +20,10 @@ describe '[].accumulate()', ->
     accumulator = (word) -> word.split('').reverse().join('')
     result      = 'the quick brown fox etc'.split(/\s/).accumulate accumulator
 
-    expect(result).toEqual ["eht", "kciuq", "nworb", "xof", "cte"]
+    expect(result).toEqual ['eht', 'kciuq', 'nworb', 'xof', 'cte']
 
   xit 'accumulate recursively', ->
     result = 'a b c'.split(/\s+/).accumulate (char)  ->
-      '1 2 3'.split(/\s+/).accumulate (digit) -> "#{char}#{digit}"
+      '1 2 3'.split(/\s+/).accumulate (digit) -> '#{char}#{digit}'
 
-    expect(result).toEqual([["a1", "a2", "a3"], ["b1", "b2", "b3"], ["c1", "c2", "c3"]])
+    expect(result).toEqual([['a1', 'a2', 'a3'], ['b1', 'b2', 'b3'], ['c1', 'c2', 'c3']])

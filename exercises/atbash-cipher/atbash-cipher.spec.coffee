@@ -1,4 +1,4 @@
-Atbash = require './atbash'
+Atbash = require './atbash-cipher'
 
 describe 'Atbash', ->
   it 'encodes no', ->

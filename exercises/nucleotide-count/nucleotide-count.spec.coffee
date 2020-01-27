@@ -1,4 +1,4 @@
-DNA = require './example'
+DNA = require './nucleotide-count'
 
 describe 'DNA', ->
   it 'has no nucleotides', ->
