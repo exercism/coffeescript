@@ -24,6 +24,6 @@ describe '[].accumulate()', ->
 
   xit 'accumulate recursively', ->
     result = 'a b c'.split(/\s+/).accumulate (char)  ->
-      '1 2 3'.split(/\s+/).accumulate (digit) -> '#{char}#{digit}'
+      '1 2 3'.split(/\s+/).accumulate (digit) -> "#{char}#{digit}"
 
     expect(result).toEqual([['a1', 'a2', 'a3'], ['b1', 'b2', 'b3'], ['c1', 'c2', 'c3']])
