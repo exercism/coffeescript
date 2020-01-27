@@ -1,8 +1,8 @@
 # This is a stub file for the CoffeeScript track
 
-class Beer
+class BeerSong
   verse: (args) ->
 
   sing: (args) ->
 
-module.exports = Beer
+module.exports = BeerSong
