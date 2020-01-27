@@ -1,6 +1,6 @@
 # This is a stub file for the CoffeeScript track
 
-class Atbash
+class AtbashCipher
   encode: (args) ->
 
-module.exports = Atbash
+module.exports = AtbashCipher
