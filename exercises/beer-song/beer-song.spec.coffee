@@ -49,4 +49,7 @@ describe 'Beer', ->
     '
 =======
     """
+<<<<<<< HEAD:exercises/beer-song/beer-song.spec.coffee
 >>>>>>> beer-song stub file:exercises/beer-song/beer-song_test.spec.coffee
+=======
+>>>>>>> b04a45190849e2f4cb3f56024234c4da51df9ab7:exercises/beer-song/beer-song_test.spec.coffee
