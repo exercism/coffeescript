@@ -1,20 +1,20 @@
-Words = require './word-count'
+WordCount = require './word-count'
 
-describe 'Words', ->
+describe 'WordCount', ->
   it 'counts one word', ->
-    words = new Words 'word'
+    words = new WordCount 'word'
     expect(words.count()).toEqual
       word: 1
 
   xit 'counts one of each', ->
-    words = new Words 'one of each'
+    words = new WordCount 'one of each'
     expect(words.count()).toEqual
       one: 1
       of: 1
       each: 1
 
   xit 'counts multiple occurrences', ->
-    words = new Words 'one fish two fish red fish blue fish'
+    words = new WordCount 'one fish two fish red fish blue fish'
     expect(words.count()).toEqual
       one: 1
       fish: 4
@@ -23,7 +23,7 @@ describe 'Words', ->
       blue: 1
 
   xit 'ignores punctuation', ->
-    words = new Words 'car : carpet as java : javascript!!&@$%^&'
+    words = new WordCount 'car : carpet as java : javascript!!&@$%^&'
     expect(words.count()).toEqual
       car: 1
       carpet: 1
@@ -32,13 +32,13 @@ describe 'Words', ->
       javascript: 1
 
   xit 'includes numbers', ->
-    words = new Words 'testing, 1, 2 testing'
+    words = new WordCount 'testing, 1, 2 testing'
     expect(words.count()).toEqual
       testing: 2
       1: 1
       2: 1
 
   xit 'normalizes case', ->
-    words = new Words 'go Go GO'
+    words = new WordCount 'go Go GO'
     expect(words.count()).toEqual
       go: 3
