@@ -1,26 +1,34 @@
 Pascal = require './pascals-triangle'
 
 describe 'Pascal', ->
-  it 'with one row', ->
-    arr = new PascalsTriangle(1)
-    expect(arr.array).toEqual [[1]]
+  it 'one row', ->
+    pascal = new PascalsTriangle()
+    expect(pascal.rows(0)).toEqual []
 
-  xit 'with two rows', ->
-    arr = new PascalsTriangle(2)
-    expect(arr.array).toEqual [[1], [1,1]]
+  xit 'two rows', ->
+    pascal = new PascalsTriangle()
+    expect(pascal.rows(1)).toEqual [[1]]
 
-  xit 'with three rows', ->
-    arr = new PascalsTriangle(3)
-    expect(arr.array).toEqual [[1], [1,1], [1,2,1]]
+  xit 'three rows', ->
+    pascal = new PascalsTriangle()
+    expect(pascal.rows(2)).toEqual [[1], [1,1]]
 
-  xit 'with four rows', ->
-    arr = new PascalsTriangle(4)
-    expect(arr.array).toEqual [[1], [1,1], [1,2,1], [1,3,3,1]]
+  xit 'four rows', ->
+    pascal = new PascalsTriangle()
+    expect(pascal.rows(3)).toEqual [[1], [1,1], [1,2,1]]
 
-  xit 'with five rows', ->
-    arr = new PascalsTriangle(5)
-    expect(arr.array).toEqual [[1], [1,1], [1,2,1], [1,3,3,1], [1,4,6,4,1]]
+  xit 'five rows', ->
+    pascal = new PascalsTriangle()
+    expect(pascal.rows(4)).toEqual [[1], [1,1], [1,2,1], [1,3,3,1]]
 
-  xit 'should equal 20th row', ->
-    arr = new PascalsTriangle(20)
-    expect(arr.array[19]).toEqual [1, 19, 171, 969, 3876, 11628, 27132, 50388, 75582, 92378, 92378, 75582, 50388, 27132, 11628, 3876, 969, 171, 19, 1]
+  xit 'five rows', ->
+    pascal = new PascalsTriangle()
+    expect(pascal.rows(5)).toEqual [[1], [1,1], [1,2,1], [1,3,3,1], [1,4,6,4,1]]
+
+  xit 'six rows', ->
+    pascal = new PascalsTriangle()
+    expect(pascal.rows[6]).toEqual [[1], [1,1], [1,2,1], [1,3,3,1], [1,4,6,4,1], [1, 5, 10, 10, 5, 1]]
+
+  xit 'ten rows', ->
+    pascal = new PascalsTriangle()
+    expect(pascal.rows[6]).toEqual [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1], [1, 5, 10, 10, 5, 1], [1, 6, 15, 20, 15, 6, 1], [1, 7, 21, 35, 35, 21, 7, 1], [1, 8, 28, 56, 70, 56, 28, 8, 1], [1, 9, 36, 84, 126, 126, 84, 36, 9, 1]]
