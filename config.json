@@ -16,6 +16,7 @@
   },
   "test_pattern": "spec.coffee",
   "exercises": {
+    "concept": [],
     "practice": [
       {
         "slug": "hello-world",
