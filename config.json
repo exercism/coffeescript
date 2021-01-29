@@ -31,15 +31,174 @@
       ]
     },
     {
-      "slug": "bob",
-      "uuid": "a8e713a1-e8b9-48b2-b20d-7121b0ecf6c0",
+      "slug": "queen-attack",
+      "uuid": "563c81d1-8673-41b8-8302-15f7edb22321",
       "core": false,
       "unlocked_by": null,
-      "difficulty": 5,
+      "difficulty": 1,
       "topics": [
-        "conditionals",
-        "control_flow_switch",
+        "algorithms",
+        "arrays",
+        "games",
+        "logic"
+      ]
+    },
+    {
+      "slug": "anagram",
+      "uuid": "22fe2f9c-71af-4ce0-b3cb-690a93654fe6",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "sorting",
+        "strings",
         "text_formatting"
+      ]
+    },
+    {
+      "slug": "beer-song",
+      "uuid": "3256e251-89ab-4a48-91a4-b4d314b77bec",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "control_flow_switch",
+        "loops",
+        "text_formatting"
+      ]
+    },
+    {
+      "slug": "binary",
+      "uuid": "414dcffe-029a-4558-aabe-d933cd148abf",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "integers",
+        "math",
+        "transforming"
+      ]
+    },
+    {
+      "slug": "luhn",
+      "uuid": "85c6c117-0173-4a1a-ae33-86427d6512dd",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "algorithms",
+        "arrays",
+        "integers",
+        "pattern_recognition"
+      ]
+    },
+    {
+      "slug": "nucleotide-count",
+      "uuid": "6952588f-22fb-493e-b252-d62c404ad9ca",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "filtering",
+        "maps",
+        "strings"
+      ]
+    },
+    {
+      "slug": "palindrome-products",
+      "uuid": "803690cc-a7cc-4c2f-b767-4c14a399f13a",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "arrays",
+        "integers",
+        "math"
+      ]
+    },
+    {
+      "slug": "pascals-triangle",
+      "uuid": "ee80988f-f1df-4958-b164-0e7fba9d1305",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "algorithms",
+        "arrays",
+        "integers",
+        "math"
+      ]
+    },
+    {
+      "slug": "triangle",
+      "uuid": "42292f42-ccfe-4103-a6f3-a057bca32c49",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 2,
+      "topics": [
+        "arrays",
+        "equality"
+      ]
+    },
+    {
+      "slug": "accumulate",
+      "uuid": "b4670a87-1436-4e83-a641-76a6ec00fab8",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 3,
+      "topics": [
+        "arrays",
+        "maps",
+        "transforming"
+      ]
+    },
+    {
+      "slug": "clock",
+      "uuid": "4b3977e2-0e32-49ac-b3df-5c1d2600c079",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 3,
+      "topics": [
+        "integers",
+        "loops",
+        "text_formatting"
+      ]
+    },
+    {
+      "slug": "hexadecimal",
+      "uuid": "bad8f00c-a480-4cf9-8939-2ec45f59ff42",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 3,
+      "topics": [
+        "integers",
+        "math",
+        "transforming"
+      ]
+    },
+    {
+      "slug": "linked-list",
+      "uuid": "34661cc2-6d88-4e36-8c3e-87744be307ef",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 3,
+      "topics": [
+        "algorithms",
+        "classes",
+        "object_oriented_programming",
+        "variables"
+      ]
+    },
+    {
+      "slug": "trinary",
+      "uuid": "3b225ecc-1321-476d-8aa7-db352f952c61",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 3,
+      "topics": [
+        "integers",
+        "math",
+        "transforming"
       ]
     },
     {
@@ -57,103 +216,6 @@
       ]
     },
     {
-      "slug": "accumulate",
-      "uuid": "b4670a87-1436-4e83-a641-76a6ec00fab8",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 3,
-      "topics": [
-        "arrays",
-        "maps",
-        "transforming"
-      ]
-    },
-    {
-      "slug": "binary",
-      "uuid": "414dcffe-029a-4558-aabe-d933cd148abf",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 2,
-      "topics": [
-        "integers",
-        "math",
-        "transforming"
-      ]
-    },
-    {
-      "slug": "anagram",
-      "uuid": "22fe2f9c-71af-4ce0-b3cb-690a93654fe6",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 2,
-      "topics": [
-        "sorting",
-        "strings",
-        "text_formatting"
-      ]
-    },
-    {
-      "slug": "trinary",
-      "uuid": "3b225ecc-1321-476d-8aa7-db352f952c61",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 3,
-      "topics": [
-        "integers",
-        "math",
-        "transforming"
-      ]
-    },
-    {
-      "slug": "hexadecimal",
-      "uuid": "bad8f00c-a480-4cf9-8939-2ec45f59ff42",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 3,
-      "topics": [
-        "integers",
-        "math",
-        "transforming"
-      ]
-    },
-    {
-      "slug": "triangle",
-      "uuid": "42292f42-ccfe-4103-a6f3-a057bca32c49",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 2,
-      "topics": [
-        "arrays",
-        "equality"
-      ]
-    },
-    {
-      "slug": "luhn",
-      "uuid": "85c6c117-0173-4a1a-ae33-86427d6512dd",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 2,
-      "topics": [
-        "algorithms",
-        "arrays",
-        "integers",
-        "pattern_recognition"
-      ]
-    },
-    {
-      "slug": "binary-search-tree",
-      "uuid": "bf14de70-e231-48a1-b208-2d54d3398171",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 5,
-      "topics": [
-        "algorithms",
-        "arrays",
-        "integers",
-        "trees"
-      ]
-    },
-    {
       "slug": "nth-prime",
       "uuid": "df9e580c-3a05-4d6c-b0d0-375df3af4d6c",
       "core": false,
@@ -165,31 +227,6 @@
         "loops",
         "map",
         "math"
-      ]
-    },
-    {
-      "slug": "palindrome-products",
-      "uuid": "803690cc-a7cc-4c2f-b767-4c14a399f13a",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 2,
-      "topics": [
-        "arrays",
-        "integers",
-        "math"
-      ]
-    },
-    {
-      "slug": "queen-attack",
-      "uuid": "563c81d1-8673-41b8-8302-15f7edb22321",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "algorithms",
-        "arrays",
-        "games",
-        "logic"
       ]
     },
     {
@@ -206,30 +243,6 @@
       ]
     },
     {
-      "slug": "clock",
-      "uuid": "4b3977e2-0e32-49ac-b3df-5c1d2600c079",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 3,
-      "topics": [
-        "integers",
-        "loops",
-        "text_formatting"
-      ]
-    },
-    {
-      "slug": "beer-song",
-      "uuid": "3256e251-89ab-4a48-91a4-b4d314b77bec",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 2,
-      "topics": [
-        "control_flow_switch",
-        "loops",
-        "text_formatting"
-      ]
-    },
-    {
       "slug": "atbash-cipher",
       "uuid": "a38d0644-42b5-4f01-b110-b723be1fa8a1",
       "core": false,
@@ -243,41 +256,28 @@
       ]
     },
     {
-      "slug": "linked-list",
-      "uuid": "34661cc2-6d88-4e36-8c3e-87744be307ef",
+      "slug": "binary-search-tree",
+      "uuid": "bf14de70-e231-48a1-b208-2d54d3398171",
       "core": false,
       "unlocked_by": null,
-      "difficulty": 3,
-      "topics": [
-        "algorithms",
-        "classes",
-        "object_oriented_programming",
-        "variables"
-      ]
-    },
-    {
-      "slug": "pascals-triangle",
-      "uuid": "ee80988f-f1df-4958-b164-0e7fba9d1305",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 2,
+      "difficulty": 5,
       "topics": [
         "algorithms",
         "arrays",
         "integers",
-        "math"
+        "trees"
       ]
     },
     {
-      "slug": "nucleotide-count",
-      "uuid": "6952588f-22fb-493e-b252-d62c404ad9ca",
+      "slug": "bob",
+      "uuid": "a8e713a1-e8b9-48b2-b20d-7121b0ecf6c0",
       "core": false,
       "unlocked_by": null,
-      "difficulty": 2,
+      "difficulty": 5,
       "topics": [
-        "filtering",
-        "maps",
-        "strings"
+        "conditionals",
+        "control_flow_switch",
+        "text_formatting"
       ]
     }
   ]
