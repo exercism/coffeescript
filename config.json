@@ -1,5 +1,6 @@
 {
   "language": "CoffeeScript",
+  "slug": "coffeescript",
   "active": true,
   "status": {
     "concept_exercises": false,
