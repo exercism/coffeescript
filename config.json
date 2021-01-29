@@ -20,6 +20,7 @@
       "slug": "hello-world",
       "name": "Hello World",
       "uuid": "0d1ce0cd-f7f2-4843-82ac-b0b4d995fa16",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": [
         "conditionals",
@@ -32,6 +33,7 @@
       "slug": "queen-attack",
       "name": "Queen Attack",
       "uuid": "563c81d1-8673-41b8-8302-15f7edb22321",
+      "prerequisites": [],
       "difficulty": 1,
       "topics": [
         "algorithms",
@@ -44,6 +46,7 @@
       "slug": "anagram",
       "name": "Anagram",
       "uuid": "22fe2f9c-71af-4ce0-b3cb-690a93654fe6",
+      "prerequisites": [],
       "difficulty": 2,
       "topics": [
         "sorting",
@@ -55,6 +58,7 @@
       "slug": "beer-song",
       "name": "Beer Song",
       "uuid": "3256e251-89ab-4a48-91a4-b4d314b77bec",
+      "prerequisites": [],
       "difficulty": 2,
       "topics": [
         "control_flow_switch",
@@ -66,6 +70,7 @@
       "slug": "binary",
       "name": "Binary",
       "uuid": "414dcffe-029a-4558-aabe-d933cd148abf",
+      "prerequisites": [],
       "difficulty": 2,
       "topics": [
         "integers",
@@ -77,6 +82,7 @@
       "slug": "luhn",
       "name": "Luhn",
       "uuid": "85c6c117-0173-4a1a-ae33-86427d6512dd",
+      "prerequisites": [],
       "difficulty": 2,
       "topics": [
         "algorithms",
@@ -89,6 +95,7 @@
       "slug": "nucleotide-count",
       "name": "Nucleotide Count",
       "uuid": "6952588f-22fb-493e-b252-d62c404ad9ca",
+      "prerequisites": [],
       "difficulty": 2,
       "topics": [
         "filtering",
@@ -100,6 +107,7 @@
       "slug": "palindrome-products",
       "name": "Palindrome Products",
       "uuid": "803690cc-a7cc-4c2f-b767-4c14a399f13a",
+      "prerequisites": [],
       "difficulty": 2,
       "topics": [
         "arrays",
@@ -111,6 +119,7 @@
       "slug": "pascals-triangle",
       "name": "Pascals Triangle",
       "uuid": "ee80988f-f1df-4958-b164-0e7fba9d1305",
+      "prerequisites": [],
       "difficulty": 2,
       "topics": [
         "algorithms",
@@ -123,6 +132,7 @@
       "slug": "triangle",
       "name": "Triangle",
       "uuid": "42292f42-ccfe-4103-a6f3-a057bca32c49",
+      "prerequisites": [],
       "difficulty": 2,
       "topics": [
         "arrays",
@@ -133,6 +143,7 @@
       "slug": "accumulate",
       "name": "Accumulate",
       "uuid": "b4670a87-1436-4e83-a641-76a6ec00fab8",
+      "prerequisites": [],
       "difficulty": 3,
       "topics": [
         "arrays",
@@ -144,6 +155,7 @@
       "slug": "clock",
       "name": "Clock",
       "uuid": "4b3977e2-0e32-49ac-b3df-5c1d2600c079",
+      "prerequisites": [],
       "difficulty": 3,
       "topics": [
         "integers",
@@ -155,6 +167,7 @@
       "slug": "hexadecimal",
       "name": "Hexadecimal",
       "uuid": "bad8f00c-a480-4cf9-8939-2ec45f59ff42",
+      "prerequisites": [],
       "difficulty": 3,
       "topics": [
         "integers",
@@ -166,6 +179,7 @@
       "slug": "linked-list",
       "name": "Linked List",
       "uuid": "34661cc2-6d88-4e36-8c3e-87744be307ef",
+      "prerequisites": [],
       "difficulty": 3,
       "topics": [
         "algorithms",
@@ -178,6 +192,7 @@
       "slug": "trinary",
       "name": "Trinary",
       "uuid": "3b225ecc-1321-476d-8aa7-db352f952c61",
+      "prerequisites": [],
       "difficulty": 3,
       "topics": [
         "integers",
@@ -189,6 +204,7 @@
       "slug": "word-count",
       "name": "Word Count",
       "uuid": "e80080ca-04a9-40b5-affe-88f1d617dc97",
+      "prerequisites": [],
       "difficulty": 3,
       "topics": [
         "maps",
@@ -202,6 +218,7 @@
       "slug": "nth-prime",
       "name": "Nth Prime",
       "uuid": "df9e580c-3a05-4d6c-b0d0-375df3af4d6c",
+      "prerequisites": [],
       "difficulty": 4,
       "topics": [
         "arrays",
@@ -215,6 +232,7 @@
       "slug": "wordy",
       "name": "Wordy",
       "uuid": "86826aa0-f4b0-444c-a5c9-287a6590027e",
+      "prerequisites": [],
       "difficulty": 4,
       "topics": [
         "integers",
@@ -227,6 +245,7 @@
       "slug": "atbash-cipher",
       "name": "Atbash Cipher",
       "uuid": "a38d0644-42b5-4f01-b110-b723be1fa8a1",
+      "prerequisites": [],
       "difficulty": 5,
       "topics": [
         "arrays",
@@ -239,6 +258,7 @@
       "slug": "binary-search-tree",
       "name": "Binary Search Tree",
       "uuid": "bf14de70-e231-48a1-b208-2d54d3398171",
+      "prerequisites": [],
       "difficulty": 5,
       "topics": [
         "algorithms",
@@ -251,6 +271,7 @@
       "slug": "bob",
       "name": "Bob",
       "uuid": "a8e713a1-e8b9-48b2-b20d-7121b0ecf6c0",
+      "prerequisites": [],
       "difficulty": 5,
       "topics": [
         "conditionals",
