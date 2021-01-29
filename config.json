@@ -1,6 +1,12 @@
 {
   "language": "CoffeeScript",
   "active": true,
+  "status": {
+    "concept_exercises": false,
+    "test_runner": false,
+    "representer": false,
+    "analyzer": false
+  },
   "blurb": "CoffeeScript is a language that compiles into JavaScript. It uses an alternative syntax to the Java-like syntax of JavaScript, and is one of many new transpiled languages used in web development.",
   "version": 3,
   "test_pattern": "spec.coffee",
