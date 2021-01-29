@@ -10,6 +10,10 @@
   },
   "blurb": "CoffeeScript is a language that compiles into JavaScript. It uses an alternative syntax to the Java-like syntax of JavaScript, and is one of many new transpiled languages used in web development.",
   "version": 3,
+  "online_editor": {
+    "indent_style": "space",
+    "indent_size": 4
+  },
   "test_pattern": "spec.coffee",
   "exercises": [
     {
