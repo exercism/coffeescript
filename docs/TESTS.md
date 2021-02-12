@@ -1,4 +1,4 @@
-## Running Tests
+# Running Tests
 
 Execute the tests with:
 
