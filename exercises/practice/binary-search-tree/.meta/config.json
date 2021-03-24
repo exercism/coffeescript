@@ -1,6 +1,14 @@
 {
   "blurb": "Insert and search for numbers in a binary tree.",
   "authors": [],
+  "contributors": [
+    "aimorris",
+    "Gaelan",
+    "kytrinyx",
+    "marocchino",
+    "rootulp",
+    "shidel-dev"
+  ],
   "files": {
     "solution": [],
     "test": [],
