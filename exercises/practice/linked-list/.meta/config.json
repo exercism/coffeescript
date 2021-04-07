@@ -2,9 +2,15 @@
   "blurb": "Implement a doubly linked list",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "linked-list.coffee"
+    ],
+    "test": [
+      "linked-list.spec.coffee"
+    ],
+    "example": [
+      "example.coffee"
+    ]
   },
   "source": "Classic computer science topic"
 }
