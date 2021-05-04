@@ -1,3 +1,5 @@
+# Installation
+
 **Windows and OS X users**: Install [Node.js](http://nodejs.org/) [via package manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager). Windows users can use a paid version of Visual Studio, see below.
 
 **Linux users**: [Joyent maintains a document][linstall] that details how to get Node.js installed for a wide range of distributions and package managers.
