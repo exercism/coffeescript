@@ -338,7 +338,6 @@
     "platform/ios",
     "platform/android",
     "platform/web",
-    "used_for/artificial_intelligence",
     "used_for/backends",
     "used_for/cross_platform_development",
     "used_for/frontends",
