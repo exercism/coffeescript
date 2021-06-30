@@ -1,0 +1,17 @@
+{
+  "blurb": "Compute Pascal's triangle up to a given number of rows.",
+  "authors": [],
+  "files": {
+    "solution": [
+      "pascals-triangle.coffee"
+    ],
+    "test": [
+      "pascals-triangle.spec.coffee"
+    ],
+    "example": [
+      "example.coffee"
+    ]
+  },
+  "source": "Pascal's Triangle at Wolfram Math World",
+  "source_url": "http://mathworld.wolfram.com/PascalsTriangle.html"
+}

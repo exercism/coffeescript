@@ -1,0 +1,25 @@
+{
+  "docs": [
+    {
+      "uuid": "dce0232f-83fc-4522-8700-198794974e6a",
+      "slug": "installation",
+      "path": "docs/INSTALLATION.md",
+      "title": "Installing CoffeeScript locally",
+      "blurb": "Learn how to install CoffeeScript locally to solve Exercism's exercises on your own machine"
+    },
+    {
+      "uuid": "18f06ec5-392b-45f5-8c4d-9d50f3ca1369",
+      "slug": "tests",
+      "path": "docs/TESTS.md",
+      "title": "Testing on the CoffeeScript track",
+      "blurb": "Learn how to test your CoffeeScript exercises on Exercism"
+    },
+    {
+      "uuid": "066497a1-7b20-4a67-98fa-ac52332d7a91",
+      "slug": "resources",
+      "path": "docs/RESOURCES.md",
+      "title": "Useful CoffeeScript resources",
+      "blurb": "A collection of useful resources to help you master CoffeeScript"
+    }
+  ]
+}

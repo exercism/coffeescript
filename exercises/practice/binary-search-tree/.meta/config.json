@@ -1,0 +1,17 @@
+{
+  "blurb": "Insert and search for numbers in a binary tree.",
+  "authors": [],
+  "files": {
+    "solution": [
+      "binary-search-tree.coffee"
+    ],
+    "test": [
+      "binary-search-tree.spec.coffee"
+    ],
+    "example": [
+      "example.coffee"
+    ]
+  },
+  "source": "Josh Cheek",
+  "source_url": "https://twitter.com/josh_cheek"
+}

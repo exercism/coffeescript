@@ -1,0 +1,17 @@
+{
+  "blurb": "Given a number determine whether or not it is valid per the Luhn formula.",
+  "authors": [],
+  "files": {
+    "solution": [
+      "luhn.coffee"
+    ],
+    "test": [
+      "luhn.spec.coffee"
+    ],
+    "example": [
+      "example.coffee"
+    ]
+  },
+  "source": "The Luhn Algorithm on Wikipedia",
+  "source_url": "http://en.wikipedia.org/wiki/Luhn_algorithm"
+}
