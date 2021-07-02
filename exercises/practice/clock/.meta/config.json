@@ -1,6 +1,13 @@
 {
   "blurb": "Implement a clock that handles times without dates.",
-  "authors": [],
+  "authors": [
+    "wvmitchell"
+  ],
+  "contributors": [
+    "aimorris",
+    "kytrinyx",
+    "rootulp"
+  ],
   "files": {
     "solution": [
       "clock.coffee"
