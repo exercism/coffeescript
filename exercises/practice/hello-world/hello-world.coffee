@@ -1,5 +1,4 @@
-# This is a stub file for the CoffeeScript track
 class HelloWorld
-  hello: -> ''
+  hello: -> 'Goodbye, Mars!'
 
 module.exports = HelloWorld
