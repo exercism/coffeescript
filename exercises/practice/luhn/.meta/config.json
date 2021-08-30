@@ -18,7 +18,7 @@
       "luhn.spec.coffee"
     ],
     "example": [
-      "example.coffee"
+      ".meta/example.coffee"
     ]
   },
   "source": "The Luhn Algorithm on Wikipedia",

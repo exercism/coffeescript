@@ -14,7 +14,7 @@
       "linked-list.spec.coffee"
     ],
     "example": [
-      "example.coffee"
+      ".meta/example.coffee"
     ]
   },
   "source": "Classic computer science topic"

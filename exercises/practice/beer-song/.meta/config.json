@@ -16,7 +16,7 @@
       "beer-song.spec.coffee"
     ],
     "example": [
-      "example.coffee"
+      ".meta/example.coffee"
     ]
   },
   "source": "Learn to Program by Chris Pine",

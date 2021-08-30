@@ -16,7 +16,7 @@
       "atbash-cipher.spec.coffee"
     ],
     "example": [
-      "example.coffee"
+      ".meta/example.coffee"
     ]
   },
   "source": "Wikipedia",

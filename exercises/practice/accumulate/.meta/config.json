@@ -15,7 +15,7 @@
       "accumulate.spec.coffee"
     ],
     "example": [
-      "example.coffee"
+      ".meta/example.coffee"
     ]
   },
   "source": "Conversation with James Edward Gray II",

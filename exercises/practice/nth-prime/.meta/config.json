@@ -18,7 +18,7 @@
       "nth-prime.spec.coffee"
     ],
     "example": [
-      "example.coffee"
+      ".meta/example.coffee"
     ]
   },
   "source": "A variation on Problem 7 at Project Euler",

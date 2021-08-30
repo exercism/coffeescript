@@ -17,7 +17,7 @@
       "binary-search-tree.spec.coffee"
     ],
     "example": [
-      "example.coffee"
+      ".meta/example.coffee"
     ]
   },
   "source": "Josh Cheek",

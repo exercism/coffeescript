@@ -19,7 +19,7 @@
       "bob.spec.coffee"
     ],
     "example": [
-      "example.coffee"
+      ".meta/example.coffee"
     ]
   },
   "source": "Inspired by the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial.",
