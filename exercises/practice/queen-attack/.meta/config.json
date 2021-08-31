@@ -18,7 +18,7 @@
       "queen-attack.spec.coffee"
     ],
     "example": [
-      "example.coffee"
+      ".meta/example.coffee"
     ]
   },
   "source": "J Dalbey's Programming Practice problems",

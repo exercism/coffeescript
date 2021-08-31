@@ -16,7 +16,7 @@
       "clock.spec.coffee"
     ],
     "example": [
-      "example.coffee"
+      ".meta/example.coffee"
     ]
   },
   "source": "Pairing session with Erin Drummond",

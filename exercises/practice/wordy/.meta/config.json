@@ -17,7 +17,7 @@
       "wordy.spec.coffee"
     ],
     "example": [
-      "example.coffee"
+      ".meta/example.coffee"
     ]
   },
   "source": "Inspired by one of the generated questions in the Extreme Startup game.",

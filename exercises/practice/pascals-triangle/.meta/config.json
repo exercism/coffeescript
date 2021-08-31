@@ -14,7 +14,7 @@
       "pascals-triangle.spec.coffee"
     ],
     "example": [
-      "example.coffee"
+      ".meta/example.coffee"
     ]
   },
   "source": "Pascal's Triangle at Wolfram Math World",

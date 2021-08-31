@@ -19,7 +19,7 @@
       "palindrome-products.spec.coffee"
     ],
     "example": [
-      "example.coffee"
+      ".meta/example.coffee"
     ]
   },
   "source": "Problem 4 at Project Euler",

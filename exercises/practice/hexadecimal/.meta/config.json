@@ -17,7 +17,7 @@
       "hexadecimal.spec.coffee"
     ],
     "example": [
-      "example.coffee"
+      ".meta/example.coffee"
     ]
   },
   "source": "All of Computer Science",

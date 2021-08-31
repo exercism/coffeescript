@@ -17,7 +17,7 @@
       "nucleotide-count.spec.coffee"
     ],
     "example": [
-      "example.coffee"
+      ".meta/example.coffee"
     ]
   },
   "source": "The Calculating DNA Nucleotides_problem at Rosalind",

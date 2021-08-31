@@ -18,7 +18,7 @@
       "triangle.spec.coffee"
     ],
     "example": [
-      "example.coffee"
+      ".meta/example.coffee"
     ]
   },
   "source": "The Ruby Koans triangle project, parts 1 & 2",
