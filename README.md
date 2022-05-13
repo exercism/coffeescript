@@ -1,4 +1,4 @@
-# CoffeeScript
+# Exercism CoffeeScript Track
 
 Exercism exercises in CoffeeScript
 
