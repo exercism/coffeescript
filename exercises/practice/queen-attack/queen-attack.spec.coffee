@@ -1,4 +1,4 @@
-Queens = require './queen-attack'
+QueenAttack = require './queen-attack'
 
 describe 'Queens', ->
   it 'has the correct default positions', ->
