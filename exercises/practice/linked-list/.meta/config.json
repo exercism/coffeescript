@@ -1,5 +1,4 @@
 {
-  "blurb": "Implement a doubly linked list.",
   "authors": [],
   "contributors": [
     "aimorris",
@@ -17,5 +16,6 @@
       ".meta/example.coffee"
     ]
   },
+  "blurb": "Implement a doubly linked list.",
   "source": "Classic computer science topic"
 }
