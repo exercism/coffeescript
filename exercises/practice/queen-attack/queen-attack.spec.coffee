@@ -1,6 +1,6 @@
 QueenAttack = require './queen-attack'
 
-describe 'Queens', ->
+describe 'QueenAttack', ->
   it 'has the correct default positions', ->
     queens = new QueenAttack
     expect(queens.white).toEqual([0,3])
