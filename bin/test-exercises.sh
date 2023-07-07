@@ -4,11 +4,11 @@ mkdir -p "${dic}"
 test_run() {
     echo "Testing $1"
     source_file="$1/$(jq -r '.files.solution[0]' $1/.meta/config.json)"
-    spec_file="$1/$(jq -r '.files.test[0]' $1/.meta/config.json)"
+    test_file="$1/$(jq -r '.files.test[0]' $1/.meta/config.json)"
     cat "$1/.meta/example.coffee" > "${dic}/${source_file}"
-    cat "${spec_file}" > "${dic}/${spec_file}"
-    sed -i -e 's/xit/it/g' ${dic}/${spec_file}
-    jasmine-node --coffee *spec* || exit 1
+    cat "${test_file}" > "${dic}/${test_file}"
+    sed -i -e 's/xit/it/g' ${dic}/${test_file}
+    jasmine-node --coffee "${dic}/${test_file}" || exit 1
 }
 
 for exercise in ./exercises/practice/*; do
