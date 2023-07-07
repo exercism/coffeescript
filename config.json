@@ -335,12 +335,12 @@
     },
     {
       "title": "Saftey features",
-      "content": "Allowing you to check for the existence of a variable or property using the `?` operator and there is no `var` keyword, so you can't accidentally create a global variable.",
+      "content": "CoffeeScript allows you to check for existence and doesnt have a `var` keyword.",
       "icon": "safe"
     },
     {
       "title": "Large package ecosystem",
-      "content": "CoffeeScript can use any JavaScript library or package, and has a large ecosystem of its own packages.",
+      "content": "CoffeeScript can use any JavaScript library or package.",
       "icon": "tooling"
     },
     {
@@ -350,7 +350,7 @@
     },
     {
       "title": "Multi paradigm",
-      "content": "CoffeeScript is multi-paradigm, allowing you to use functional, object-oriented, and imperative styles.",
+      "content": "Use which ever paradigm you want, functional, object-oriented or imperative programming.",
       "icon": "multi-paradigm"
     }
   ],
