@@ -77,17 +77,12 @@
         ]
       },
       {
-        "slug": "beer-song",
-        "name": "Beer Song",
-        "uuid": "3256e251-89ab-4a48-91a4-b4d314b77bec",
+        "slug": "bottle-song",
+        "name": "Bottle Song",
+        "uuid": "eed6de7f-c6ce-4e85-a34e-0170b790c395",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2,
-        "topics": [
-          "control_flow_switch",
-          "loops",
-          "text_formatting"
-        ]
+        "difficulty": 2
       },
       {
         "slug": "binary",
@@ -318,6 +313,20 @@
           "control_flow_switch",
           "text_formatting"
         ]
+      },
+      {
+        "slug": "beer-song",
+        "name": "Beer Song",
+        "uuid": "3256e251-89ab-4a48-91a4-b4d314b77bec",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2,
+        "topics": [
+          "control_flow_switch",
+          "loops",
+          "text_formatting"
+        ],
+        "status": "deprecated"
       }
     ]
   },
