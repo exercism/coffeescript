@@ -20,6 +20,13 @@
       "path": "docs/RESOURCES.md",
       "title": "Useful CoffeeScript resources",
       "blurb": "A collection of useful resources to help you master CoffeeScript"
+    },
+    {
+      "uuid": "0bc3ee77-3f6a-4f62-8c25-90346e32ad42",
+      "slug": "learning",
+      "path": "docs/LEARNING.md",
+      "title": "How to learn CoffeeScript",
+      "blurb": "An overview of how to get started from scratch with CoffeeScript"
     }
   ]
 }
