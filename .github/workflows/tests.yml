@@ -1,0 +1,24 @@
+name: Tests
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  schedule:
+    # Weekly.
+    - cron: '0 0 * * 0'
+
+jobs:
+  exercises:
+    name: Check exercises
+    runs-on: ubuntu-22.04
+    container:
+      image: node:20
+    steps:
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9
+      - name: Install jq
+        run: apt-get update && apt-get install -y jq
+      - name: Install CoffeeScript
+        run: npm install -g jasmine-node coffeescript
+      - name: Run tests
+        run: ./bin/test-exercises.sh
