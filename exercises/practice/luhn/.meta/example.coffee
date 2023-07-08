@@ -1,46 +1,17 @@
-module.exports = class Luhn
-  constructor: (number) ->
-    @checkDigit = number % 10
-    @addends = @calculateAddends(number)
-    @checksum = @calculateChecksum(@addends)
-    @valid = @determineIfValid(@checksum)
+class Luhn
+  constructor: (@num) ->
 
-  calculateAddends: (number) ->
+  valid: ->
+    @num = @num.replace /\s+/g, ''
+    return false if @num.length < 2
+    return false if @num.match /\D/
+    sum = 0
+    for digit, i in @num.split('').reverse()
+      digit = parseInt digit
+      if i % 2 == 1
+        digit *= 2
+        digit -= 9 if digit > 9
+      sum += digit
+    sum % 10 == 0
 
-    numberAsString = "" + number + ""
-    numbers = numberAsString.split('')
-
-    addends = (@calculateAddend(i,numbers) for i in [0..numbers.length-1])
-    addends.reverse()
-
-  calculateAddend: (i,numbers) ->
-    index = numbers.length - 1 - i
-
-    currentAddend = parseInt(numbers[index])
-
-    if (i + 1) % 2 == 0
-      currentAddend = currentAddend * 2
-      if currentAddend > 10
-        currentAddend = currentAddend - 9
-
-    currentAddend
-
-  calculateChecksum: (numbers) ->
-    numbers.reduce (x,y) -> x + y
-
-  determineIfValid: (sum) ->
-    (sum % 10 == 0)
-
-
-  @create = (number) ->
-    finalNumber = number * 10
-    luhnNumber = new Luhn(finalNumber)
-    index = 0
-
-    while(!luhnNumber.valid)
-      finalNumber = number * 10 + index
-      luhnNumber = new Luhn(finalNumber)
-      break if luhnNumber.valid
-      index += 1
-
-    finalNumber
+module.exports = Luhn
