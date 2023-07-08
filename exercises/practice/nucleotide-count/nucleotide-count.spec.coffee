@@ -37,9 +37,8 @@ describe 'NucleotideCount', ->
     expect(dna.count('T')).toEqual 2
 
   xit 'validates strand', ->
-    dna = new NucleotideCount('AGTXCG')
     expect ->
-      dna.count 'G'
+      new NucleotideCount('AGTXCG')
     .toThrow new Error('Invalid nucleotide strand')
 
   xit 'validates nucleotides', ->
