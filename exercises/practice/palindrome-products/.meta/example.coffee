@@ -1,58 +1,54 @@
-class Palindromes
+class PalindromeProducts
   constructor: (bounds) ->
     @max = bounds['maxFactor']
     @min = bounds['minFactor'] || 1
-    @range = [@min..@max]
-    @palindromes = @generate()
-
-  generate: ->
-    palindromes = []
-    for i in [@min..@max]
-      for j in [@min..@max]
-        product = (i * j)
-        palindromes.push(product) if @isPalindrome(product)
-    return palindromes
-
-  uniqueFactors: (value) =>
-    starting = @findFactors(value)
-    sorted = starting.map (pair) -> pair.sort()
-    return sorted.unique()
-
-  findFactors: (value) ->
-    results = []
-    for i in [1..value]
-      results.push([i, (value / i)]) if value % i == 0
-    return results
 
   largest: =>
-    biggest = Math.max.apply(Math, @palindromes)
-    low = @min
-    high = @max
+    throw new Error("min must be <= max") if @min > @max
+    result_products = []
+    result = null
+    for x in [@max..@min]
+      was_bigger = false
+      for y in [(x - 1)..@max]
+        product = x * y
+        if result_products is [] or product > result
+          was_bigger = true
+          if @isPalindrome(product)
+            result = product
+            result_products = [[x, y]]
+        else if product == result
+          result_products.push([x, y])
+      unless was_bigger
+        break
     return {
-      value: biggest,
-      factors: @uniqueFactors(biggest).filter (pair) ->
-        pair.every (factor) -> low <= factor <= high
+      value: result,
+      factors: result_products
     }
+    
 
   smallest: =>
-    littlest = Math.min.apply(Math, @palindromes)
-    low = @min
-    high = @max
+    throw new Error("min must be <= max") if @min > @max
+    result_products = []
+    result = null
+    for x in [@min..@max]
+      was_smaller = false
+      for y in [x..@max]
+        product = x * y
+        if result is null or product < result
+          was_smaller = true
+          if @isPalindrome(product)
+            result = product
+            result_products = [[x, y]]
+        else if product is result
+          result_products.push([x, y])
+      unless was_smaller
+        break
     return {
-      value: littlest,
-      factors: @uniqueFactors(littlest).filter (pair) ->
-        pair.every (factor) -> low <= factor <= high
+      value: result,
+      factors: result_products
     }
 
-  isPalindrome: (number) ->
-    return `"".split.call(number, "").reverse().join("") == number`
+  isPalindrome: (number) -> 
+    number.toString() is number.toString().split('').reverse().join('')
 
-Array::unique = ->
-  output = {}
-  output[@[key]] = @[key] for key in [0...@length]
-  value for key, value of output
-
-arrayEqual = (a, b) ->
-  a.length is b.length and a.every (elem, i) -> elem is b[i]
-
-module.exports = Palindromes
+module.exports = PalindromeProducts
