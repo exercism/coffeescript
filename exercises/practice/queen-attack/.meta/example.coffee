@@ -1,42 +1,16 @@
-module.exports = class QueensAttack
-  constructor: (options) ->
-    if options == undefined
-      options = { white: [0,3], black: [7,3] }
+class QueensAttack
+  constructor: (queen) ->
+    throw "row not positive" if queen.row < 0
+    throw "column not positive" if queen.column < 0
+    throw "row not on board" if queen.row > 7
+    throw "column not on board" if queen.column > 7
+    @row = queen.row
+    @column = queen.column
 
-    if (options.white[0] == options.black[0] && options.white[1] == options.black[1])
-      throw "Queens cannot share the same space"
+  canAttack: (other_queen) ->
+    same_row = @row is other_queen.row
+    same_column = @column is other_queen.column
+    same_diagonal = Math.abs(@row - other_queen.row) is Math.abs(@column - other_queen.column)
+    same_row or same_column or same_diagonal
 
-    @white = options.white
-    @black = options.black
-
-  canAttack: ->
-    canAttack = false
-
-    canAttack = true if @white[0] == @black[0]
-    canAttack = true if @white[1] == @black[1]
-
-    yDiagonal = @white[0] - @black[0]
-    xDiagonal = @white[1] - @black[1]
-
-    canAttack = true if xDiagonal == yDiagonal
-    canAttack = true if -xDiagonal == yDiagonal
-    canAttack
-
-  toString: ->
-    @boardRepresentation()
-
-  boardRow: (rowNumber) ->
-    row = (@boardPosition(rowColumn, rowNumber) for rowColumn in [0..7])
-    row.join(" ")
-
-  boardPosition: (rowNumber, rowColumn) ->
-    if @white[0] == rowNumber && @white[1] == rowColumn
-      "W"
-    else if @black[0] == rowNumber && @black[1] == rowColumn
-      "B"
-    else
-      "_"
-
-  boardRepresentation: ->
-    boardRepresentation = (@boardRow row for row in [0..7])
-    boardRepresentation.join("\n")
+module.exports = QueensAttack
