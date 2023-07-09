@@ -7,43 +7,43 @@ describe 'PalindromeProducts', ->
     expect(largest.value).toEqual(1)
     expect(largest.factors).toEqual([[1, 1]])
 
-  xit 'largest palindrome from single digit factors', ->
+  xit 'find the largest palindrome from single digit factors', ->
     palindromes = new PalindromeProducts({maxFactor: 9})
     largest = palindromes.largest()
     expect(largest.value).toEqual(9)
     expect([[[3, 3], [1, 9]], [[1, 9], [3, 3]]]).toContain(largest.factors)
 
-  xit 'smallest palindrome from double digit factors', ->
+  xit 'find the smallest palindrome from double digit factors', ->
     palindromes = new PalindromeProducts({ maxFactor: 99, minFactor: 10 })
     smallest = palindromes.smallest()
     expect(smallest.value).toEqual(121)
     expect(smallest.factors).toEqual([[11, 11]])
 
-  xit 'largest palindrome from double digit factors', ->
+  xit 'find the largest palindrome from double digit factors', ->
     palindromes = new PalindromeProducts({ maxFactor: 99, minFactor: 10 })
     largest = palindromes.largest()
     expect(largest.value).toEqual(9009)
     expect(largest.factors).toEqual([[91, 99]])
 
-  xit 'smallest palindrome from triple digit factors', ->
+  xit 'find the smallest palindrome from triple digit factors"', ->
     palindromes = new PalindromeProducts({ maxFactor: 999, minFactor: 100 })
     smallest = palindromes.smallest()
     expect(smallest.value).toEqual(10201)
     expect(smallest.factors).toEqual([[101, 101]])
 
-  xit 'largest palindrome from triple digit factors', ->
+  xit 'find the largest palindrome from triple digit factors', ->
     palindromes = new PalindromeProducts({ maxFactor: 999, minFactor: 100 })
     largest = palindromes.largest()
     expect(largest.value).toEqual(906609)
     expect(largest.factors).toEqual([[913, 993]])
 
-  xit 'smallest palindrome from four digit factors', ->
+  xit 'find the smallest palindrome from four digit factors', ->
     palindromes = new PalindromeProducts({ maxFactor: 9999, minFactor: 1000 })
     smallest = palindromes.smallest()
     expect(smallest.value).toEqual(1002001)
     expect(smallest.factors).toEqual([[1001, 1001]])
 
-  xit 'largest palindrome from four digit factors', ->
+  xit 'find the largest palindrome from four digit factors"', ->
     palindromes = new PalindromeProducts({ maxFactor: 9999, minFactor: 1000 })
     largest = palindromes.largest()
     expect(largest.value).toEqual(99000099)
