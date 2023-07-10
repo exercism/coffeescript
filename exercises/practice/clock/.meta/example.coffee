@@ -6,25 +6,25 @@ class Clock
   constructor: (hour, minute = 0) ->
     @hour = hour
     @minute = minute
-    @flatten_minutes()
-    @flatten_hours()
+    @flattenMinutes()
+    @flattenHours()
 
   toString:->
     "#{clean(@hour)}:#{clean(@minute)}"
 
   plus: (num) ->
     @minute += num
-    @flatten_minutes()
-    @flatten_hours()
+    @flattenMinutes()
+    @flattenHours()
     this
 
   minus: (num) ->
     @minute -= num
-    @flatten_minutes()
-    @flatten_hours()
+    @flattenMinutes()
+    @flattenHours()
     this
 
-  flatten_minutes: ->
+  flattenMinutes: ->
     while @minute < 0
       @minute = 60 + @minute
       @hour -= 1
@@ -32,7 +32,7 @@ class Clock
       @hour += Math.floor(@minute / 60)
       @minute = @minute % 60
 
-  flatten_hours: ->
+  flattenHours: ->
     while @hour < 0
       @hour = 24 + @hour
     if @hour > 23
