@@ -1,49 +1,43 @@
-module.exports = class WordProblem
+class WordProblem
+  constructor: (@question) ->
+    @tokens = []
 
   BINARY_OPERATORS:
     'plus':          (l, r) -> l + r
     'minus':         (l, r) -> l - r
-    'multiplied by': (l, r) -> l * r
-    'divided by':    (l, r) -> l / r
+    'multiplied': (l, r) -> l * r
+    'divided':    (l, r) -> l / r
 
   ERROR:
-    tooComplicated: new Error("I don't understand the question")
+    unknownOperation: new Error("Unknown operation")
+    syntaxError:    new Error("Syntax error")
 
-  constructor: (@question = '') ->
-    @matches = @question.match @pattern()
-
-  operators: ->
-    Object.keys @BINARY_OPERATORS
-
-  pattern: ->
-    operations = " (#{@operators().join('|')}) "
-
-    /// (?:
-      what[\x20]is[\x20] # what is
-      ([-+]?[\d]+)       # +/- number
-      #{operations}      # operator (plus, minus, etc.)
-      ([-+]?[\d]+)       # +/- number
-      (?:                # optional extra group
-        #{operations}    # operator (plus, minus, etc.)
-        ([-+]?[\d]+)     # +/- number
-      )?                 # end optional extra group
-    ) ///i
-
-  tooComplicated: -> not @matches
-
-  answer: =>
-    throw @ERROR.tooComplicated if @tooComplicated()
+  answer: ->
+    @parse()
     @evaluate()
 
+  parse: ->
+    throw @ERROR.unknownOperation unless @question.slice(0, 7) is 'What is'
+    @tokens = @question.slice(0, -1)
+    @tokens = @tokens.split(' ')
+    @tokens = @tokens.slice(2)
+    @tokens = @tokens.reduce (acc, item) ->
+      isBy = ["multiplied", "divided"].includes(acc[acc.length - 1]) and item is "by"
+      if isNaN(item) is isNaN(acc[acc.length - 1]) and not isBy
+        throw WordProblem::ERROR.syntaxError
+      unless isBy
+        acc.push(item)
+      acc
+    , []
+    
   evaluate: ->
-    out = 0
-    m   = @matches
+    throw @ERROR.syntaxError if isNaN(@tokens[0])
+    sum = parseInt(@tokens[0])
+    for item, index in @tokens.slice(1)
+      throw @ERROR.unknownOperation if isNaN(item) and not @BINARY_OPERATORS.hasOwnProperty(item)
+      if @BINARY_OPERATORS.hasOwnProperty(item)
+        throw @ERROR.syntaxError if isNaN(@tokens[index + 2])
+        sum = @BINARY_OPERATORS[item](sum, parseInt(@tokens[index + 2]))
+    sum
 
-    out = @operate(m[2], m[1], m[3]) if m[1]? && m[2]? && m[3]?
-    out = @operate(m[4], out,  m[5]) if m[4]? && m[5]?
-    out
-
-  operate: (operation, l, r) ->
-    fn = @BINARY_OPERATORS[operation] || -> 0
-    fn Number(l), Number(r)
-
+module.exports = WordProblem

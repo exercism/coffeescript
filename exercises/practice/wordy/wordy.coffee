@@ -1,5 +1,5 @@
 class Wordy
-  constructor: (args) ->
+  constructor: (question) ->
 
   answer: ->
 
