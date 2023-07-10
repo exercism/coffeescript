@@ -1,29 +1,18 @@
-Array::uniq = ->
-  output = {}
-  output[@[key]] = @[key] for key in [0...@length]
-  value for key, value of output
-
 class Triangle
 
-  constructor: (side1, side2, side3) ->
-    @sides = [side1, side2, side3]
-    checkNegative @sides
-    checkInequality @sides
+  constructor: (args...) ->
+    @sides = args
 
-  kind: ->
-    if @sides.uniq().length == 1
-      'equilateral'
-    else if @sides.uniq().length == 2
-      'isosceles'
-    else
-      'scalene'
+  equilateral: ->
+    (new Set(@sides)).size is 1 and @valid_traingle() and @sides[0] isnt 0
+  
+  isosceles: ->
+    (new Set(@sides)).size <= 2 and @valid_traingle()
 
-  checkNegative = (sides) ->
-    for side in sides
-      throw 'negative sides are illegal' if side < 0
+  scalene: ->
+    (new Set(@sides)).size is 3 and @valid_traingle()
 
-  checkInequality = (sides) ->
-    if sides[0] + sides[1] <= sides[2] || sides[1] + sides[2] <= sides[0] || sides[0] + sides[2] <= sides[1]
-      throw 'violation of triangle inequality'
+  valid_traingle: ->
+    @sides[0] + @sides[1] >= @sides[2] and @sides[1] + @sides[2] >= @sides[0] and @sides[0] + @sides[2] >= @sides[1]
 
 module.exports = Triangle

@@ -1,6 +1,10 @@
 class Triangle
   constructor: (args) ->
 
-  kind: ->
+  equilateral: ->
+  
+  isosceles: ->
+
+  scalene: ->
 
 module.exports = Triangle
