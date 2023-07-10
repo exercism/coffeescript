@@ -24,6 +24,3 @@ describe 'RnaTrascription', ->
   xit 'RNA complement', ->
     dna = new RnaTrascription "ACGTGGTCTTAA"
     expect(dna.toRna()).toEqual("UGCACCAGAAUU")
-  
-
-  
