@@ -182,6 +182,14 @@
         ]
       },
       {
+        "slug": "phone-number",
+        "name": "Phone Number",
+        "uuid": "a5e178c2-fcb8-4722-a67a-d1a5c8866f1b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "clock",
         "name": "Clock",
         "uuid": "4b3977e2-0e32-49ac-b3df-5c1d2600c079",
