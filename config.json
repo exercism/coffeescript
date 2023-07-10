@@ -90,6 +90,14 @@
         ]
       },
       {
+        "slug": "scrabble-score",
+        "name": "Scrabble Score",
+        "uuid": "1630dd6a-dbf8-4fd2-bcb7-1989bea52347",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "binary",
         "name": "Binary",
         "uuid": "414dcffe-029a-4558-aabe-d933cd148abf",
