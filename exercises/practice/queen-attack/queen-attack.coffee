@@ -1,6 +1,6 @@
 class QueensAttack
   constructor: (queen) ->
 
-  canAttack: (other_queen) ->
+  canAttack: (otherQueen) ->
 
 module.exports = QueensAttack

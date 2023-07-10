@@ -7,10 +7,10 @@ class QueensAttack
     @row = queen.row
     @column = queen.column
 
-  canAttack: (other_queen) ->
-    same_row = @row is other_queen.row
-    same_column = @column is other_queen.column
-    same_diagonal = Math.abs(@row - other_queen.row) is Math.abs(@column - other_queen.column)
-    same_row or same_column or same_diagonal
+  canAttack: (otherQueen) ->
+    sameRow = @row is otherQueen.row
+    sameColumn = @column is otherQueen.column
+    sameDiagonal = Math.abs(@row - otherQueen.row) is Math.abs(@column - otherQueen.column)
+    sameRow or sameColumn or sameDiagonal
 
 module.exports = QueensAttack
