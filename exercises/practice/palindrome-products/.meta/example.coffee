@@ -5,47 +5,47 @@ class PalindromeProducts
 
   largest: =>
     throw new Error("min must be <= max") if @min > @max
-    result_products = []
+    resultProducts = []
     result = null
     for x in [@max..@min]
-      was_bigger = false
+      wasBigger = false
       for y in [(x - 1)..@max]
         product = x * y
-        if result_products is [] or product > result
-          was_bigger = true
+        if resultProducts is [] or product > result
+          wasBigger = true
           if @isPalindrome(product)
             result = product
-            result_products = [[x, y]]
+            resultProducts = [[x, y]]
         else if product == result
-          result_products.push([x, y])
-      unless was_bigger
+          resultProducts.push([x, y])
+      unless wasBigger
         break
     return {
       value: result,
-      factors: result_products
+      factors: resultProducts
     }
     
 
   smallest: =>
     throw new Error("min must be <= max") if @min > @max
-    result_products = []
+    resultProducts = []
     result = null
     for x in [@min..@max]
-      was_smaller = false
+      wasSmaller = false
       for y in [x..@max]
         product = x * y
         if result is null or product < result
-          was_smaller = true
+          wasSmaller = true
           if @isPalindrome(product)
             result = product
-            result_products = [[x, y]]
+            resultProducts = [[x, y]]
         else if product is result
-          result_products.push([x, y])
-      unless was_smaller
+          resultProducts.push([x, y])
+      unless wasSmaller
         break
     return {
       value: result,
-      factors: result_products
+      factors: resultProducts
     }
 
   isPalindrome: (number) -> 
