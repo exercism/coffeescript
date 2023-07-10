@@ -10,10 +10,10 @@ class BottleSong
   verse: (number) ->
     bottles = @bottles(number)
     say = @say(number)
-    say_upper = say.charAt(0).toUpperCase() + say.slice(1)
+    sayUpper = say.charAt(0).toUpperCase() + say.slice(1)
     [
-      "#{say_upper} green #{bottles} hanging on the wall,",
-      "#{say_upper} green #{bottles} hanging on the wall,",
+      "#{sayUpper} green #{bottles} hanging on the wall,",
+      "#{sayUpper} green #{bottles} hanging on the wall,",
       "And if #{@say(1)} green #{@bottles(1)} should accidentally fall,",
       "There'll be #{@say(number - 1)} green #{@bottles(number - 1)} hanging on the wall.",
     ]

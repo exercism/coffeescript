@@ -1,9 +1,9 @@
 BottleSong = require './bottle-song'
 
 describe 'Bob', ->
-  bottle_song = new BottleSong()
+  bottleSong = new BottleSong()
   it 'first generic verse', ->
-    result = bottle_song.recite(10, 1)
+    result = bottleSong.recite(10, 1)
     expected = [
                 "Ten green bottles hanging on the wall,",
                 "Ten green bottles hanging on the wall,",
@@ -13,7 +13,7 @@ describe 'Bob', ->
     expect(result).toEqual expected
 
   it 'last generic verse', ->
-    result = bottle_song.recite(3, 1)
+    result = bottleSong.recite(3, 1)
     expected = [
                 "Three green bottles hanging on the wall,",
                 "Three green bottles hanging on the wall,",
@@ -23,7 +23,7 @@ describe 'Bob', ->
     expect(result).toEqual expected
 
   it 'verse with 2 bottles', ->
-    result = bottle_song.recite(2, 1)
+    result = bottleSong.recite(2, 1)
     expected = [
                 "Two green bottles hanging on the wall,",
                 "Two green bottles hanging on the wall,",
@@ -33,7 +33,7 @@ describe 'Bob', ->
     expect(result).toEqual expected
 
   it 'verse with 1 bottle', ->
-    result = bottle_song.recite(1, 1)
+    result = bottleSong.recite(1, 1)
     expected = [
                 "One green bottle hanging on the wall,",
                 "One green bottle hanging on the wall,",
@@ -43,7 +43,7 @@ describe 'Bob', ->
     expect(result).toEqual expected
 
   it 'first two verses', ->
-    result = bottle_song.recite(10, 2)
+    result = bottleSong.recite(10, 2)
     expected = [
                 "Ten green bottles hanging on the wall,",
                 "Ten green bottles hanging on the wall,",
@@ -58,7 +58,7 @@ describe 'Bob', ->
     expect(result).toEqual expected
 
   it 'last three verses', ->
-    result = bottle_song.recite(3, 3)
+    result = bottleSong.recite(3, 3)
     expected = [
                 "Three green bottles hanging on the wall,",
                 "Three green bottles hanging on the wall,",
@@ -78,7 +78,7 @@ describe 'Bob', ->
     expect(result).toEqual expected
 
   it 'all verses', ->
-    result = bottle_song.recite(10, 10)
+    result = bottleSong.recite(10, 10)
     expected = [
                 "Ten green bottles hanging on the wall,",
                 "Ten green bottles hanging on the wall,",
