@@ -354,7 +354,38 @@
     ]
   },
   "concepts": [],
-  "key_features": [],
+  "key_features": [
+    {
+      "title": "Compile to JavaScript",
+      "content": "Compile to JavaScript, allowing you to use CoffeeScript anywhere JavaScript is used.",
+      "icon": "web"
+    },
+    {
+      "title": "Simple Syntax",
+      "content": "CoffeeScript has a simple syntax, inspired by Ruby and Python, that is easy to read and write.",
+      "icon": "fun"
+    },
+    {
+      "title": "Saftey features",
+      "content": "CoffeeScript allows you to check for existence and doesnt have a `var` keyword.",
+      "icon": "safe"
+    },
+    {
+      "title": "Large package ecosystem",
+      "content": "CoffeeScript can use any JavaScript library or package.",
+      "icon": "tooling"
+    },
+    {
+      "title": "Destructuring assignment",
+      "content": "Allowing you to handle multiple return values from a function or multiple properties from an object.",
+      "icon": "productive"
+    },
+    {
+      "title": "Multi paradigm",
+      "content": "Use which ever paradigm you want, functional, object-oriented or imperative programming.",
+      "icon": "multi-paradigm"
+    }
+  ],
   "tags": [
     "paradigm/declarative",
     "paradigm/functional",
