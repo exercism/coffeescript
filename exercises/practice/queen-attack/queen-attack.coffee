@@ -1,6 +1,6 @@
-class QueenAttack
-  constructor: (args) ->
-    @white =
-    @black =
+class QueensAttack
+  constructor: (queen) ->
 
-module.exports = QueenAttack
+  canAttack: (otherQueen) ->
+
+module.exports = QueensAttack

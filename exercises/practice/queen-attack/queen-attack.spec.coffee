@@ -1,58 +1,65 @@
 QueenAttack = require './queen-attack'
 
 describe 'QueenAttack', ->
-  it 'has the correct default positions', ->
-    queens = new QueenAttack
-    expect(queens.white).toEqual([0,3])
-    expect(queens.black).toEqual([7,3])
+  it 'queen with a valid position', ->
+    new QueenAttack({row: 2, column: 2})
 
-  xit 'initialized with specific placement', ->
-    queens = new QueenAttack({white: [3,7], black: [6,1] })
-    expect(queens.white).toEqual([3, 7])
-    expect(queens.black).toEqual([6, 1])
+  xit 'queen must have positive row', ->
+    expect ->
+      new QueenAttack({row: -2, column: 2})
+    .toThrow('row not positive')
 
+  xit 'queen must have row on board', ->
+    expect ->
+      new QueenAttack({row: 8, column: 4})
+    .toThrow('row not on board')
 
-  xit 'cannot occupy the same space', ->
-    positioning = { white: [2,4], black: [2,4] }
-    expect(-> new QueenAttack(positioning)).toThrow('Queens cannot share the same space')
+  xit 'queen must have positive column', ->
+    expect ->
+      new QueenAttack({row: 2, column: -2})
+    .toThrow('column not positive')
 
+  xit 'queen must have column on board', ->
+    expect ->
+      new QueenAttack({row: 4, column: 8})
+    .toThrow('column not on board')
 
-  xit 'toString representation', ->
-    positioning = {white: [2, 4], black: [6, 6]}
-    queens = new QueenAttack(positioning)
-    board = '_ _ _ _ _ _ _ _\n_ _ _ _ _ _ _ _\n_ _ _ _ _ _ _ _\n_ _ _ _ _ _ _ _\n' +
-      '_ _ W _ _ _ _ _\n_ _ _ _ _ _ _ _\n_ _ _ _ _ _ B _\n_ _ _ _ _ _ _ _'
-    expect(queens.toString()).toEqual(board)
+  xit 'cannot attack', ->
+    white_queen = new QueenAttack({row: 2, column: 4})
+    black_queen = new QueenAttack({row: 6, column: 6})
+    expect(white_queen.canAttack(black_queen)).toEqual(false)
 
-  xit 'queens cannot attack', ->
-    queens = new QueenAttack({ white: [2,3], black: [4,7] })
-    expect(queens.canAttack()).toEqual(false)
+  xit 'can attack on same row', ->
+    white_queen = new QueenAttack({row: 2, column: 4})
+    black_queen = new QueenAttack({row: 2, column: 6})
+    expect(white_queen.canAttack(black_queen)).toEqual(true)
 
+  xit 'can attack on same column', ->
+    white_queen = new QueenAttack({row: 4, column: 5})
+    black_queen = new QueenAttack({row: 2, column: 5})
+    expect(white_queen.canAttack(black_queen)).toEqual(true)
 
-  xit 'queens can attack when they are on the same row', ->
-    queens = new QueenAttack({ white: [2,4], black: [2,7] })
-    expect(queens.canAttack()).toEqual(true)
+  xit 'can attack on first diagonal', ->
+    white_queen = new QueenAttack({row: 2, column: 2})
+    black_queen = new QueenAttack({row: 0, column: 4})
+    expect(white_queen.canAttack(black_queen)).toEqual(true)
 
+  xit 'can attack on second diagonal', ->
+    white_queen = new QueenAttack({row: 2, column: 2})
+    black_queen = new QueenAttack({row: 3, column: 1})
+    expect(white_queen.canAttack(black_queen)).toEqual(true)
 
-  xit 'queens can attack when they are on the same column', ->
-    queens = new QueenAttack({ white: [5,4], black: [2,4] })
-    expect(queens.canAttack()).toEqual(true)
+  xit 'can attack on third diagonal', ->
+    white_queen = new QueenAttack({row: 2, column: 2})
+    black_queen = new QueenAttack({row: 1, column: 1})
+    expect(white_queen.canAttack(black_queen)).toEqual(true)
 
+  xit 'can attack on fourth diagonal', ->
+    white_queen = new QueenAttack({row: 1, column: 7})
+    black_queen = new QueenAttack({row: 0, column: 6})
+    expect(white_queen.canAttack(black_queen)).toEqual(true)
 
-  xit 'queens can attack diagonally', ->
-    queens = new QueenAttack({ white: [1, 1], black: [6, 6] })
-    expect(queens.canAttack()).toEqual(true)
-
-
-  xit 'queens can attack another diagonally', ->
-    queens = new QueenAttack({ white: [0, 6], black: [1, 7] })
-    expect(queens.canAttack()).toEqual(true)
-
-
-  xit 'queens can attack yet another diagonally', ->
-    queens = new QueenAttack({ white: [4, 1], black: [6, 3] })
-    expect(queens.canAttack()).toEqual(true)
-
-  xit 'queens can attack yet yet another diagonally', ->
-    queens = new QueenAttack({ white: [6, 1], black: [1, 6] })
-    expect(queens.canAttack()).toEqual(true)
+  xit 'cannot attack if falling diagonals are only the same when reflected across the longest falling diagonal', ->
+    white_queen = new QueenAttack({row: 4, column: 1})
+    black_queen = new QueenAttack({row: 2, column: 5})
+    expect(white_queen.canAttack(black_queen)).toEqual(false)

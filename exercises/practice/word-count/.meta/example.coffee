@@ -1,9 +1,9 @@
 module.exports = class Words
   constructor: (input) ->
-    @words = input.toLowerCase().match(/\b[a-z0-9]+\b/g)
+    @input = input.trim().toLowerCase().match(/\w+('\w+)?/g);
 
   count: ->
     counts = {}
-    for word in @words
+    for word in @input
       counts[word] = if counts[word] then counts[word] + 1 else 1
     counts
