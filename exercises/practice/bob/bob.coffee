@@ -1,4 +1,4 @@
 class Bob
-  hey: (args) ->
+  hey: (message) ->
 
 module.exports = Bob

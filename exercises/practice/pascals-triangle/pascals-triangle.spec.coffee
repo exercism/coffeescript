@@ -1,4 +1,4 @@
-Pascal = require './pascals-triangle'
+PascalsTriangle = require './pascals-triangle'
 
 describe 'Pascal', ->
   it 'one row', ->

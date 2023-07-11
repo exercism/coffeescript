@@ -1,4 +1,4 @@
 class NthPrime
-  nth: (args) ->
+  @nth: (nthPrime) ->
 
 module.exports = NthPrime

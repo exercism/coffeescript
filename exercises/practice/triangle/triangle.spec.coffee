@@ -1,54 +1,89 @@
 Triangle = require './triangle'
 
 describe 'Triangle', ->
-  it 'is equilateral with equal sides', ->
-    triangle = new Triangle(2,2,2)
-    expect(triangle.kind()).toBe 'equilateral'
+  describe 'equilateral', ->
+    it 'all sides are equal', ->
+      triangle = new Triangle(2, 2, 2)
+      expect(triangle.equilateral()).toEqual true
 
-  xit 'is equilateral for larger triangle', ->
-    triangle = new Triangle(10,10,10)
-    expect(triangle.kind()).toBe 'equilateral'
+    xit 'any side is unequal', ->
+      triangle = new Triangle(2, 3, 2)
+      expect(triangle.equilateral()).toEqual false
 
-  xit 'is isosceles when last two sides equal', ->
-    triangle = new Triangle(2,4,4)
-    expect(triangle.kind()).toBe 'isosceles'
+    xit 'no sides are equal', ->
+      triangle = new Triangle(5, 4, 6)
+      expect(triangle.equilateral()).toEqual false
 
-  xit 'is isosceles when first and last equal', ->
-    triangle = new Triangle(4,2,4)
-    expect(triangle.kind()).toBe 'isosceles'
+    xit 'all zero sides is not a triangle', ->
+      triangle = new Triangle(0, 0, 0)
+      expect(triangle.equilateral()).toEqual false
 
-  xit 'is isosceles when first two equal', ->
-    triangle = new Triangle(4,4,2)
-    expect(triangle.kind()).toBe 'isosceles'
+    xit 'sides may be floats', ->
+      triangle = new Triangle(0.5, 0.5, 0.5)
+      expect(triangle.equilateral()).toEqual true
 
-  xit 'is isosceles with arbitrary sides', ->
-    triangle = new Triangle(10,10,2)
-    expect(triangle.kind()).toBe 'isosceles'
+  describe 'isosceles', ->
+    xit 'last two sides are equal', ->
+      triangle = new Triangle(3, 4, 4)
+      expect(triangle.isosceles()).toEqual true
 
-  xit 'is scalene when no sides equal', ->
-    triangle = new Triangle(3,4,5)
-    expect(triangle.kind()).toBe 'scalene'
+    xit 'first two sides are equal', ->
+      triangle = new Triangle(4, 4, 3)
+      expect(triangle.isosceles()).toEqual true
 
-  xit 'is scalene when larger as well', ->
-    triangle = new Triangle(10,11,12)
-    expect(triangle.kind()).toBe 'scalene'
+    xit 'first and last sides are equal', ->
+      triangle = new Triangle(4, 3, 4)
+      expect(triangle.isosceles()).toEqual true
 
-  xit 'is scalene in decesending order', ->
-    triangle = new Triangle(5,4,3)
-    expect(triangle.kind()).toBe 'scalene'
+    xit 'equilateral triangles are also isosceles', ->
+      triangle = new Triangle(4, 4, 4)
+      expect(triangle.isosceles()).toEqual true
 
-  xit 'is legal when very small', ->
-    triangle = new Triangle(.03,.06,.04)
-    expect(triangle.kind()).toBe 'scalene'
+    xit 'no sides are equal', ->
+      triangle = new Triangle(2, 3, 4)
+      expect(triangle.isosceles()).toEqual false
 
-  xit 'is illegal when a side is negative', ->
-    expect(-> new Triangle(2,3,-5)).toThrow('negative sides are illegal')
+    xit 'first triangle inequality violation', ->
+      triangle = new Triangle(1, 1, 3)
+      expect(triangle.isosceles()).toEqual false
 
-  xit 'is illegal when violating triangle inequality', ->
-    expect(-> new Triangle(1,1,3)).toThrow('violation of triangle inequality')
+    xit 'second triangle inequality violation', ->
+      triangle = new Triangle(1, 3, 1)
+      expect(triangle.isosceles()).toEqual false
 
-  xit 'is illegal when violating triangle inequality 2', ->
-    expect(-> new Triangle(2,2,5)).toThrow('violation of triangle inequality')
+    xit 'third triangle inequality violation', ->
+      triangle = new Triangle(3, 1, 1)
+      expect(triangle.isosceles()).toEqual false
 
-  xit 'is illegal when violating triangle inequality 3', ->
-    expect(-> new Triangle(7,3,2)).toThrow('violation of triangle inequality')
+    xit 'sides may be floats', ->
+      triangle = new Triangle(0.5, 0.4, 0.5)
+      expect(triangle.isosceles()).toEqual true
+
+  describe 'scalene', ->
+    xit 'no sides are equal', ->
+      triangle = new Triangle(5, 4, 6)
+      expect(triangle.scalene()).toEqual true
+
+    xit 'all sides are equal', ->
+      triangle = new Triangle(4, 4, 4)
+      expect(triangle.scalene()).toEqual false
+
+    xit 'first and second sides are equal', ->
+      triangle = new Triangle(4, 4, 3)
+      expect(triangle.scalene()).toEqual false
+
+    xit 'first and third sides are equal', ->
+      triangle = new Triangle(3, 4, 3)
+      expect(triangle.scalene()).toEqual false
+
+    xit 'second and third  sides are equal', ->
+      triangle = new Triangle(4, 3, 3)
+      expect(triangle.scalene()).toEqual false
+
+    xit 'may not violate triangle inequality', ->
+      triangle = new Triangle(7, 3, 2)
+      expect(triangle.scalene()).toEqual false
+
+    xit 'sides may be floats', ->
+      triangle = new Triangle(0.5, 0.4, 0.6)
+      expect(triangle.scalene()).toEqual true

@@ -1,5 +1,4 @@
 class PascalsTriangle
-  constructor: (args) ->
-    @array =
+  rows: (num) ->
 
 module.exports = PascalsTriangle
