@@ -143,6 +143,14 @@
         ]
       },
       {
+        "slug": "rna-transcription",
+        "name": "Rna Transcription",
+        "uuid": "d47b7ced-f2e6-47fd-b796-9c21448b1c14",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "pascals-triangle",
         "name": "Pascals Triangle",
         "uuid": "ee80988f-f1df-4958-b164-0e7fba9d1305",
