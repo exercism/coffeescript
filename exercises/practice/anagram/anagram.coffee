@@ -5,4 +5,4 @@ class Anagram
 
   match: (targets) ->
 
-module.exports = Anagram
+module.exports = Anagrammm

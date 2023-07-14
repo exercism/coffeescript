@@ -5,7 +5,7 @@ describe 'Bob', ->
     result = bob.hey 'Tom-ay-to, tom-aaaah-to.'
     expect(result).toEqual 'Whatever.'
 
-  xit 'shouting', ->
+  it 'shouting', ->
     result = bob.hey 'WATCH OUT!'
     expect(result).toEqual 'Whoa, chill out!'
 

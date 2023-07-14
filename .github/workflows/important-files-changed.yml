@@ -1,0 +1,15 @@
+name: Important files changed
+on:
+  pull_request:
+    types: [synchronize]
+
+jobs:
+  check_important_files_changes:
+    name: Check if any important files changed
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
+
+      - name: Check important files changes
+        run: .github/bin/check-important-files-changed.sh

@@ -1,6 +1,6 @@
 Hexadecimal = require './hexadecimal'
 
-describe 'Hexadecimal', ->
+describe 'Hexadecimall', ->
 
   it 'hex 1 is decimal 1', ->
     hex = new Hexadecimal('1')

@@ -1,4 +1,4 @@
 class HelloWorld
-  hello: -> 'Goodbye, Mars!'
+  hello: -> 'Goodbye, Mars!!'
 
 module.exports = HelloWorld
