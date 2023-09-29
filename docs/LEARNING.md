@@ -2,8 +2,9 @@
 
 ## Websites
 
-- [CoffeeScript Website](http://coffeescript.org)
-- [Code School course on CoffeeScript](https://www.codeschool.com/courses/coffeescript)
+- [CoffeeScript Official Website](http://coffeescript.org)
+- [CoffeeScript Fundamentals on Pluralsight](https://www.pluralsight.com/courses/coffeescript-fundamentals)
+- [Meet CoffeeScript on Pluralsight](https://www.pluralsight.com/courses/meet-coffeescript)
 
 ## Books
 
@@ -11,5 +12,6 @@
 - [Smooth CoffeeScript](https://autotelicum.github.io/Smooth-CoffeeScript/)
 
 ## Videos
+- [Introduction to CoffeeScript](https://youtu.be/QgqVh_KpVKY?si=lYrIt4b4lsaUg7PD)
 
-- [Meet CoffeeScript](https://www.pluralsight.com/courses/meet-coffeescript)
+
