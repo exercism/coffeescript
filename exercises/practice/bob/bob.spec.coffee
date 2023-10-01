@@ -22,7 +22,7 @@ describe 'Bob', ->
     expect(result).toEqual 'Whatever.'
 
   xit 'forceful questions', ->
-    result = bob.hey 'WHAT THE HELL WERE YOU THINKING?'
+    result = bob.hey 'WHAT'S GOING ON?'
     expect(result).toEqual "Calm down, I know what I'm doing!"
 
   xit 'shouting numbers', ->
