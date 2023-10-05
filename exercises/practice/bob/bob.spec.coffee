@@ -22,8 +22,8 @@ describe 'Bob', ->
     expect(result).toEqual 'Whatever.'
 
   xit 'forceful questions', ->
-    result = bob.hey 'WHAT THE HELL WERE YOU THINKING?'
-    expect(result).toEqual 'Whoa, chill out!'
+    result = bob.hey 'WHAT'S GOING ON?'
+    expect(result).toEqual "Calm down, I know what I'm doing!"
 
   xit 'shouting numbers', ->
     result = bob.hey '1, 2, 3 GO!'
