@@ -365,29 +365,29 @@
   "concepts": [],
   "key_features": [
     {
-      "title": "Compile to JavaScript",
-      "content": "Allowing you to use CoffeeScript anywhere JavaScript is used.",
-      "icon": "web"
+      "title": "Transcompiles to JavaScript",
+      "content": "Same language, better syntax. Use CoffeeScript anywhere JavaScript is used.",
+      "icon": "widely-used"
     },
     {
-      "title": "Simple syntax",
-      "content": "CoffeeScript has a simple syntax, inspired by Ruby and Python, that is easy to read and write.",
-      "icon": "fun"
+      "title": "Human friendly syntax",
+      "content": "Inspired by Ruby and Python, CoffeeScript has a simple, readable, and easy-to-use syntax.",
+      "icon": "easy"
     },
     {
-      "title": "Safety features",
-      "content": "CoffeeScript allows you to check for existence and doesnt have a `var` keyword.",
-      "icon": "safe"
+      "title": "Dynamically typed",
+      "content": "Easy to write, easy to read.",
+      "icon": "dynamically-typed"
     },
     {
       "title": "Large package ecosystem",
-      "content": "CoffeeScript can use any JavaScript library or package.",
+      "content": "CoffeeScript can use any of the 1.3 million+ JavaScript libraries.",
       "icon": "tooling"
     },
     {
-      "title": "Destructuring assignment",
-      "content": "Handle multiple return values from a function or multiple properties from an object.",
-      "icon": "productive"
+      "title": "Developer happiness",
+      "content": "Combine JavaScript's power with your happiness",
+      "icon": "fun"
     },
     {
       "title": "Multi-paradigm",
