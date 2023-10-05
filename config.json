@@ -365,7 +365,7 @@
   "concepts": [],
   "key_features": [
     {
-      "title": "Transcompiles to JavaScript",
+      "title": "Transpiles to JavaScript",
       "content": "Same language, better syntax. Use CoffeeScript anywhere JavaScript is used.",
       "icon": "widely-used"
     },
