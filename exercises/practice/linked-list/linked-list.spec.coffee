@@ -54,7 +54,7 @@ describe 'LinkedList', ->
         list = new LinkedList()
         expect(list.popNode()).toBe undefined
 
-    xit ' can count its elements', ->
+    xit 'can count its elements', ->
         list = new LinkedList()
         list.pushNode(20)
         list.pushNode(30)
