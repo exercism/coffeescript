@@ -1,6 +1,6 @@
-class QueensAttack
+class QueenAttack
   constructor: (queen) ->
 
   canAttack: (otherQueen) ->
 
-module.exports = QueensAttack
+module.exports = QueenAttack
