@@ -5,4 +5,4 @@ class PalindromeProducts
 
   largest: ->
 
-module.export = PalindromeProducts
+module.exports = PalindromeProducts
