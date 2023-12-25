@@ -1,5 +1,4 @@
 class Grains
-
   square: (number) ->
 
   total: () ->
