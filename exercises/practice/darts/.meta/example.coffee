@@ -9,4 +9,5 @@ class Darts
       1
     else
       0
+
 module.exports = Darts
