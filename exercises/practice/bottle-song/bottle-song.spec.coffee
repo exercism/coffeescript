@@ -12,7 +12,7 @@ describe 'BottleSong', ->
               ]
     expect(result).toEqual expected
 
-  it 'last generic verse', ->
+  xit 'last generic verse', ->
     result = bottleSong.recite(3, 1)
     expected = [
                 "Three green bottles hanging on the wall,",
@@ -22,7 +22,7 @@ describe 'BottleSong', ->
               ]
     expect(result).toEqual expected
 
-  it 'verse with 2 bottles', ->
+  xit 'verse with 2 bottles', ->
     result = bottleSong.recite(2, 1)
     expected = [
                 "Two green bottles hanging on the wall,",
@@ -32,7 +32,7 @@ describe 'BottleSong', ->
               ]
     expect(result).toEqual expected
 
-  it 'verse with 1 bottle', ->
+  xit 'verse with 1 bottle', ->
     result = bottleSong.recite(1, 1)
     expected = [
                 "One green bottle hanging on the wall,",
@@ -42,7 +42,7 @@ describe 'BottleSong', ->
               ]
     expect(result).toEqual expected
 
-  it 'first two verses', ->
+  xit 'first two verses', ->
     result = bottleSong.recite(10, 2)
     expected = [
                 "Ten green bottles hanging on the wall,",
@@ -57,7 +57,7 @@ describe 'BottleSong', ->
               ]
     expect(result).toEqual expected
 
-  it 'last three verses', ->
+  xit 'last three verses', ->
     result = bottleSong.recite(3, 3)
     expected = [
                 "Three green bottles hanging on the wall,",
@@ -77,7 +77,7 @@ describe 'BottleSong', ->
               ]
     expect(result).toEqual expected
 
-  it 'all verses', ->
+  xit 'all verses', ->
     result = bottleSong.recite(10, 10)
     expected = [
                 "Ten green bottles hanging on the wall,",
