@@ -1,6 +1,6 @@
 BottleSong = require './bottle-song'
 
-describe 'Bob', ->
+describe 'BottleSong', ->
   bottleSong = new BottleSong()
   it 'first generic verse', ->
     result = bottleSong.recite(10, 1)
