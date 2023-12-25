@@ -235,6 +235,14 @@
         ]
       },
       {
+        "slug": "leap",
+        "name": "Leap",
+        "uuid": "fed8614b-fa32-465e-8699-dbcf0cfc0798",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "linked-list",
         "name": "Linked List",
         "uuid": "34661cc2-6d88-4e36-8c3e-87744be307ef",
