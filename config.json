@@ -33,7 +33,6 @@
     ]
   },
   "exercises": {
-    "concept": [],
     "practice": [
       {
         "slug": "hello-world",
@@ -353,16 +352,15 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
+        "status": "deprecated",
         "topics": [
           "control_flow_switch",
           "loops",
           "text_formatting"
-        ],
-        "status": "deprecated"
+        ]
       }
     ]
   },
-  "concepts": [],
   "key_features": [
     {
       "title": "Transpiles to JavaScript",
@@ -396,19 +394,19 @@
     }
   ],
   "tags": [
+    "execution_mode/interpreted",
     "paradigm/declarative",
     "paradigm/functional",
     "paradigm/imperative",
     "paradigm/object_oriented",
+    "platform/android",
+    "platform/ios",
+    "platform/linux",
+    "platform/mac",
+    "platform/web",
+    "platform/windows",
     "typing/dynamic",
     "typing/weak",
-    "execution_mode/interpreted",
-    "platform/windows",
-    "platform/mac",
-    "platform/linux",
-    "platform/ios",
-    "platform/android",
-    "platform/web",
     "used_for/backends",
     "used_for/cross_platform_development",
     "used_for/frontends",
