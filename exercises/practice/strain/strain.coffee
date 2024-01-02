@@ -1,6 +1,6 @@
 class Strain
-  keep: (lst, predicate) -> 
+  @keep: (lst, predicate) -> 
 
-  discard: (lst, predicate) ->
+  @discard: (lst, predicate) ->
 
 module.exports = Strain
