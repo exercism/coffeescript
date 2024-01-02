@@ -1,4 +1,4 @@
 class Leap
-  leapYear: (year) ->
+  @leapYear: (year) ->
 
 module.exports = Leap
