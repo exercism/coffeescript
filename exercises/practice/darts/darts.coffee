@@ -1,4 +1,4 @@
 class Darts
-  score: (x, y) ->
+  @score: (x, y) ->
 
 module.exports = Darts
