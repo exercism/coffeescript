@@ -114,6 +114,14 @@
         ]
       },
       {
+        "slug": "grains",
+        "name": "Grains",
+        "uuid": "1244927f-9ff6-422e-a8bc-5e476dc46a90",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "darts",
         "name": "Darts",
         "uuid": "2e7a7952-9db5-4aa6-9985-6561fac3853d",
