@@ -192,6 +192,14 @@
         ]
       },
       {
+        "slug": "square-root",
+        "name": "Square Root",
+        "uuid": "5407e219-9884-4b36-9b63-fac188ad6853",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "strain",
         "name": "Strain",
         "uuid": "1b205a7a-7602-4e96-941c-3e56b6aecb3a",
