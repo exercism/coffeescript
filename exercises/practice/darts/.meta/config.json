@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "darts.coffee"
+    ],
+    "test": [
+      "darts.spec.coffee"
+    ],
+    "example": [
+      ".meta/example.coffee"
+    ]
+  },
+  "blurb": "Write a function that returns the earned points in a single toss of a Darts game.",
+  "source": "Inspired by an exercise created by a professor Della Paolera in Argentina"
+}
