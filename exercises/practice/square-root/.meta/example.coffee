@@ -1,5 +1,5 @@
 class SquareRoot
-  squareRoot: (radicand) ->
+  @squareRoot: (radicand) ->
     results = 0
     while (results * results != radicand)
         results += 1
