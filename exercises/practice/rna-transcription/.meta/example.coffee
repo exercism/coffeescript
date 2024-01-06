@@ -1,4 +1,4 @@
-class RnaTrascription
+class RnaTranscription
   constructor: (@dna) ->
   
   toRna: -> 
@@ -10,4 +10,4 @@ class RnaTrascription
         when 'A' then 'U'
         else throw new Error "Invalid input DNA."
 
-module.exports = RnaTrascription
+module.exports = RnaTranscription
