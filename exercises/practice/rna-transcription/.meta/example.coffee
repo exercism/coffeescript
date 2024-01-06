@@ -1,7 +1,7 @@
 class RnaTranscription
   constructor: (@dna) ->
-  
-  toRna: -> 
+
+  toRna: ->
     @dna.replace /./g, (nucleotide) ->
       switch nucleotide
         when 'C' then 'G'

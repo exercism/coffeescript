@@ -1,6 +1,6 @@
 class RnaTranscription
   constructor: (dna) ->
-  
-  toRna: -> 
+
+  toRna: ->
 
 module.exports = RnaTranscription
