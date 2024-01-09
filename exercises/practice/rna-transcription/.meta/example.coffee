@@ -1,7 +1,7 @@
-class RnaTrascription
+class RnaTranscription
   constructor: (@dna) ->
-  
-  toRna: -> 
+
+  toRna: ->
     @dna.replace /./g, (nucleotide) ->
       switch nucleotide
         when 'C' then 'G'
@@ -10,4 +10,4 @@ class RnaTrascription
         when 'A' then 'U'
         else throw new Error "Invalid input DNA."
 
-module.exports = RnaTrascription
+module.exports = RnaTranscription
