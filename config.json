@@ -207,6 +207,14 @@
         ]
       },
       {
+        "slug": "reverse-string",
+        "name": "Reverse String",
+        "uuid": "1b4c8b0f-a7cc-4db1-a0ad-485dc2b320d7",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "square-root",
         "name": "Square Root",
         "uuid": "5407e219-9884-4b36-9b63-fac188ad6853",
