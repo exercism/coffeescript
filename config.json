@@ -185,6 +185,14 @@
         "difficulty": 2
       },
       {
+        "slug": "resistor-color-duo",
+        "name": "Resistor Color Duo",
+        "uuid": "f8f53f73-05dd-4732-994f-77eeaea6aa41",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "rna-transcription",
         "name": "Rna Transcription",
         "uuid": "d47b7ced-f2e6-47fd-b796-9c21448b1c14",
