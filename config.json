@@ -209,6 +209,14 @@
         "difficulty": 2
       },
       {
+        "slug": "roman-numerals",
+        "name": "Roman Numerals",
+        "uuid": "d4b800f6-94cd-455a-abe5-cbbddd70a26f",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "pascals-triangle",
         "name": "Pascals Triangle",
         "uuid": "ee80988f-f1df-4958-b164-0e7fba9d1305",
