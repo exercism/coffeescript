@@ -462,6 +462,14 @@
           "loops",
           "text_formatting"
         ]
+      },
+      {
+        "slug": "difference-of-squares",
+        "name": "Difference of Squares",
+        "uuid": "ae8b3303-96cf-447f-b377-0ca713c0e022",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       }
     ]
   },
