@@ -132,6 +132,4 @@ describe 'ProteinTranslation', ->
     expect(results).toEqual expected
 
   xit "Non-existing codon can't translate", ->
-    expect ->
-      ProteinTranslation.proteins("AAA")
-    .toThrow "Invalid codon"
+    expect(ProteinTranslation.proteins("AAA")).toThrow "Invalid codon"
