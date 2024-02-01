@@ -134,4 +134,4 @@ describe 'ProteinTranslation', ->
   xit "Non-existing codon can't translate", ->
     expect ->
       ProteinTranslation.proteins("AAA")
-    .toThrow "Invalid codon"
+    .toThrow new Error("Invalid codon")
