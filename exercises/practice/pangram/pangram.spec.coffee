@@ -13,11 +13,11 @@ describe 'Pangram', ->
     sentence = 'the quick brown fox jumps over the lazy dog'
     expect(Pangram.isPangram sentence).toBe(true)
     
-  xit "missing the letter 'x'", ->
+  xit 'missing the letter "x"', ->
     sentence = 'a quick movement of the enemy will jeopardize five gunboats'
     expect(Pangram.isPangram sentence).toBe(false)
     
-  xit "missing the letter 'h'", ->
+  xit 'missing the letter "h"', ->
     sentence = 'five boxing wizards jump quickly at it'
     expect(Pangram.isPangram sentence).toBe(false)
     
