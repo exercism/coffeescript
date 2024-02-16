@@ -37,7 +37,7 @@ describe 'Binary Search', ->
       new BinarySearch(array).find 7
     .toThrow new Error 'value not in array'
 
-  xit 'a value smaller than the array's smallest value is not found', ->
+  xit 'a value smaller than the array\'s smallest value is not found', ->
     array = [1, 3, 4, 6, 8, 9, 11]
     expect ->
       new BinarySearch(array).find 0
