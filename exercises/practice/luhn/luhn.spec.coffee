@@ -74,14 +74,14 @@ describe 'Luhn', ->
     luhn = new Luhn('109')
     expect(luhn.valid()).toBe true
 
-  xit 'using ascii value for non-doubled non-digit isn\'t allowed', ->
+  xit "using ascii value for non-doubled non-digit isn't allowed", ->
     luhn = new Luhn('055b 444 285')
     expect(luhn.valid()).toBe false
 
-  xit 'using ascii value for doubled non-digit isn\'t allowed', ->
+  xit "using ascii value for doubled non-digit isn't allowed", ->
     luhn = new Luhn(':9')
     expect(luhn.valid()).toBe false
 
-  xit 'non-numeric, non-space char in the middle with a sum that\'s divisible by 10 isn\'t allowed', ->
+  xit "non-numeric, non-space char in the middle with a sum that's divisible by 10 isn't allowed", ->
     luhn = new Luhn('59%59')
     expect(luhn.valid()).toBe false
