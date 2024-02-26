@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "list-ops.coffee"
+    ],
+    "test": [
+      "list-ops.spec.coffee"
+    ],
+    "example": [
+      ".meta/example.coffee"
+    ]
+  },
+  "blurb": "Implement basic list operations."
+}
