@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "acronym.coffee"
+    ],
+    "test": [
+      "acronym.spec.coffee"
+    ],
+    "example": [
+      ".meta/example.coffee"
+    ]
+  },
+  "blurb": "Convert a long phrase to its acronym.",
+  "source": "Julien Vanier",
+  "source_url": "https://github.com/monkbroc"
+}
