@@ -289,11 +289,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 3,
-        "topics": [
-          "arrays",
-          "maps",
-          "transforming"
-        ]
+        "status": "deprecated"
       },
       {
         "slug": "phone-number",
