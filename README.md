@@ -1,4 +1,6 @@
 # Exercism CoffeeScript Track
+[![Configlet](https://github.com/exercism/coffeescript/actions/workflows/configlet.yml/badge.svg)](https://github.com/exercism/coffeescript/actions/workflows/configlet.yml)
+[![Tests](https://github.com/exercism/coffeescript/actions/workflows/tests.yml/badge.svg)](https://github.com/exercism/coffeescript/actions/workflows/tests.yml)
 
 Exercism exercises in CoffeeScript
 
