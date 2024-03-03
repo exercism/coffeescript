@@ -522,6 +522,14 @@
           "regular_expressions",
           "strings"
         ]
+      },
+      {
+        "slug": "allergies",
+        "name": "Allergies",
+        "uuid": "fd8a5055-deb0-4a06-a9d5-e6d2f7e2be23",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       }
     ]
   },
