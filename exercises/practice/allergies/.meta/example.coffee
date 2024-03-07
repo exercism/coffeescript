@@ -12,8 +12,8 @@ ALLERGENS = [
 class Allergies
   constructor: (@score) ->
 
-  allergicTo: (food) ->
-    @list().some (allergen) -> allergen == food
+  allergicTo: (allergen) ->
+    @list().some (candidate) -> candidate == allergen
 
   list: () ->
     ALLERGENS.filter (_, i) => @score & (1 << i)

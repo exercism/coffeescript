@@ -1,7 +1,7 @@
 class Allergies
   constructor: (score) ->
 
-  allergicTo: (food) ->
+  allergicTo: (candidate) ->
 
   list: () ->
 
