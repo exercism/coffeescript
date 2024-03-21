@@ -3,5 +3,5 @@
 Execute the tests with:
 
 ```bash
-$ jasmine-node --coffee bob_test.spec.coffee
+$ jasmine-node --coffee bob.spec.coffee
 ```
