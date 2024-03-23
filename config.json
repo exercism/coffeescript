@@ -350,6 +350,14 @@
         "difficulty": 2
       },
       {
+        "slug": "robot-simulator",
+        "name": "Robot Simulator",
+        "uuid": "23b8d924-3493-4bbc-8e7d-7fdef5234833",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "reverse-string",
         "name": "Reverse String",
         "uuid": "1b4c8b0f-a7cc-4db1-a0ad-485dc2b320d7",
