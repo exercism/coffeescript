@@ -137,7 +137,7 @@ describe "Allergies", ->
         result = allergies.allergicTo "chocolate"
         expect(result).toEqual false
 
-    xit "allergic only to tomatoes", ->
+    xit "allergic only to chocolate", ->
         allergies = new Allergies 32
         result = allergies.allergicTo "chocolate"
         expect(result).toEqual true
@@ -195,7 +195,7 @@ describe "Allergies", ->
         expect(result).toEqual true
 
     xit "allergic to cats and something else", ->
-        allergies = new Allergies 2192
+        allergies = new Allergies 192
         result = allergies.allergicTo "cats"
         expect(result).toEqual true
 
