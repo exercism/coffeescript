@@ -65,6 +65,14 @@
         ]
       },
       {
+        "slug": "armstrong-numbers",
+        "name": "Armstrong Numbers",
+        "uuid": "931d5146-32fd-408d-8da0-752a5612c220",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "beer-song",
         "name": "Beer Song",
         "uuid": "3256e251-89ab-4a48-91a4-b4d314b77bec",
