@@ -125,6 +125,11 @@ describe 'RomanNumerals', ->
     results = RomanNumerals.convert(3001)
     expected = "MMMI"
     expect(results).toEqual expected
+
+  xit '3888 is MMMDCCCLXXXVIII', ->
+    results = RomanNumerals.convert(3888)
+    expected = "MMMDCCCLXXXVIII"
+    expect(results).toEqual expected
     
   xit '3999 is MMMCMXCIX', ->
     results = RomanNumerals.convert(3999)
