@@ -272,6 +272,14 @@
         ]
       },
       {
+        "slug": "matching-brackets",
+        "name": "Matching Brackets",
+        "uuid": "f4231888-c660-46d1-b05e-0dd4e223ea28",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "nucleotide-count",
         "name": "Nucleotide Count",
         "uuid": "6952588f-22fb-493e-b252-d62c404ad9ca",
