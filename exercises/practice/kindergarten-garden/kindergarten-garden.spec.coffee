@@ -24,11 +24,11 @@ describe "Kindergarten Garden", ->
         expect(diagram.plants "Charlie").toEqual ["grass", "grass", "grass", "grass"]
 
   describe "full garden", ->
-    xit "for Alice, first student\"s garden", ->
+    xit "for Alice, first student's garden", ->
         diagram = new KindergartenGarden "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV"
         expect(diagram.plants "Alice").toEqual ["violets", "radishes", "violets", "radishes"]
 
-    xit "for Bob, second student\"s garden", ->
+    xit "for Bob, second student's garden", ->
         diagram = new KindergartenGarden "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV"
         expect(diagram.plants "Bob").toEqual ["clover", "grass", "clover", "clover"]
 
