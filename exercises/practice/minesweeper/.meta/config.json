@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "minesweeper.coffee"
+    ],
+    "test": [
+      "minesweeper.spec.coffee"
+    ],
+    "example": [
+      ".meta/example.coffee"
+    ]
+  },
+  "blurb": "Add the numbers to a minesweeper board."
+}
