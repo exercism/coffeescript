@@ -1,5 +1,5 @@
 class MatchingBrackets
-  @isPaired (value) ->
+  @isPaired: (value) ->
     stack = []
     for char in value
       if char in ['[', '{', '(']
