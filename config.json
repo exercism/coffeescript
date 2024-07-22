@@ -644,6 +644,14 @@
         "difficulty": 2
       },
       {
+        "slug": "grade-school",
+        "name": "Grade School",
+        "uuid": "98f925a2-bc1c-4dc1-b2f4-d06941114250",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "minesweeper",
         "name": "Minesweeper",
         "uuid": "fe341c5e-0292-455f-93be-1ffb8f0b4b3b",
