@@ -559,6 +559,14 @@
         "difficulty": 5
       },
       {
+        "slug": "largest-series-product",
+        "name": "Largest Series Product",
+        "uuid": "9ae397e6-da06-433a-b4dc-118c01b73a8a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "nth-prime",
         "name": "Nth Prime",
         "uuid": "df9e580c-3a05-4d6c-b0d0-375df3af4d6c",
