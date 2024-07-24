@@ -590,6 +590,14 @@
         "difficulty": 5
       },
       {
+        "slug": "run-length-encoding",
+        "name": "Run-Length Encoding",
+        "uuid": "b496f1b1-c04e-4d13-95bf-507bf3e616a7",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "spiral-matrix",
         "name": "Spiral Matrix",
         "uuid": "2bf4fbd5-cc07-4b7e-b733-d787981bc587",
