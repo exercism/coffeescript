@@ -698,6 +698,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 8
+      },
+      {
+        "slug": "simple-linked-list",
+        "name": "Simple Linked List",
+        "uuid": "1c96f455-f1d5-4aa1-950c-6e60fc2b09ae",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
       }
     ]
   },
