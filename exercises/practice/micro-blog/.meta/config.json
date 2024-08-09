@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "micro-blog.coffee"
+    ],
+    "test": [
+      "micro-blog.spec.coffee"
+    ],
+    "example": [
+      ".meta/example.coffee"
+    ]
+  },
+  "blurb": "Given an input string, truncate it to 5 characters."
+}
