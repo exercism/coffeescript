@@ -2,7 +2,7 @@
 
 describe 'Simple Linked List', ->
   describe 'Element class', ->
-    xit 'has constructor', ->
+    it 'has constructor', ->
       element = new Element 1
       expect(element.value).toEqual 1
 
@@ -13,7 +13,7 @@ describe 'Simple Linked List', ->
     xit 'has null for next by default', ->
       element = new Element 1
       expect(element.next).toEqual null
-    
+
   describe 'List class', ->
     xit 'has constructor', ->
       list = new LinkedList
@@ -69,23 +69,23 @@ describe 'Simple Linked List', ->
       list.add element2
       expect(list.head.next.value).toEqual 1
 
-    xit 'can be inxitialized wxith an array', ->
+    xit 'can be initialized with an array', ->
       list = new LinkedList [1, 2, 3]
       expect(list.length()).toEqual 3
       expect(list.head.value).toEqual 3
 
-  describe 'Lists wxith multiple elements', ->
+  describe 'Lists with multiple elements', ->
 
-    xit 'wxith correct length', ->
+    xit 'with correct length', ->
       list = new LinkedList [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
       expect(list.length()).toEqual 10
 
-    xit 'wxith correct head value', ->
-      list = new LinkedList [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+    xit 'with correct head value', ->
+      list = new LinkedList [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
       expect(list.head.value).toEqual 10
 
     xit 'can traverse the list', ->
-      list = new LinkedList [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+      list = new LinkedList [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
       expect(list.head.next.next.next.value).toEqual 7
 
     xit 'can convert to an array', ->
@@ -95,23 +95,23 @@ describe 'Simple Linked List', ->
     xit 'head of list is final element from input array', ->
       list = new LinkedList [1, 2]
       expect(list.head.value).toEqual 2
-    
+
     xit 'can convert longer list to an array', ->
-      list = new LinkedList [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+      list = new LinkedList [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
       expect(list.toArray()).toEqual [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 
     xit 'can be reversed', ->
       list = new LinkedList [1, 2]
       expect(list.reverse().toArray()).toEqual [1, 2]
 
-    xit 'can be reversed when xit has more elements', ->
+    xit 'can be reversed when it has more elements', ->
       list = new LinkedList [1, 2, 3]
       expect(list.reverse().toArray()).toEqual [1, 2, 3]
 
     xit 'can reverse with many elements', ->
-      list = new LinkedList [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+      list = new LinkedList [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
       expect(list.reverse().toArray()).toEqual [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
     xit 'can reverse a reversal', ->
-      list = new LinkedList [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+      list = new LinkedList [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
       expect(list.reverse().reverse().toArray()).toEqual [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
