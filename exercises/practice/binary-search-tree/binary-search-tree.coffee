@@ -4,6 +4,6 @@ class BinarySearchTree
 
   insert: (args) ->
 
-  data: ->
+  each: (callback) ->
 
 module.exports = BinarySearchTree
