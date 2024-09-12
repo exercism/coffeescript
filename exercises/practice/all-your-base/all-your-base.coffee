@@ -1,6 +1,3 @@
-class AllYourBase
-  constructor: (args) ->
+allYourBase = (args) ->
 
-  rebase: (args) ->
-
-module.exports = AllYourBase
+module.exports = allYourBase
