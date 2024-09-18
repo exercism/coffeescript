@@ -21,21 +21,19 @@ Weekdays = {
 }
 
 meetup = ({year, month, week, dayofweek}) ->
-  # javascript uses 0-based months
-  # set hour to 12 to avoid daylight saving problems
+  # Javascript uses 0-based months
+  # Set hour to 12 to avoid daylight saving problems
   date = new Date year, month - 1, 1, 12
-  # the zeroth day of next month is the last day of this month
-  lastDateOfMonth = new Date(year, month, 0, 12).getDate()
+
+  if week == Weeks.Last
+    # The zeroth day of next month is the last day of this month
+    # The last day minus 6 is the start of the last week
+    week = new Date(year, month, 0, 12).getDate() - 6
 
   loop
-    if date.getDay() == dayofweek 
-      d = date.getDate()
-      if week is Weeks.Last
-        if d >= lastDateOfMonth - 6
-          return Date.UTC(date.getFullYear(), date.getMonth() + 1, d)
-      else
-        if d >= week
-          return Date.UTC(date.getFullYear(), date.getMonth() + 1, d)
-    date.setDate (date.getDate() + 1)
+    d = date.getDate()
+    if date.getDay() == dayofweek and d >= week
+      return Date.UTC date.getFullYear(), date.getMonth() + 1, d
+    date.setDate d + 1
 
 module.exports = {Weeks, Weekdays, meetup}
