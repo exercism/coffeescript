@@ -1,26 +1,41 @@
-weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+# these values are the first day of the month that 
+# qualifies for the "week", except Last which is a sentinel value
+Weeks = {
+  First: 1
+  Second: 8
+  Third: 15
+  Fourth: 22
+  Teenth: 13
+  Last: -1
+}
+
+# the javascript weekday number
+Weekdays = {
+  Sunday: 0
+  Monday: 1
+  Tuesday: 2
+  Wednesday: 3
+  Thursday: 4
+  Friday: 5
+  Saturday: 6
+}
+
 meetup = ({year, month, week, dayofweek}) ->
   # javascript uses 0-based months
-  # initialize the date's time to 12:00:00 to avoid daylight saving problems
+  # set hour to 12 to avoid daylight saving problems
   date = new Date year, month - 1, 1, 12
+  # the zeroth day of next month is the last day of this month
+  lastDateOfMonth = new Date(year, month, 0, 12).getDate()
 
-  days = Array.from({length: 7}, -> [])
-
-  while date.getMonth() == month - 1
-    days[date.getDay()].push new Date date
+  loop
+    if date.getDay() == dayofweek 
+      d = date.getDate()
+      if week is Weeks.Last
+        if d >= lastDateOfMonth - 6
+          return Date.UTC(date.getFullYear(), date.getMonth() + 1, d)
+      else
+        if d >= week
+          return Date.UTC(date.getFullYear(), date.getMonth() + 1, d)
     date.setDate (date.getDate() + 1)
 
-  dayIdx = weekdays.indexOf dayofweek
-  targetDays = days[dayIdx]
-
-  wantedDay = switch week
-    when 'first'  then targetDays.at 0
-    when 'second' then targetDays.at 1
-    when 'third'  then targetDays.at 2
-    when 'fourth' then targetDays.at 3
-    when 'last'   then targetDays.at -1
-    when 'teenth' then targetDays.find (d) -> d.getDate() >= 13
-
-  wantedDay.toISOString().replace /T.+/, ''
-
-module.exports = meetup
+module.exports = {Weeks, Weekdays, meetup}
