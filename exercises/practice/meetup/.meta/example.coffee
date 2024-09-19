@@ -33,7 +33,7 @@ meetup = ({year, month, week, dayofweek}) ->
   loop
     d = date.getDate()
     if date.getDay() == dayofweek and d >= week
-      return Date.UTC date.getFullYear(), date.getMonth() + 1, d
+      return new Date date.getFullYear(), date.getMonth(), d
     date.setDate d + 1
 
 module.exports = {Weeks, Weekdays, meetup}
