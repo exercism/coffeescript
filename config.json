@@ -738,6 +738,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 3
+      },
+      {
+        "slug": "meetup",
+        "name": "Meetup",
+        "uuid": "398c1590-2e8f-445e-83cb-2b762be63b2b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
       }
     ]
   },
