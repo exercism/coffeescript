@@ -73,6 +73,14 @@
         "difficulty": 2
       },
       {
+        "slug": "bank-account",
+        "name": "Bank Account",
+        "uuid": "27f36909-8005-4537-80b4-4c81a3325b5b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "beer-song",
         "name": "Beer Song",
         "uuid": "3256e251-89ab-4a48-91a4-b4d314b77bec",
@@ -735,14 +743,6 @@
         "slug": "all-your-base",
         "name": "All Your Base",
         "uuid": "b3bfbbd9-a0f4-4cbf-848b-f889bb0241a0",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 3
-      },
-      {
-        "slug": "bank-account",
-        "name": "Bank Account",
-        "uuid": "27f36909-8005-4537-80b4-4c81a3325b5b",
         "practices": [],
         "prerequisites": [],
         "difficulty": 3
