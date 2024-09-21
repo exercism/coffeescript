@@ -1,3 +1,4 @@
-maximumValue = (args) ->
+class Knapsack
+  @maximumValue: (args) ->
 
-module.exports = {maximumValue}
+module.exports = Knapsack
