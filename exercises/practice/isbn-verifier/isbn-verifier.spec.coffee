@@ -26,10 +26,10 @@ describe  'ISBN Verifier', ->
   xit 'valid ISBN without separating dashes', ->
     expect(IsbnVerifier.isValid '3598215088').toEqual true
 
-  it  'ISBN without separating dashes and X as check digit', ->
+  xit 'ISBN without separating dashes and X as check digit', ->
     expect(IsbnVerifier.isValid '359821507X').toEqual true
 
-  it  'ISBN without check digit and dashes', ->
+  xit 'ISBN without check digit and dashes', ->
     expect(IsbnVerifier.isValid '359821507').toEqual false
 
   xit 'too long ISBN and no dashes', ->
@@ -38,7 +38,7 @@ describe  'ISBN Verifier', ->
   xit 'too short ISBN', ->
     expect(IsbnVerifier.isValid '00').toEqual false
 
-  it  'ISBN without check digit', ->
+  xit 'ISBN without check digit', ->
     expect(IsbnVerifier.isValid '3-598-21507').toEqual false
 
   xit 'check digit of X should not be used for 0', ->
