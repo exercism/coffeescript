@@ -642,6 +642,14 @@
         ]
       },
       {
+        "slug": "custom-set",
+        "name": "Custom Set",
+        "uuid": "560b738f-c20d-43ac-9bc5-4821628adc00",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "kindergarten-garden",
         "name": "Kindergarten Garden",
         "uuid": "eedbb810-6f4d-4feb-8da4-d5e26db6d67c",
