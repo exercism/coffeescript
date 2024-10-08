@@ -59,7 +59,7 @@ describe 'Anagram', ->
 
   xit 'does not detect an anagram if the original word is repeated', ->
     detector = new Anagram 'go'
-    matches = detector.match ["go Go GO"]
+    matches = detector.match ["goGoGO"]
     expect(matches).toEqual []
 
   xit 'anagrams must use all letters exactly once', ->
