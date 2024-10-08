@@ -131,6 +131,11 @@ describe 'ProteinTranslation', ->
     expected = ["Tryptophan", "Cysteine", "Tyrosine"]
     expect(results).toEqual expected
 
+  xit 'Sequence of two non-STOP codons does not translate to a STOP codon', ->
+    results = ProteinTranslation.proteins("AUGAUG")
+    expected = ["Methionine", "Methionine"]
+    expect(results).toEqual expected
+
   xit "Non-existing codon can't translate", ->
     expect ->
       ProteinTranslation.proteins("AAA")
