@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "custom-set.coffee"
+    ],
+    "test": [
+      "custom-set.spec.coffee"
+    ],
+    "example": [
+      ".meta/example.coffee"
+    ]
+  },
+  "blurb": "Create a custom set type."
+}
