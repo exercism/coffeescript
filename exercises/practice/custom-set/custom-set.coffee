@@ -9,7 +9,7 @@ class CustomSet
 
   disjoint: (other) ->
 
-  equall: (other) ->
+  equal: (other) ->
 
   add: (value) ->
 
