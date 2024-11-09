@@ -1,12 +1,12 @@
 class BinarySearch
-  constructor: (@values) ->
+  constructor: (@array) ->
 
   find: (value) ->
     start = 0
-    end = @values.length - 1
+    end = @array.length - 1
     while start <= end
         mid = (start + end) // 2
-        item = @values[mid]
+        item = @array.get mid
         if value == item
             return mid
         else if value <= item
