@@ -11,6 +11,9 @@
     ],
     "example": [
       ".meta/example.coffee"
+    ],
+    "editor": [
+      "traced-array.coffee"
     ]
   },
   "blurb": "Implement a binary search algorithm.",

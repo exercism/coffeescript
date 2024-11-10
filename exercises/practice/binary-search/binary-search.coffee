@@ -1,5 +1,5 @@
 class BinarySearch
-  constructor: (values) ->
+  constructor: (array) ->
 
   find: (value) ->
 
