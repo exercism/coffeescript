@@ -10,7 +10,7 @@ describe 'Anagram', ->
   it 'no matches', ->
     detector = new Anagram 'diaper'
     matches = detector.match ['hello', 'world', 'zombies', 'pants']
-    expect(matches).toContainSameValues ['a', 'b']
+    expect(matches).toContainSameValues []
 
   xit 'detects two anagrams', ->
     detector = new Anagram 'solemn'
