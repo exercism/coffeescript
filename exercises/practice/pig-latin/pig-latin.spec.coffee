@@ -53,6 +53,11 @@ describe 'Pig Latin', ->
             expected = "atqay"
             expect(results).toEqual expected
 
+        xit 'word beginning with consonant and vowel containing qu', ->
+            results = PigLatin.translate "liquid"
+            expected = "iquidlay"
+            expect(results).toEqual expected
+
     describe 'some letter clusters are treated as a single consonant', ->
         xit 'word beginning with ch', ->
             results = PigLatin.translate "chair"
