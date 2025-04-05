@@ -146,6 +146,14 @@
         "difficulty": 2
       },
       {
+        "slug": "game-of-life",
+        "name": "Conway's Game of Life",
+        "uuid": "50824213-832d-466d-ba9c-f722ed3814ac",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "dnd-character",
         "name": "D&D Character",
         "uuid": "6f421414-3668-450d-a7ea-bba6d4e0d75f",
