@@ -36,7 +36,7 @@ class House
 
   @verses: (startVerse, endVerse) ->
     result = []
-    for i in [start..end]
+    for i in [startVerse..endVerse]
       result.push @verse(i)
     result.join '\n'
 
