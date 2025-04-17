@@ -586,6 +586,14 @@
         ]
       },
       {
+        "slug": "twelve-days",
+        "name": "Twelve Days",
+        "uuid": "53f2f7a6-d7b5-4c67-8368-af4709cdc98d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "two-fer",
         "name": "Two Fer",
         "uuid": "6280dc12-8d67-4cc1-95f0-b7f863cbf444",
