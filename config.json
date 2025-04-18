@@ -464,6 +464,14 @@
         "difficulty": 2
       },
       {
+        "slug": "resistor-color-trio",
+        "name": "Resistor Color Trio",
+        "uuid": "643e96bc-d0b2-426b-98ef-9f12d1f50b7a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "robot-simulator",
         "name": "Robot Simulator",
         "uuid": "23b8d924-3493-4bbc-8e7d-7fdef5234833",
