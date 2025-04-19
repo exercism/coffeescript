@@ -674,6 +674,14 @@
         "difficulty": 5
       },
       {
+        "slug": "diamond",
+        "name": "Diamond",
+        "uuid": "f1da1920-802f-4165-87a4-2381f530c262",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "house",
         "name": "House",
         "uuid": "ae838c07-9ba2-431e-99bd-e8f70a3be1e1",
