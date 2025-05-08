@@ -202,6 +202,14 @@
         "difficulty": 2
       },
       {
+        "slug": "food-chain",
+        "name": "Food Chain",
+        "uuid": "32e9daaf-b58c-42a9-9b9b-8f54db58551f",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "gigasecond",
         "name": "Gigasecond",
         "uuid": "1d797dbb-90e3-424c-91de-430e41a71ab1",
