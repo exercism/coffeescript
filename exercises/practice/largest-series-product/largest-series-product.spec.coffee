@@ -40,7 +40,7 @@ describe 'Largest Series Product', ->
   xit 'rejects span longer than string length', ->
     expect ->
       Lsp.largestProduct '123', 4
-    .toThrow new Error 'span must be smaller than string length'
+    .toThrow new Error 'span must not exceed string length'
 
   xit 'reports 1 for empty string and empty product (0 span)', ->
     result = Lsp.largestProduct '', 0
@@ -53,7 +53,7 @@ describe 'Largest Series Product', ->
   xit 'rejects empty string and nonzero span', ->
     expect ->
       Lsp.largestProduct '', 1
-    .toThrow new Error 'span must be smaller than string length'
+    .toThrow new Error 'span must not exceed string length'
 
   xit 'rejects invalid character in digits', ->
     expect ->
