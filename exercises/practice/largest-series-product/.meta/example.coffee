@@ -3,7 +3,7 @@ class LargestSeriesProduct
     if span < 0
       throw new Error 'span must not be negative'
     if span > digits.length
-      throw new Error 'span must be smaller than string length'
+      throw new Error 'span must not exceed string length'
     if digits.match(/[^0-9]/)
       throw new Error 'digits input must only contain digits'
 
