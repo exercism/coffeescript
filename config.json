@@ -836,7 +836,8 @@
         "uuid": "fe341c5e-0292-455f-93be-1ffb8f0b4b3b",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 8
+        "difficulty": 8,
+        "status": "deprecated"
       },
       {
         "slug": "simple-linked-list",
