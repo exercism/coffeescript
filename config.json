@@ -831,6 +831,14 @@
         "difficulty": 5
       },
       {
+        "slug": "change",
+        "name": "Change",
+        "uuid": "fff0dee7-06d5-4771-8e03-228475204db4",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
+      },
+      {
         "slug": "flower-field",
         "name": "Flower Field",
         "uuid": "02887f9c-e666-439b-a726-03c35dfb5f2c",
