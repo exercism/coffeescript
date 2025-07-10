@@ -46,20 +46,20 @@ describe 'Strain', ->
 
   xit 'keeps lists', ->
     data = [
-        [1, 2, 3],
-        [5, 5, 5],
-        [5, 1, 2],
-        [2, 1, 2],
-        [1, 5, 2],
-        [2, 2, 1],
-        [1, 2, 5]
+      [1, 2, 3]
+      [5, 5, 5]
+      [5, 1, 2]
+      [2, 1, 2]
+      [1, 5, 2]
+      [2, 2, 1]
+      [1, 2, 5]
     ]
     result = Strain.keep(data, containsFive)
     expected = [
-        [5, 5, 5],
-        [5, 1, 2],
-        [1, 5, 2],
-        [1, 2, 5]
+      [5, 5, 5]
+      [5, 1, 2]
+      [1, 5, 2]
+      [1, 2, 5]
     ]
     expect(result).toEqual expected
 
@@ -101,18 +101,18 @@ describe 'Strain', ->
 
   xit 'discards lists', ->
     data = [
-        [1, 2, 3],
-        [5, 5, 5],
-        [5, 1, 2],
-        [2, 1, 2],
-        [1, 5, 2],
-        [2, 2, 1],
-        [1, 2, 5]
+      [1, 2, 3]
+      [5, 5, 5]
+      [5, 1, 2]
+      [2, 1, 2]
+      [1, 5, 2]
+      [2, 2, 1]
+      [1, 2, 5]
     ]
     result = Strain.discard(data, containsFive)
     expected = [
-        [1, 2, 3],
-        [2, 1, 2],
-        [2, 2, 1]
+      [1, 2, 3]
+      [2, 1, 2]
+      [2, 2, 1]
     ]
     expect(result).toEqual expected

@@ -1,6 +1,6 @@
 allYourBase = require './all-your-base'
 
-describe "AllYourBase", -> 
+describe "AllYourBase", ->
   it "single bit one to decimal", ->
     actual = allYourBase {
       inputBase: 2,

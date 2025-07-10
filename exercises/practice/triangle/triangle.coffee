@@ -2,7 +2,7 @@ class Triangle
   constructor: (args) ->
 
   equilateral: ->
-  
+
   isosceles: ->
 
   scalene: ->

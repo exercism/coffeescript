@@ -19,19 +19,19 @@ describe 'Grade School', ->
     expect(school.add 'Blair', 2).toBe true
     expect(school.add 'James', 2).toBe true
     expect(school.add 'Paul', 2).toBe true
-  
+
   xit 'Multiple students in the same grade are added to the roster', ->
     school.add 'Blair', 2
     school.add 'James', 2
     school.add 'Paul', 2
     expect(school.roster()).toEqual ['Blair', 'James', 'Paul']
-  
+
   xit 'Cannot add student to same grade in the roster more than once', ->
     school.add 'Blair', 2
     expect(school.add 'James', 2).toBe true
     expect(school.add 'James', 2).toBe false
     school.add 'Paul', 2
-  
+
   xit 'Student not added to same grade in the roster more than once', ->
     school.add 'Blair', 2
     school.add 'James', 2
@@ -66,13 +66,13 @@ describe 'Grade School', ->
     school.add 'Peter', 2
     school.add 'Anna', 1
     expect(school.roster()).toEqual ['Anna', 'Peter', 'Jim']
-  
+
   xit 'Students are sorted by name in the roster', ->
     school.add 'Peter', 2
     school.add 'Zoe', 2
     school.add 'Alex', 2
     expect(school.roster()).toEqual ['Alex', 'Peter', 'Zoe']
-  
+
   xit 'Students are sorted by grades and then by name in the roster', ->
     school.add 'Peter', 2
     school.add 'Anna', 1
@@ -114,7 +114,7 @@ describe 'Grade School', ->
     school.add 'Paul', 3
     expect(school.grade 3).toEqual ['Paul']
 
-  xit 'Students are sorted by name in a grade', ->  
+  xit 'Students are sorted by name in a grade', -> 
     school.add 'Franklin', 5
     school.add 'Bradley', 5
     school.add 'Jeff', 1

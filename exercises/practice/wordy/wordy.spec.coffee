@@ -25,7 +25,7 @@ describe 'Word Problem', ->
   xit 'subtraction', ->
     problem = new WordProblem('What is 4 minus -12?')
     expect(problem.answer()).toEqual 16
-  
+
   xit 'multiplication', ->
     problem = new WordProblem('What is -3 multiplied by 25?')
     expect(problem.answer()).toEqual -75

@@ -49,7 +49,7 @@ describe 'Food Chain', ->
       "I don't know why she swallowed the fly. Perhaps she'll die."
     ].join "\n"
     expect(FoodChain.recite 5, 5).toEqual expected
-  
+
   xit 'goat', ->
     expected = [
       "I know an old lady who swallowed a goat."

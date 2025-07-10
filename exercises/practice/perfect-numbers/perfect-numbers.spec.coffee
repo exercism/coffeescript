@@ -36,13 +36,13 @@ describe 'Perfect Numbers', ->
 
     xit 'Edge case (no factors other than itself) is classified correctly', ->
       expect(PerfectNumbers.classify(1)).toEqual 'deficient'
-    
+
   describe 'Invalid inputs', ->
     xit 'Zero is rejected (as it is not a positive integer)', ->
       expect ->
         PerfectNumbers.classify(0)
       .toThrow new Error('Classification is only possible for positive integers.')
-    
+
     xit 'Negative integer is rejected (as it is not a positive integer)', ->
       expect ->
         PerfectNumbers.classify(-1)

@@ -40,7 +40,7 @@ describe 'Micro Blog', ->
   xit 'Emoji short', ->
     result = Microblog.truncate '💇'
     expect(result).toEqual '💇'
-    
+
   xit 'Emoji long', ->
     result = Microblog.truncate '❄🌡🤧🤒🏥🕰😀'
     expect(result).toEqual '❄🌡🤧🤒🏥'

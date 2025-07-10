@@ -19,15 +19,15 @@ describe 'ResistorColor', ->
   xit 'Colors', ->
     results = ResistorColor.colors()
     expected = [
-        'black'
-        'brown'
-        'red'
-        'orange'
-        'yellow'
-        'green'
-        'blue'
-        'violet'
-        'grey'
-        'white'
+      'black'
+      'brown'
+      'red'
+      'orange'
+      'yellow'
+      'green'
+      'blue'
+      'violet'
+      'grey'
+      'white'
     ]
     expect(results).toEqual expected

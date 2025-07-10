@@ -24,7 +24,7 @@ class PalindromeProducts
       value: result,
       factors: resultProducts
     }
-    
+
 
   smallest: =>
     throw new Error("min must be <= max") if @min > @max

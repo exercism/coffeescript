@@ -14,7 +14,7 @@ class Sublist
       Classification.sublist
     else
       Classification.unequal
-  
+
   @is_superlist: (listOne, listTwo) ->
     for i in [0..listOne.length - listTwo.length]
       if listOne.slice(i, i + listTwo.length).join() == listTwo.join()

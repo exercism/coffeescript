@@ -4,8 +4,8 @@ class Atbash
     phrase = phrase.replace /[a-z]/g, (letter) ->
       String.fromCharCode 219 - letter.charCodeAt()
     phrase.replace(/(.{5})/g, "$1 ").trim()
-    
-    
+
+
   @decode: (phrase) ->
     phrase = phrase.replaceAll(" ", "")
     phrase.replace /[a-z]/g, (letter) ->

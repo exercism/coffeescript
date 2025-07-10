@@ -1,33 +1,33 @@
 RD = require './relative-distance'
 
 describe 'RelativeDistance', ->
-  it 'Direct parent-child relation', -> 
+  it 'Direct parent-child relation', ->
     familyTree = {
-        'Vera': ['Tomoko']
-        'Tomoko': ['Aditi']   
+      'Vera': ['Tomoko']
+      'Tomoko': ['Aditi']   
     }
     results = RD.degreesOfSeparation familyTree, 'Vera', 'Tomoko'
     expect(results).toEqual 1
 
   xit 'Sibling relationship', ->
     familyTree = {
-        'Dalia': ['Olga', 'Yassin']
+      'Dalia': ['Olga', 'Yassin']
     }
     results = RD.degreesOfSeparation familyTree, 'Olga', 'Yassin'
     expect(results).toEqual 1
 
   xit 'Two degrees of separation, grandchild', ->
     familyTree = {
-        'Khadija': ['Mateo']
-        'Mateo': ['Rami']
+      'Khadija': ['Mateo']
+      'Mateo': ['Rami']
     }
     results = RD.degreesOfSeparation familyTree, 'Khadija', 'Rami'
     expect(results).toEqual 2
 
   xit 'Unrelated individuals', ->
     familyTree = {
-        'Priya': ['Rami']
-        'Kaito': ['Elif']
+      'Priya': ['Rami']
+      'Kaito': ['Elif']
     }
     results = RD.degreesOfSeparation familyTree, 'Priya', 'Kaito'
     expect(results).toEqual -1

@@ -5,7 +5,7 @@ class Triangle
 
   equilateral: ->
     (new Set(@sides)).size is 1 and @validTraingle() and @sides[0] isnt 0
-  
+
   isosceles: ->
     (new Set(@sides)).size <= 2 and @validTraingle()
 

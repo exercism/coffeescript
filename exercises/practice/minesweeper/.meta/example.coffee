@@ -4,7 +4,7 @@ class Minesweeper
       return minefield
     if minefield[0].length < 1
       return minefield
-    
+
     board = minefield.map (row) -> row.split ''
 
     board.map (row, x) ->
