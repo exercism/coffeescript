@@ -1,7 +1,7 @@
 RD = require './relative-distance'
 
 describe 'RelativeDistance', ->
-  it 'Direct parent-child relation', -> 
+  it 'Direct parent-child relation', ->
     familyTree = {
       'Vera': ['Tomoko']
       'Tomoko': ['Aditi']   

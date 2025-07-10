@@ -10,7 +10,7 @@ describe "Sieve", ->
   xit "Find primes up to 10", ->
     expect(Sieve.primes(10)).toEqual [2, 3, 5, 7]
 
-  xit "Limit is prime", -> 
+  xit "Limit is prime", ->
     expect(Sieve.primes(13)).toEqual [2, 3, 5, 7, 11, 13]
 
   xit "Find primes up to 1000", ->

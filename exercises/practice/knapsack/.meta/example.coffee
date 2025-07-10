@@ -4,7 +4,7 @@ class Knapsack
   @maximumValue: ({maximumWeight, items}) ->
     return 0 if items.length is 0
 
-    m = Array.from({length: items.length + 1}, -> new Array(maximumWeight + 1))
+    m = Array.from({length: items.length + 1}, ->new Array(maximumWeight + 1))
     m[0].fill 0
 
     for i in [1 .. items.length]

@@ -49,7 +49,7 @@ describe 'Rotational Cipher', ->
     expected = 'Xiwxmrk 1 2 3 xiwxmrk'
     expect(result).toEqual expected
 
-  xit 'rotate punctuation', ->  
+  xit 'rotate punctuation', -> 
     cipher = new RotationalCipher 21
     result = cipher.rotate "Let's eat, Grandma!"
     expected = "Gzo'n zvo, Bmviyhv!"

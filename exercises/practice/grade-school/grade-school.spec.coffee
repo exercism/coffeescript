@@ -114,7 +114,7 @@ describe 'Grade School', ->
     school.add 'Paul', 3
     expect(school.grade 3).toEqual ['Paul']
 
-  xit 'Students are sorted by name in a grade', ->  
+  xit 'Students are sorted by name in a grade', -> 
     school.add 'Franklin', 5
     school.add 'Bradley', 5
     school.add 'Jeff', 1

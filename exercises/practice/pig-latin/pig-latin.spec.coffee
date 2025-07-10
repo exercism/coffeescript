@@ -100,7 +100,7 @@ describe 'Pig Latin', ->
       expected = "xrayay"
       expect(results).toEqual expected
 
-describe 'position of y in a word determines if xit is a consonant or a vowel', ->   
+describe 'position of y in a word determines if xit is a consonant or a vowel', ->  
     xit 'y is treated like a consonant at the beginning of a word', ->
       results = PigLatin.translate "yellow"
       expected = "ellowyay"
