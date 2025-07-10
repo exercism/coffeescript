@@ -68,7 +68,7 @@ describe 'LinkedList', ->
         list.deleteNode(10)
         expect(list.countNodes()).toBe 2
         expect(list.shiftNode()).toBe 20
-        
+
     xit 'deletes only the last element', ->
         list = new LinkedList()
         list.pushNode(10)

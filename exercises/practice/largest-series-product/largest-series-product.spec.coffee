@@ -12,7 +12,7 @@ describe 'Largest Series Product', ->
   xit 'can find the largest product of 2', ->
     result = Lsp.largestProduct '576802143', 2
     expect(result).toEqual 48
-  
+
   xit 'can find the largest product of 3 with numbers in order', ->
     result = Lsp.largestProduct '0123456789', 3
     expect(result).toEqual 504
@@ -24,7 +24,7 @@ describe 'Largest Series Product', ->
   xit 'can find the largest product of 5 with numbers in order', ->
     result = Lsp.largestProduct '0123456789', 5
     expect(result).toEqual 15120
-  
+
   xit 'can get the largest product of a big number', ->
     result = Lsp.largestProduct '73167176531330624919225119674426574742355349194934', 6
     expect(result).toEqual 23520

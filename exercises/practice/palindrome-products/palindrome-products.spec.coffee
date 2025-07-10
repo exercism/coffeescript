@@ -48,7 +48,7 @@ describe 'PalindromeProducts', ->
     largest = palindromes.largest()
     expect(largest.value).toEqual(99000099)
     expect(largest.factors).toEqual([[9901, 9999]])
-  
+
   xit 'empty result for smallest if no palindrome in the range', ->
     palindromes = new PalindromeProducts({ maxFactor: 1003, minFactor: 1002 })
     smallest = palindromes.smallest()

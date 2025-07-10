@@ -12,7 +12,7 @@ describe 'ScrabbleScore', ->
 
   xit 'short word', -> 
     expect(ScrabbleScore.score('at')).toEqual(2)
-  
+
   xit 'short, valuable word', ->
     expect(ScrabbleScore.score('zoo')).toEqual(12)
 

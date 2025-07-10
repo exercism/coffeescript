@@ -25,7 +25,7 @@ describe 'Spiral Matrix', ->
       [7, 6, 5]
     ]
     expect(SM.spiralMatrix 3).toEqual expected
-    
+
 
   xit 'spiral of size 4', ->
     expected = [

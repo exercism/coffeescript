@@ -4,7 +4,7 @@ class FlowerField
       return garden
     if garden[0].length < 1
       return garden
-    
+
     board = garden.map (row) -> row.split ''
 
     board.map (row, x) ->

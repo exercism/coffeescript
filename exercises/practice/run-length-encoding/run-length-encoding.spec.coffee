@@ -21,17 +21,17 @@ describe 'Run Length Encoding', ->
       input = 'WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB'
       expected = '12WB12W3B24WB'
       expect(RLE.encode input).toEqual expected
-    
+
     xit 'string with multiple whitespace mixed', ->
       input = '  hsqq qww  '
       expected = '2 hs2q q2w2 '
       expect(RLE.encode input).toEqual expected
-    
+
     xit 'string with lowercase characters', ->
       input = 'aabbbcccc'
       expected = '2a3b4c'
       expect(RLE.encode input).toEqual expected
-    
+
   describe 'decode', ->
     xit 'empty string', ->
       input = ''
@@ -62,7 +62,7 @@ describe 'Run Length Encoding', ->
       input = '2a3b4c'
       expected = 'aabbbcccc'
       expect(RLE.decode input).toEqual expected
-  
+
   xit 'encode followed by decode gives original string', ->
     plainText = 'zzz ZZ  zZ'
     input = RLE.encode plainText

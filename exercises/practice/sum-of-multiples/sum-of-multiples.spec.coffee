@@ -3,19 +3,19 @@ SumOfMultiples = require './sum-of-multiples'
 describe 'Sum of Multiples', ->
   it 'no multiples within limit', ->
     expect(SumOfMultiples.sum [3, 5], 1).toEqual 0
-  
+
   xit 'one factor has multiples within limit', ->
     expect(SumOfMultiples.sum [3, 5], 4).toEqual 3
 
   xit 'more than one multiple within limit', ->
     expect(SumOfMultiples.sum [3], 7).toEqual 9
-  
+
   xit 'more than one factor with multiples within limit', ->
     expect(SumOfMultiples.sum [3, 5], 10).toEqual 23
 
   xit 'each multiple is only counted once', ->
     expect(SumOfMultiples.sum [3, 5], 100).toEqual 2318
-  
+
   xit 'a much larger limit', ->
     expect(SumOfMultiples.sum [3, 5], 1000).toEqual 233168
 

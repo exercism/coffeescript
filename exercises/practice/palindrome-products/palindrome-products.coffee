@@ -1,6 +1,6 @@
 class PalindromeProducts
   constructor: (args) ->
-  
+
   smallest: ->
 
   largest: ->

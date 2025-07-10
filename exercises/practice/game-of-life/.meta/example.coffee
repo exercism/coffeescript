@@ -18,7 +18,7 @@ class GameOfLife
                     if newRow < 0 || newCol < 0 || newRow >= rows || newCol >= cols
                         continue
                     liveNeighbors += @matrix[newRow][newCol]
-            
+
             liveNeighbors
 
             cell = @matrix[row][col]            
@@ -29,7 +29,7 @@ class GameOfLife
             else if liveNeighbors == 3
                 cell = 1
             newMatrix[row][col] = cell
-    
+
     @matrix = newMatrix
 
 module.exports = GameOfLife

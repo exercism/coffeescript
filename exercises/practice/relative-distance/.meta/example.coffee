@@ -27,7 +27,7 @@ class RelativeDistance
       for neighbor in neighbors[current] when not visited[neighbor]
         queue.push [neighbor, degree + 1]
         visited[neighbor] = 1
-    
+
     -1
 
 module.exports = RelativeDistance

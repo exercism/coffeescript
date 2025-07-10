@@ -29,7 +29,7 @@ class WordProblem
         acc.push(item)
       acc
     , []
-    
+
   evaluate: ->
     throw @ERROR.syntaxError if isNaN(@tokens[0])
     sum = parseInt(@tokens[0])

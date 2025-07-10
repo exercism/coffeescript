@@ -6,7 +6,7 @@ class TracedArray
     @get = (index) =>
       @accessCount += 1
       data[index]
-    
+
     Object.defineProperty @, 'length',
       get: -> data.length
 

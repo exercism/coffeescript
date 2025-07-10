@@ -18,7 +18,7 @@ class ListOps
 
   @map: (list, fn) ->
     (fn(elt) for elt in list)
-  
+
   @foldl: (list, fn, initial) ->
     results = initial
     for elt in list

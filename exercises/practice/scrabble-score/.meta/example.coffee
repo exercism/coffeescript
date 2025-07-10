@@ -4,7 +4,7 @@ class ScrabbleScore
     word.toLowerCase().split('').reduce (sum, letter) ->
       sum + ScrabbleScore.letterScore(letter)
     , 0
-      
+
   @letterScore: (letter) ->
     switch letter
       when 'a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't' then 1

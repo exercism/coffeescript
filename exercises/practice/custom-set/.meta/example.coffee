@@ -35,7 +35,7 @@ class CustomSet
 
   difference: (other) ->
     new CustomSet @values.filter (item) -> !other.contains item
-  
+
   union: (other) ->
     new CustomSet @values.concat other.values
 

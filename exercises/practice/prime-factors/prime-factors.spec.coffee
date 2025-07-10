@@ -6,7 +6,7 @@ describe 'Prime Factors', ->
 
   xit 'prime number', ->
       expect(PrimeFactors.factors 2).toEqual [2]
-  
+
   xit 'another prime number', ->
       expect(PrimeFactors.factors 3).toEqual [3]
 
@@ -24,7 +24,7 @@ describe 'Prime Factors', ->
 
   xit 'product of third prime', ->
       expect(PrimeFactors.factors 625).toEqual [5, 5, 5, 5]
-  
+
   xit 'product of first and second prime', ->
       expect(PrimeFactors.factors 6).toEqual [2, 3]
 
