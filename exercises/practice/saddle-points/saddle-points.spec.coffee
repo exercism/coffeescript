@@ -29,8 +29,8 @@ describe 'SaddlePoints', ->
       [1, 5, 4]]
     results = SaddlePoints matrix
     expect(results.sort()).toEqual [{row: 1, column: 2}
-                             {row: 2, column: 2}
-                             {row: 3, column: 2}]
+                                    {row: 2, column: 2}
+                                    {row: 3, column: 2}]
 
   xit 'can identify multiple saddle points in a row', ->
     matrix = [
@@ -39,8 +39,8 @@ describe 'SaddlePoints', ->
       [7, 5, 6]]
     results = SaddlePoints matrix
     expect(results.sort()).toEqual [{row: 2, column: 1}
-                             {row: 2, column: 2}
-                             {row: 2, column: 3}]
+                                    {row: 2, column: 2}
+                                    {row: 2, column: 3}]
 
   xit 'can identify saddle point in bottom right corner', ->
     matrix = [
@@ -56,7 +56,7 @@ describe 'SaddlePoints', ->
       [3, 2, 4]]
     results = SaddlePoints matrix
     expect(results.sort()).toEqual [{row: 1, column: 1}
-                             {row: 1, column: 3}]
+                                    {row: 1, column: 3}]
 
   xit 'can identify that saddle points in a single column matrix are those with the minimum value', ->
     matrix = [
@@ -66,11 +66,11 @@ describe 'SaddlePoints', ->
       [1]]
     results = SaddlePoints matrix
     expect(results.sort()).toEqual [{row: 2, column: 1}
-                             {row: 4, column: 1}] 
+                                    {row: 4, column: 1}] 
   
   xit 'can identify that saddle points in a single row matrix are those with the maximum value', ->
     matrix = [[2, 5, 3, 5]]
     results = SaddlePoints matrix
     expect(results.sort()).toEqual [{row: 1, column: 2}
-                             {row: 1, column: 4}]
+                                    {row: 1, column: 4}]
                             
