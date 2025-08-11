@@ -520,6 +520,14 @@
         "difficulty": 2
       },
       {
+        "slug": "saddle-points",
+        "name": "Saddle Points",
+        "uuid": "3abe4014-3f1d-4178-9b3a-bc0fff0f1322",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "scrabble-score",
         "name": "Scrabble Score",
         "uuid": "1630dd6a-dbf8-4fd2-bcb7-1989bea52347",
