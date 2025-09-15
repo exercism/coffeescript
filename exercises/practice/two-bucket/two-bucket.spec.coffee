@@ -86,7 +86,6 @@ describe 'TwoBucket', ->
     expect(result.goalBucket).toEqual("two")
     expect(result.otherBucket).toEqual(0)
 
-
   xit "Measure using bucket one of size 2 and bucket two of size 3 - start with bucket one and end with bucket two", ->
     twoBucket = new TwoBucket({
       bucketOne: 2
@@ -98,7 +97,6 @@ describe 'TwoBucket', ->
     expect(result.moves).toEqual(2)
     expect(result.goalBucket).toEqual("two")
     expect(result.otherBucket).toEqual(2)
-
 
   xit "Not possible to reach the goal", ->
     input = {
