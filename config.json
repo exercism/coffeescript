@@ -286,6 +286,14 @@
         "difficulty": 2
       },
       {
+        "slug": "line-up",
+        "name": "Line Up",
+        "uuid": "e73766c8-49bc-46ae-a814-630f02cb0d60",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "linked-list",
         "name": "Linked List",
         "uuid": "34661cc2-6d88-4e36-8c3e-87744be307ef",
