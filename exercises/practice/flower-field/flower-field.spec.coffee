@@ -133,4 +133,4 @@ describe 'Flower Field', ->
 
   xit 'multiple adjacent flowers', ->
     garden = [' ** ']
-  expect(FlowerField.annotate garden).toEqual ['1**1']
+    expect(FlowerField.annotate garden).toEqual ['1**1']
