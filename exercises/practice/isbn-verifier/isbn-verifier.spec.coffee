@@ -23,6 +23,12 @@ describe  'ISBN Verifier', ->
   xit 'X is only valid as a check digit', ->
     expect(IsbnVerifier.isValid '3-598-2X507-9').toEqual false
 
+  xit 'only one check digit is allowed', ->
+    expect(IsbnVerifier.isValid '3-598-21508-96').toEqual false
+
+  xit 'X is not substituted by the value 10', ->
+    expect(IsbnVerifier.isValid '3-598-2X507-5').toEqual false
+
   xit 'valid ISBN without separating dashes', ->
     expect(IsbnVerifier.isValid '3598215088').toEqual true
 
