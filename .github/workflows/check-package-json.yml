@@ -1,0 +1,24 @@
+name: Check package.json Sync
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check-package-json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Run sync script
+        run: node bin/sync-package-json.js
+
+      - name: Check for changes
+        run: |
+          git diff --exit-code || (echo "Error: package.json files are not in sync. Run 'node bin/sync-package-json.js' locally." && exit 1)
