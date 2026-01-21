@@ -839,6 +839,14 @@
         "difficulty": 2
       },
       {
+        "slug": "camicia",
+        "name": "Camicia",
+        "uuid": "3d899e5f-27eb-45bc-aa5e-4a844105f462",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "grade-school",
         "name": "Grade School",
         "uuid": "98f925a2-bc1c-4dc1-b2f4-d06941114250",
