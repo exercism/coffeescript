@@ -1,0 +1,20 @@
+{
+  "authors": [
+    "lpizzinidev"
+  ],
+  "contributors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "satellite.coffee"
+    ],
+    "test": [
+      "satellite.spec.coffee"
+    ],
+    "example": [
+      ".meta/example.coffee"
+    ]
+  },
+  "blurb": "Rebuild binary trees from pre-order and in-order traversals."
+}
