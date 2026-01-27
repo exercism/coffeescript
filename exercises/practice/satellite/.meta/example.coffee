@@ -25,8 +25,8 @@ class Satellite
     leftInorder = inorder.slice 0, inorderIndex
     rightInorder = inorder.slice inorderIndex + 1
 
-    leftPreorder = preorderRest.filter node -> leftInorder.includes node
-    rightPreorder = preorderRest.filter node -> rightInorder.includes node
+    leftPreorder = preorderRest.filter (node) -> leftInorder.includes node
+    rightPreorder = preorderRest.filter (node) -> rightInorder.includes node
 
     {
         value: head
