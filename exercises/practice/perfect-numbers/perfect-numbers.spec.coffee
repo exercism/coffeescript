@@ -21,6 +21,9 @@ describe 'Perfect Numbers', ->
     xit 'Large abundant number is classified correctly', ->
       expect(PerfectNumbers.classify(33550335)).toEqual 'abundant'
 
+    xit 'Perfect square abundant number is classified correctly', ->
+      expect(PerfectNumbers.classify(196)).toEqual 'abundant'
+
   describe 'Deficient numbers', ->
     xit 'Smallest prime deficient number is classified correctly', ->
       expect(PerfectNumbers.classify(2)).toEqual 'deficient'
