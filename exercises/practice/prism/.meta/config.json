@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "prism.coffee"
+    ],
+    "test": [
+      "prism.spec.coffee"
+    ],
+    "example": [
+      ".meta/example.coffee"
+    ]
+  },
+  "blurb": "Calculate the path of a laser through reflective prisms.",
+  "source": "FraSanga",
+  "source_url": "https://github.com/exercism/problem-specifications/pull/2625"
+}

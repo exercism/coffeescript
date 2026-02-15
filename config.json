@@ -769,6 +769,14 @@
         "difficulty": 5
       },
       {
+        "slug": "prism",
+        "name": "Prism",
+        "uuid": "0067850a-7008-4b67-b3f2-e795d00dea89",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "run-length-encoding",
         "name": "Run-Length Encoding",
         "uuid": "b496f1b1-c04e-4d13-95bf-507bf3e616a7",
