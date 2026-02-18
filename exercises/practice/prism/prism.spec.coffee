@@ -5,19 +5,19 @@ describe 'Prism', ->
     start = { x: 0, y: 0, angle: 0 }
     prisms = []
     result = Prism.findSequence(start, prisms)
-    expect(result.sequence).toEqual []
+    expect(result).toEqual []
 
   xit 'one prism one hit', ->
     start = { x: 0, y: 0, angle: 0 }
     prisms = [{ id: 1, x: 10, y: 0, angle: 0 }]
     result = Prism.findSequence(start, prisms)
-    expect(result.sequence).toEqual [1]
+    expect(result).toEqual [1]
 
   xit 'one prism zero hits', ->
     start = { x: 0, y: 0, angle: 0 }
     prisms = [{ id: 1, x: -10, y: 0, angle: 0 }]
     result = Prism.findSequence(start, prisms)
-    expect(result.sequence).toEqual []
+    expect(result).toEqual []
 
   xit 'going up zero hits', ->
     start = { x: 0, y: 0, angle: 90 }
@@ -27,7 +27,7 @@ describe 'Prism', ->
       { id: 2, x: 10, y: 0, angle: 0 }
     ]
     result = Prism.findSequence(start, prisms)
-    expect(result.sequence).toEqual []
+    expect(result).toEqual []
 
   xit 'going down zero hits', ->
     start = { x: 0, y: 0, angle: -90 }
@@ -37,7 +37,7 @@ describe 'Prism', ->
       { id: 3, x: -10, y: 0, angle: 0 }
     ]
     result = Prism.findSequence(start, prisms)
-    expect(result.sequence).toEqual []
+    expect(result).toEqual []
 
   xit 'going left zero hits', ->
     start = { x: 0, y: 0, angle: 180 }
@@ -47,7 +47,7 @@ describe 'Prism', ->
       { id: 1, x: 0, y: -10, angle: 0 }
     ]
     result = Prism.findSequence(start, prisms)
-    expect(result.sequence).toEqual []
+    expect(result).toEqual []
 
   xit 'negative angle', ->
     start = { x: 0, y: 0, angle: -180 }
@@ -57,13 +57,13 @@ describe 'Prism', ->
       { id: 3, x: 10, y: 0, angle: 0 }
     ]
     result = Prism.findSequence(start, prisms)
-    expect(result.sequence).toEqual []
+    expect(result).toEqual []
 
   xit 'large angle', ->
     start = { x: 0, y: 0, angle: 2340 }
     prisms = [{ id: 1, x: 10, y: 0, angle: 0 }]
     result = Prism.findSequence(start, prisms)
-    expect(result.sequence).toEqual []
+    expect(result).toEqual []
 
   xit 'upward refraction two hits', ->
     start = { x: 0, y: 0, angle: 0 }
@@ -72,7 +72,7 @@ describe 'Prism', ->
       { id: 2, x: 10, y: 0, angle: 90 }
     ]
     result = Prism.findSequence(start, prisms)
-    expect(result.sequence).toEqual [2, 1]
+    expect(result).toEqual [2, 1]
 
   xit 'downward refraction two hits', ->
     start = { x: 0, y: 0, angle: 0 }
@@ -81,7 +81,7 @@ describe 'Prism', ->
       { id: 2, x: 10, y: -10, angle: 0 }
     ]
     result = Prism.findSequence(start, prisms)
-    expect(result.sequence).toEqual [1, 2]
+    expect(result).toEqual [1, 2]
 
   xit 'same prism twice', ->
     start = { x: 0, y: 0, angle: 0 }
@@ -90,7 +90,7 @@ describe 'Prism', ->
       { id: 1, x: 20, y: 0, angle: -180 }
     ]
     result = Prism.findSequence(start, prisms)
-    expect(result.sequence).toEqual [2, 1, 2]
+    expect(result).toEqual [2, 1, 2]
 
   xit 'simple path', ->
     start = { x: 0, y: 0, angle: 0 }
@@ -101,7 +101,7 @@ describe 'Prism', ->
       { id: 4, x: 20, y: 0, angle: 0 }
     ]
     result = Prism.findSequence(start, prisms)
-    expect(result.sequence).toEqual [2, 1, 3]
+    expect(result).toEqual [2, 1, 3]
 
   xit 'multiple prisms floating point precision', ->
     start = { x: 0, y: 0, angle: -6.429 }
@@ -146,7 +146,7 @@ describe 'Prism', ->
       { id: 19, x: -13.8, y: 24.2, angle: -9.205 }
     ]
     result = Prism.findSequence(start, prisms)
-    expect(result.sequence).toEqual [
+    expect(result).toEqual [
       7, 30, 16, 28, 13, 22, 23, 10, 9, 24, 25, 38, 29, 4, 35, 21, 5, 20
       11, 1, 33, 26, 32, 6, 15, 17, 2, 14, 27, 34, 37, 31, 36, 18, 19, 8, 3
       12
@@ -233,7 +233,7 @@ describe 'Prism', ->
       { id: 19, x: 53.2, y: 20.6, angle: -87.181 }
     ]
     result = Prism.findSequence(start, prisms)
-    expect(result.sequence).toEqual [
+    expect(result).toEqual [
       43, 44, 66, 45, 52, 35, 49, 13, 3, 69, 46, 28, 20, 11, 24, 38, 19, 42
       15, 10, 63, 25, 59, 1, 6, 2, 4, 67, 22, 29, 65, 64, 12, 47, 54, 68
       23, 75, 8, 26, 18, 9, 60, 17, 31, 7, 70, 40, 5, 51, 61, 55, 57, 14
