@@ -38,6 +38,6 @@ class Prism
       y = nearest.y
       angle = (angle + nearest.angle) % 360
 
-    sequence: sequence
+    sequence
 
 module.exports = Prism
