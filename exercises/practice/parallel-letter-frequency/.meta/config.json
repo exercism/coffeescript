@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "BNAndras",
+    "CoolKatt"
+  ],
+  "files": {
+    "solution": [
+      "parallel-letter-frequency.coffee"
+    ],
+    "test": [
+      "parallel-letter-frequency.spec.coffee"
+    ],
+    "example": [
+      ".meta/example.coffee"
+    ]
+  },
+  "blurb": "Count the frequency of letters in texts using parallel computation."
+}

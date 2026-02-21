@@ -895,6 +895,14 @@
         "difficulty": 8
       },
       {
+        "slug": "parallel-letter-frequency",
+        "name": "Parallel Letter Frequency",
+        "uuid": "5b856b54-c8be-4d90-be7c-60a441625fd0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
+      },
+      {
         "slug": "minesweeper",
         "name": "Minesweeper",
         "uuid": "fe341c5e-0292-455f-93be-1ffb8f0b4b3b",
