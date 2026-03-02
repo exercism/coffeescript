@@ -958,6 +958,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
+      },
+      {
+        "slug": "split-second-stopwatch",
+        "name": "Split-Second Stopwatch",
+        "uuid": "f35052c7-02ff-4786-91d6-e1065a90847e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
       }
     ]
   },
