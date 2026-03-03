@@ -1,0 +1,28 @@
+{
+  "name": "@exercism/coffeescript",
+  "description": "Exercism exercises in CoffeeScript",
+  "author": "Katrina Owen",
+  "contributors": [
+    "Andras B Nagy <bnagyandras87@gmail.com>"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exercism/coffeescript.git",
+    "directory": "exercises/practice/hamming"
+  },
+  "devDependencies": {
+    "coffeelint": "^2.1.0",
+    "coffeescript": "^2.7.0",
+    "jasmine-node": "^3.0.0",
+    "prettier": "^2.8.8",
+    "prettier-plugin-coffeescript": "^0.1.5"
+  },
+  "scripts": {
+    "test": "jasmine-node --coffee .",
+    "lint": "coffeelint -r .",
+    "watch": "jasmine-node --coffee --autotest .",
+    "format": "prettier --write ."
+  },
+  "packageManager": "npm@9.2.0"
+}
