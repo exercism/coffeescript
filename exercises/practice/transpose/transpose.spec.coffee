@@ -6,17 +6,17 @@ describe 'Transpose', ->
     expected = ''
     expect(Transpose.transpose lines).toEqual expected
 
-  it 'two characters in a row', ->
+  xit 'two characters in a row', ->
     lines = 'A1'
     expected = "A\n1"
     expect(Transpose.transpose lines).toEqual expected
 
-  it 'two characters in a column', ->
+  xit 'two characters in a column', ->
     lines = "A\n1"
     expected = 'A1'
     expect(Transpose.transpose lines).toEqual expected
 
-  it 'simple', ->
+  xit 'simple', ->
     lines = [
       'ABC'
       '123'
@@ -28,7 +28,7 @@ describe 'Transpose', ->
     ].join '\n'
     expect(Transpose.transpose lines).toEqual expected
 
-  it 'single line', ->
+  xit 'single line', ->
     lines = 'Single line.'
     expected = [
       'S'
@@ -46,7 +46,7 @@ describe 'Transpose', ->
     ].join '\n'
     expect(Transpose.transpose lines).toEqual expected
 
-  it 'first line longer than second line', ->
+  xit 'first line longer than second line', ->
     lines = [
       'The fourth line.'
       'The fifth line.'
@@ -71,7 +71,7 @@ describe 'Transpose', ->
     ].join '\n'
     expect(Transpose.transpose lines).toEqual expected
 
-  it 'second line longer than first line', ->
+  xit 'second line longer than first line', ->
     lines = [
       'The first line.'
       'The second line.'
@@ -96,7 +96,7 @@ describe 'Transpose', ->
     ].join '\n'
     expect(Transpose.transpose lines).toEqual expected
 
-  it 'mixed line length', ->
+  xit 'mixed line length', ->
     lines = [
       'The longest line.'
       'A long line.'
@@ -124,7 +124,7 @@ describe 'Transpose', ->
     ].join '\n'
     expect(Transpose.transpose lines).toEqual expected
 
-  it 'square', ->
+  xit 'square', ->
     lines = [
       'HEART'
       'EMBER'
@@ -141,7 +141,7 @@ describe 'Transpose', ->
     ].join '\n'
     expect(Transpose.transpose lines).toEqual expected
 
-  it 'rectangle', ->
+  xit 'rectangle', ->
     lines = [
       'FRACTURE'
       'OUTLINED'
@@ -160,7 +160,7 @@ describe 'Transpose', ->
     ].join '\n'
     expect(Transpose.transpose lines).toEqual expected
 
-  it 'triangle', ->
+  xit 'triangle', ->
     lines = [
       'T'
       'EE'
@@ -179,7 +179,7 @@ describe 'Transpose', ->
     ].join '\n'
     expect(Transpose.transpose lines).toEqual expected
 
-  it 'jagged triangle', ->
+  xit 'jagged triangle', ->
     lines = [
       '11'
       '2'
