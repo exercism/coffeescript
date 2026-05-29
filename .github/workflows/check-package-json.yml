@@ -7,14 +7,14 @@ on:
 
 jobs:
   check-package-json:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      
+      - uses: actions/checkout@900f2210b1d28bbbd0bd22d17926b9e224e8f231
+
       - name: Use Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@0355742c943ddb13ca8a6b700f824231caa91e75
         with:
-          node-version: 18
+          node-version: 24
 
       - name: Run sync script
         run: node bin/sync-package-json.js
