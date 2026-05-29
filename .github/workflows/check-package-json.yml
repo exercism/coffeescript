@@ -1,4 +1,4 @@
-name: Check package.json Sync
+name: Check package.json
 
 on:
   push:
@@ -15,6 +15,7 @@ jobs:
         uses: actions/setup-node@0355742c943ddb13ca8a6b700f824231caa91e75
         with:
           node-version: 24
+          package-manager-cache: false
 
       - name: Run sync script
         run: node bin/sync-package-json.js
