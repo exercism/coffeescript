@@ -45,7 +45,7 @@ describe 'Change', =>
 
   xit 'error testing for change smaller than the smallest of coins', =>
     expect ->
-        Change.findFewestCoins [5, 10], 3
+      Change.findFewestCoins [5, 10], 3
     .toThrow new Error "can't make target with given coins"
 
   xit 'error testing if no combination can add up to target', =>

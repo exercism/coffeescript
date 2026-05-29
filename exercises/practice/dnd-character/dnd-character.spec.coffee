@@ -67,11 +67,11 @@ describe 'D&D Character', ->
         character.charisma
       ]
       for ability in abilities
-          expect(ability in [3..18]).toBeTrue
+        expect(ability in [3..18]).toBeTrue
       expect(character.hitpoints).toEqual (10 + character.modifier(character.constitution))
 
     xit 'each ability is only calculated once', ->
-        abilities =  [
+      abilities =  [
             character.strength
             character.dexterity
             character.constitution
@@ -79,5 +79,5 @@ describe 'D&D Character', ->
             character.wisdom
             character.charisma
         ]
-        for ability in abilities
-            expect(ability).toEqual ability
+      for ability in abilities
+        expect(ability).toEqual ability
