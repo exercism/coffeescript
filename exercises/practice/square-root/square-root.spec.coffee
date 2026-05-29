@@ -1,4 +1,3 @@
-
 SquareRoot = require './square-root'
 
 describe 'SquareRoot', ->

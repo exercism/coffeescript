@@ -1,4 +1,3 @@
-
 IsbnVerifier = require './isbn-verifier'
 
 describe  'ISBN Verifier', ->

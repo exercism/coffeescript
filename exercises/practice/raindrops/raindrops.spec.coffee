@@ -1,4 +1,3 @@
-
 Raindrops = require './raindrops'
 
 describe 'Raindrops', ->
