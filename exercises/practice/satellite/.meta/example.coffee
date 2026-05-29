@@ -2,19 +2,19 @@ class Satellite
   @treeFromTraversals: (preorder, inorder) ->
     if preorder.length != inorder.length
         throw new Error 'traversals must have the same length'
-    
+
     uniquePreorder = new Set preorder
     uniqueInorder = new Set inorder
 
     if uniquePreorder.size != preorder.length or uniqueInorder.size != inorder.length
         throw new Error 'traversals must contain unique items'
-    
+
     preorderSorted = preorder.slice().sort().join(',')
     inorderSorted = inorder.slice().sort().join(',')
 
     if preorderSorted != inorderSorted
         throw new Error 'traversals must have the same elements'
-    
+
     if preorder.length == 0
         return {}
 

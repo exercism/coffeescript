@@ -1,4 +1,4 @@
-# these values are the first day of the month that 
+# these values are the first day of the month that
 # qualifies for the "week", except Last which is a sentinel value
 Weeks = {
   First: 1

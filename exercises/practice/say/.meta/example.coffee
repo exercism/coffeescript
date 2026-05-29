@@ -46,7 +46,7 @@ class Say
     if word is ''
       return ''
     if index == 0
-      return word    
+      return word
     if index == 1
       return "#{word} thousand"
     if index == 2

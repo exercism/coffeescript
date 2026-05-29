@@ -26,7 +26,7 @@ describe 'Leap', ->
     expect(result).toEqual false
 
   xit 'year divisible by 400 is leap year', ->
-    result = Leap.leapYear 2000 
+    result = Leap.leapYear 2000
     expect(result).toEqual true
 
   xit 'year divisible by 400 but not by 125 is still a leap year', ->

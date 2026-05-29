@@ -1,7 +1,7 @@
 gamestate = (board) ->
   xCount = 0
   oCount = 0
-  
+
   for row in board
     for cell in row
       if cell == 'X'
@@ -11,7 +11,7 @@ gamestate = (board) ->
 
   if oCount > xCount
     throw new Error 'Wrong turn order: O started'
-  
+
   if xCount > oCount + 1
     throw new Error 'Wrong turn order: X went twice'
 
@@ -20,12 +20,12 @@ gamestate = (board) ->
 
   if xWon and oWon
     throw new Error 'Impossible board: game should have ended after the game was won'
-  
+
   if xWon
     if xCount == oCount
       throw new Error 'Impossible board: game should have ended after the game was won'
     return 'win'
-    
+
   if oWon
     if xCount > oCount
       throw new Error 'Impossible board: game should have ended after the game was won'

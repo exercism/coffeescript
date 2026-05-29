@@ -51,11 +51,11 @@ class SplitSecondStopwatch
     h = Math.floor totalSeconds / 3600
     m = Math.floor (totalSeconds % 3600) / 60
     s = totalSeconds % 60
-    
+
     cleaned = (num) ->
       str = num.toString()
       if str.length < 2 then "0#{str}" else str
-    
+
     "#{cleaned h}:#{cleaned m}:#{cleaned s}"
 
 module.exports = SplitSecondStopwatch

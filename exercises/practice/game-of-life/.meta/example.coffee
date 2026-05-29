@@ -14,14 +14,14 @@ class GameOfLife
             for newRow in [row-1..row+1]
                 for newCol in [col-1..col+1]
                     if (newRow == row && newCol == col)
-                        continue 
+                        continue
                     if newRow < 0 || newCol < 0 || newRow >= rows || newCol >= cols
                         continue
                     liveNeighbors += @matrix[newRow][newCol]
 
             liveNeighbors
 
-            cell = @matrix[row][col]            
+            cell = @matrix[row][col]
             # Apply the rules
             if cell == 1
                 if liveNeighbors < 2 || liveNeighbors > 3

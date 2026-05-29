@@ -4,7 +4,7 @@ describe 'RelativeDistance', ->
   it 'Direct parent-child relation', ->
     familyTree = {
       'Vera': ['Tomoko']
-      'Tomoko': ['Aditi']   
+      'Tomoko': ['Aditi']
     }
     results = RD.degreesOfSeparation familyTree, 'Vera', 'Tomoko'
     expect(results).toEqual 1

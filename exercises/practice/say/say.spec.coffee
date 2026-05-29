@@ -9,7 +9,7 @@ describe 'Say', ->
 
   xit 'fourteen', ->
     expect(Say.say 14).toEqual 'fourteen'
-  
+
   xit 'twenty', ->
     expect(Say.say 20).toEqual 'twenty'
 
@@ -50,7 +50,7 @@ describe 'Say', ->
     expect(Say.say 1000000000).toEqual 'one billion'
 
   xit 'a big number', ->
-    expect(Say.say 987654321123).toEqual 'nine hundred eighty-seven billion ' + 
+    expect(Say.say 987654321123).toEqual 'nine hundred eighty-seven billion ' +
                                          'six hundred fifty-four million ' +
                                          'three hundred twenty-one thousand ' +
                                          'one hundred twenty-three'

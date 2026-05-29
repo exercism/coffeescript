@@ -98,7 +98,7 @@ describe 'Anagram', ->
     @addMatchers
       toContainSameValues: (expected) ->
         if not @actual? or !(Array.isArray(@actual) || @actual instanceof Set)
-          @message = -> "Anagram::match should return an array or set but instead returned #{JSON.stringify @actual}." 
+          @message = -> "Anagram::match should return an array or set but instead returned #{JSON.stringify @actual}."
           return false
 
         matches = Array.from @actual

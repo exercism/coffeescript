@@ -38,7 +38,7 @@ class Yacht
         return 4 * 6
     else if category == 'little straight'
       sorted = unique(dice).sort()
-      if isEqual(sorted, [1, 2, 3, 4, 5]) 
+      if isEqual(sorted, [1, 2, 3, 4, 5])
         return 30
     else if category == 'big straight'
       sorted = unique(dice).sort()
