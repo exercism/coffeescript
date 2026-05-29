@@ -1,13 +1,13 @@
 class HighScores
   constructor: (@scores) ->
 
-  latest: () ->
+  latest: ->
     @scores[@scores.length - 1]
 
-  personalBest: () ->
+  personalBest: ->
     Math.max.apply null, @scores
 
-  personalTopThree: () ->
+  personalTopThree: ->
     @scores.slice()
            .sort((a, b) => b - a)
            .slice 0, 3

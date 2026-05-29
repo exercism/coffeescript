@@ -15,7 +15,7 @@ class Allergies
   allergicTo: (allergen) ->
     @list().some (candidate) -> candidate == allergen
 
-  list: () ->
+  list: ->
     ALLERGENS.filter (_, i) => @score & (1 << i)
 
 module.exports = Allergies

@@ -1,6 +1,6 @@
 class GameOfLife
   constructor: (matrix) ->
 
-  tick: () ->
+  tick: ->
 
 module.exports = GameOfLife

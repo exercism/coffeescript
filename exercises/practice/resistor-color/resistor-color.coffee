@@ -1,6 +1,6 @@
 class ResistorColor
   @colorCode: (color) ->
 
-  @colors: () ->
+  @colors: ->
 
 module.exports = ResistorColor

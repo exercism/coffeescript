@@ -1,7 +1,7 @@
 class Clock
   constructor: (hour, minute) ->
 
-  toString: () ->
+  toString: ->
 
   plus: (minutes) ->
 

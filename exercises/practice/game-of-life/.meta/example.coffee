@@ -1,7 +1,7 @@
 class GameOfLife
   constructor: (@matrix) ->
 
-  tick: () ->
+  tick: ->
     return if not @matrix.length
 
     rows = @matrix.length

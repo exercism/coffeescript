@@ -1,10 +1,10 @@
 class HighScores
   constructor: (scores) ->
 
-  latest: () ->
+  latest: ->
 
-  personalBest: () ->
+  personalBest: ->
 
-  personalTopThree: () ->
+  personalTopThree: ->
 
 module.exports = HighScores

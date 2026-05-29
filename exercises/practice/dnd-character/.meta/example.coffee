@@ -1,5 +1,5 @@
 class DndCharacter
-  constructor: () ->
+  constructor: ->
     @strength = @ability()
     @dexterity = @ability()
     @constitution = @ability()
@@ -11,7 +11,7 @@ class DndCharacter
   modifier: (score) ->
     (score - 10) // 2
 
-  ability: () ->
+  ability: ->
     rolls = [0,0,0,0]
     .map((a) -> Math.floor(Math.random() * 6) + 1)
     .sort((a, b) -> a - b)[1..]

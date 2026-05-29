@@ -1,5 +1,5 @@
 class GradeSchool
-  constructor: () ->
+  constructor: ->
     @students = {}
 
   add: (student, level) ->
@@ -16,7 +16,7 @@ class GradeSchool
             result.push student
     result.sort()
 
-  roster: () ->
+  roster: ->
     result = []
     grades = (g for _, g of @students).sort()
     for g in grades.unique()

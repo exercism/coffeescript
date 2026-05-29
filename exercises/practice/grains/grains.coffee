@@ -1,6 +1,6 @@
 class Grains
   @square: (number) ->
 
-  @total: () ->
+  @total: ->
 
 module.exports = Grains

@@ -1,10 +1,10 @@
 class GradeSchool
-  constructor: () ->
+  constructor: ->
 
   add: (student, level) ->
 
   grade: (level) ->
 
-  roster: () ->
+  roster: ->
 
 module.exports = GradeSchool
