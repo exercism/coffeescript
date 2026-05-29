@@ -1,0 +1,22 @@
+{
+  "name": "@exercism/coffeescript",
+  "description": "Exercism exercises in CoffeeScript",
+  "author": "Katrina Owen",
+  "contributors": [
+    "Andras B Nagy"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exercism/coffeescript.git"
+  },
+  "devDependencies": {
+    "coffeescript": "^2.7.0",
+    "jasmine-node": "^3.0.0"
+  },
+  "scripts": {
+    "test": "jasmine-node --coffee .",
+    "watch": "jasmine-node --coffee --autotest ."
+  },
+  "packageManager": "npm@11.13.0"
+}
