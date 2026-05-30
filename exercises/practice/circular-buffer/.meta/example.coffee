@@ -7,7 +7,7 @@ class CircularBuffer
       throw new Error "full buffer"
     @data.push value
 
-  read: () ->
+  read: ->
     if !@data.length
       throw new Error "empty buffer"
     [head, @data...] = @data
@@ -18,7 +18,7 @@ class CircularBuffer
       @read()
     @write value
 
-  clear: () ->
+  clear: ->
     @data = []
 
 module.exports = CircularBuffer

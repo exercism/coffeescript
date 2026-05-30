@@ -1,5 +1,5 @@
 class Strain
-  @keep: (lst, predicate) -> 
+  @keep: (lst, predicate) ->
 
   @discard: (lst, predicate) ->
 

@@ -98,11 +98,13 @@ describe 'Anagram', ->
     @addMatchers
       toContainSameValues: (expected) ->
         if not @actual? or !(Array.isArray(@actual) || @actual instanceof Set)
-          @message = -> "Anagram::match should return an array or set but instead returned #{JSON.stringify @actual}." 
+          @message = -> "Anagram::match should return an array or set but instead returned #{JSON.stringify @actual}."
           return false
 
         matches = Array.from @actual
         if matches.length != expected.length or not matches.every((value) -> expected.includes value)
-          @message = -> "Expected returned values (#{matches.join(', ')}) to be equal to expected values (#{expected.join(', ')})."
+          @message = ->
+            "Expected returned values (#{matches.join(', ')}) to be equal to expected values " +
+              "(#{expected.join(', ')})."
           return false
         true

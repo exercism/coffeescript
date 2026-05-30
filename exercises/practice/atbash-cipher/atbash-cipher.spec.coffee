@@ -23,7 +23,8 @@ describe 'Atbash', ->
     expect(Atbash.encode('Truth is fiction.')).toBe 'gifgs rhurx grlm'
 
   xit 'encodes all the things', ->
-    expect(Atbash.encode('The quick brown fox jumps over the lazy dog.')).toBe 'gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt'
+    phrase = 'The quick brown fox jumps over the lazy dog.'
+    expect(Atbash.encode(phrase)).toBe 'gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt'
 
   xit 'decodes exercism', ->
     expect(Atbash.decode('vcvix rhn')).toBe 'exercism'

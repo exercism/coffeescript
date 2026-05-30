@@ -15,7 +15,7 @@ class ResistorColor
   @colorCode: (color) ->
     @colorBands.indexOf(color)
 
-  @colors: () ->
+  @colors: ->
     @colorBands
 
 module.exports = ResistorColor

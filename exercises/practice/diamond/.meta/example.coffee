@@ -2,14 +2,14 @@ class Diamond
   @rows: (letter) ->
     return 'A' if letter is 'A'
 
-    start = 'A'.charCodeAt 0 
+    start = 'A'.charCodeAt 0
     end = letter.charCodeAt 0
     size = end - start + 1
     diamond = []
 
     # Down to middle of diamond
     for i in [0...size]
-      currentChar = String.fromCharCode start + i 
+      currentChar = String.fromCharCode start + i
       outer = ' '.repeat size - 1 - i
       if i is 0
         line = outer + currentChar + outer

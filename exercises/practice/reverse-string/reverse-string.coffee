@@ -1,4 +1,4 @@
-class ReverseString  
-  @reverse: (str) -> 
+class ReverseString
+  @reverse: (str) ->
 
 module.exports = ReverseString

@@ -3,6 +3,6 @@ class Allergies
 
   allergicTo: (candidate) ->
 
-  list: () ->
+  list: ->
 
 module.exports = Allergies

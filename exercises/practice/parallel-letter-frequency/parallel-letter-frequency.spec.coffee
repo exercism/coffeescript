@@ -69,7 +69,11 @@ describe 'Parallel Letter Frequency', ->
 
   xit 'combination of lower- and uppercase letters, punctuation and white space', testAsync ->
     texts = [
-      "There, peeping among the cloud-wrack above a dark tower high up in the mountains, Sam saw a white star twinkle for a while. The beauty of it smote his heart, as he looked up out of the forsaken land, and hope returned to him. For like a shaft, clear and cold, the thought pierced him that in the end, the shadow was only a small and passing thing: there was light and high beauty forever beyond its reach."
+      """There, peeping among the cloud-wrack above a dark tower high up in the mountains, Sam saw a white
+star twinkle for a while. The beauty of it smote his heart, as he looked up out of the forsaken
+land, and hope returned to him. For like a shaft, clear and cold, the thought pierced him that in
+the end, the shadow was only a small and passing thing: there was light and high beauty forever
+beyond its reach."""
     ]
     expected = {
       "a": 32, "b": 4, "c": 6, "d": 14, "e": 37, "f": 7, "g": 8, "h": 29, "i": 19,
@@ -193,34 +197,55 @@ they would simply have to take it, this advantage, and add it to the list. But t
 advantage does not fall under any classification and is not in place in any list. I have a friend for instance ...
 Ech! gentlemen, but of course he is your friend, too; and indeed there is no one, no one to whom he is not a friend!"""
       """Yes, but here I come to a stop! Gentlemen, you must excuse me for being over-philosophical;
-it's the result of forty years underground! Allow me to indulge my fancy. You see, gentlemen, reason is an excellent thing,
+it's the result of forty years underground! Allow me to indulge my fancy. You see, gentlemen, reason is an
+excellent thing,
 there's no disputing that, but reason is nothing but reason and satisfies only the rational side of man's nature,
 while will is a manifestation of the whole life, that is, of the whole human life including reason and all the impulses.
-And although our life, in this manifestation of it, is often worthless, yet it is life and not simply extracting square roots.
-Here I, for instance, quite naturally want to live, in order to satisfy all my capacities for life, and not simply my capacity
-for reasoning, that is, not simply one twentieth of my capacity for life. What does reason know? Reason only knows what it has
+And although our life, in this manifestation of it, is often worthless, yet it is life and not simply extracting
+square roots.
+Here I, for instance, quite naturally want to live, in order to satisfy all my capacities for life, and not simply
+my capacity
+for reasoning, that is, not simply one twentieth of my capacity for life. What does reason know? Reason only knows
+what it has
 succeeded in learning (some things, perhaps, it will never learn; this is a poor comfort, but why not say so frankly?)
-and human nature acts as a whole, with everything that is in it, consciously or unconsciously, and, even it if goes wrong, it lives.
-I suspect, gentlemen, that you are looking at me with compassion; you tell me again that an enlightened and developed man,
-such, in short, as the future man will be, cannot consciously desire anything disadvantageous to himself, that that can be proved mathematically.
-I thoroughly agree, it can - by mathematics. But I repeat for the hundredth time, there is one case, one only, when man may consciously, purposely,
-desire what is injurious to himself, what is stupid, very stupid - simply in order to have the right to desire for himself even what is very stupid
-and not to be bound by an obligation to desire only what is sensible. Of course, this very stupid thing, this caprice of ours, may be in reality,
-gentlemen, more advantageous for us than anything else on earth, especially in certain cases. And in particular it may be more advantageous than
-any advantage even when it does us obvious harm, and contradicts the soundest conclusions of our reason concerning our advantage -
-for in any circumstances it preserves for us what is most precious and most important - that is, our personality, our individuality.
-Some, you see, maintain that this really is the most precious thing for mankind; choice can, of course, if it chooses, be in agreement
-with reason; and especially if this be not abused but kept within bounds. It is profitable and some- times even praiseworthy.
-But very often, and even most often, choice is utterly and stubbornly opposed to reason ... and ... and ... do you know that that,
-too, is profitable, sometimes even praiseworthy? Gentlemen, let us suppose that man is not stupid. (Indeed one cannot refuse to suppose that,
-if only from the one consideration, that, if man is stupid, then who is wise?) But if he is not stupid, he is monstrously ungrateful!
-Phenomenally ungrateful. In fact, I believe that the best definition of man is the ungrateful biped. But that is not all, that is not his worst defect;
-his worst defect is his perpetual moral obliquity, perpetual - from the days of the Flood to the Schleswig-Holstein period."""
+and human nature acts as a whole, with everything that is in it, consciously or unconsciously, and, even it if goes
+wrong, it lives.
+I suspect, gentlemen, that you are looking at me with compassion; you tell me again that an enlightened and
+developed man,
+such, in short, as the future man will be, cannot consciously desire anything disadvantageous to himself, that that
+can be proved mathematically.
+I thoroughly agree, it can - by mathematics. But I repeat for the hundredth time, there is one case, one only, when
+man may consciously, purposely,
+desire what is injurious to himself, what is stupid, very stupid - simply in order to have the right to desire for
+himself even what is very stupid
+and not to be bound by an obligation to desire only what is sensible. Of course, this very stupid thing, this
+caprice of ours, may be in reality,
+gentlemen, more advantageous for us than anything else on earth, especially in certain cases. And in particular it
+may be more advantageous than
+any advantage even when it does us obvious harm, and contradicts the soundest conclusions of our reason concerning
+our advantage -
+for in any circumstances it preserves for us what is most precious and most important - that is, our personality,
+our individuality.
+Some, you see, maintain that this really is the most precious thing for mankind; choice can, of course, if it
+chooses, be in agreement
+with reason; and especially if this be not abused but kept within bounds. It is profitable and some- times even
+praiseworthy.
+But very often, and even most often, choice is utterly and stubbornly opposed to reason ... and ... and ... do you
+know that that,
+too, is profitable, sometimes even praiseworthy? Gentlemen, let us suppose that man is not stupid. (Indeed one
+cannot refuse to suppose that,
+if only from the one consideration, that, if man is stupid, then who is wise?) But if he is not stupid, he is
+monstrously ungrateful!
+Phenomenally ungrateful. In fact, I believe that the best definition of man is the ungrateful biped. But that is
+not all, that is not his worst defect;
+his worst defect is his perpetual moral obliquity, perpetual - from the days of the Flood to the Schleswig-Holstein
+period."""
     ]
     expected = {
       "a": 845, "b": 155, "c": 278, "d": 359, "e": 1143, "f": 222, "g": 187, "h": 507,
       "i": 791, "j": 12, "k": 67, "l": 423, "m": 288, "n": 833, "o": 791, "p": 197,
-      "q": 8, "r": 432, "s": 700, "t": 1043, "u": 325, "v": 111, "w": 223, "x": 7, "y": 251
+      "q": 8, "r": 432, "s": 700, "t": 1043, "u": 325, "v": 111,
+      "w": 223, "x": 7, "y": 251
     }
     PLF.parallelLetterFrequency(texts).then (result) ->
       expect(result).toEqual expected

@@ -50,7 +50,7 @@ class Camicia
             pile = []
             totalTricks++
             currentDebt = 0
-            
+
             if handA.length == 0 or handB.length == 0
                return { status: 'finished', tricks: totalTricks, cards: cardsPlayed }
 

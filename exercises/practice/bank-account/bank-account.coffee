@@ -1,11 +1,11 @@
 class BankAccount
   constructor: (args) ->
 
-  open: () ->
+  open: ->
 
-  close: () ->
+  close: ->
 
-  balance: () ->
+  balance: ->
 
   deposit: (args) ->
 

@@ -48,7 +48,7 @@ class PalindromeProducts
       factors: resultProducts
     }
 
-  isPalindrome: (number) -> 
+  isPalindrome: (number) ->
     number.toString() is number.toString().split('').reverse().join('')
 
 module.exports = PalindromeProducts

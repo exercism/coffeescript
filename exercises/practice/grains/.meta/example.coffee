@@ -5,6 +5,6 @@ class Grains
 
     Math.pow(2, number - 1)
 
-  @total: () ->
+  @total: ->
     Math.pow(2, 64) - 1
 module.exports = Grains

@@ -3,10 +3,10 @@ class CircularBuffer
 
   write: (value) ->
 
-  read: () ->
+  read: ->
 
   overwrite: (value) ->
 
-  clear: () ->
+  clear: ->
 
 module.exports = CircularBuffer

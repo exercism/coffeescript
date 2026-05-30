@@ -1,4 +1,4 @@
-class PascalsTriangle  
+class PascalsTriangle
   rows: (num) ->
     triangle = []
     for i in [0...num]

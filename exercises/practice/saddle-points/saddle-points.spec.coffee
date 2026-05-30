@@ -5,7 +5,7 @@ describe 'SaddlePoints', ->
     matrix = [
       [9, 8, 7]
       [5, 3, 2]
-      [6, 6, 7]]  
+      [6, 6, 7]]
     results = SaddlePoints matrix
     expect(results.sort()).toEqual [{row: 2, column: 1}]
 
@@ -66,11 +66,11 @@ describe 'SaddlePoints', ->
       [1]]
     results = SaddlePoints matrix
     expect(results.sort()).toEqual [{row: 2, column: 1}
-                                    {row: 4, column: 1}] 
-  
+                                    {row: 4, column: 1}]
+
   xit 'can identify that saddle points in a single row matrix are those with the maximum value', ->
     matrix = [[2, 5, 3, 5]]
     results = SaddlePoints matrix
     expect(results.sort()).toEqual [{row: 1, column: 2}
                                     {row: 1, column: 4}]
-                            
+

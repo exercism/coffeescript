@@ -3,8 +3,6 @@ class SpaceAge
 
   @onMercury: (seconds) ->
 
-  @onMercury: (seconds) ->
-
   @onVenus: (seconds) ->
 
   @onMars: (seconds) ->

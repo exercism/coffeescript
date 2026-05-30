@@ -10,7 +10,7 @@ class Knapsack
     for i in [1 .. items.length]
       {weight, value} = items[i - 1]
       for w in [0 .. maximumWeight]
-        if weight > w 
+        if weight > w
           m[i][w] = m[i - 1][w]
         else
           m[i][w] = Math.max m[i - 1][w], m[i - 1][w - weight] + value

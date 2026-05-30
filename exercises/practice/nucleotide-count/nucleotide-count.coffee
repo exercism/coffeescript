@@ -1,6 +1,6 @@
 class NucleotideCount
   constructor: (args) ->
-    @nucleotideCounts =
+    @nucleotideCounts = {}
 
   count: (args) ->
 

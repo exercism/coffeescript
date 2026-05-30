@@ -1,61 +1,61 @@
 Camicia = require './camicia'
 
-describe 'Camicia', =>
-  it 'two cards, one trick', =>
+describe 'Camicia', ->
+  it 'two cards, one trick', ->
     playerA = ['2']
     playerB = ['3']
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 2, tricks: 1}
 
-  xit 'three cards, one trick', =>
+  xit 'three cards, one trick', ->
     playerA = ['2', '4']
     playerB = ['3']
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 3, tricks: 1}
 
-  xit 'four cards, one trick', =>
+  xit 'four cards, one trick', ->
     playerA = ['2', '4']
     playerB = ['3', '5', '6']
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 4, tricks: 1}
 
-  xit 'the ace reigns supreme', =>
+  xit 'the ace reigns supreme', ->
     playerA = ['2', 'A']
     playerB = ['3', '4', '5', '6', '7']
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 7, tricks: 1}
 
-  xit 'the king beats ace', =>
+  xit 'the king beats ace', ->
     playerA = ['2', 'A']
     playerB = ['3', '4', '5', '6', 'K']
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 7, tricks: 1}
 
-  xit 'the queen seduces the king', =>
+  xit 'the queen seduces the king', ->
     playerA = ['2', 'A', '7', '8', 'Q']
     playerB = ['3', '4', '5', '6', 'K']
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 10, tricks: 1}
 
-  xit 'the jack betrays the queen', =>
+  xit 'the jack betrays the queen', ->
     playerA = ['2', 'A', '7', '8', 'Q']
     playerB = ['3', '4', '5', '6', 'K', '9', 'J']
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 12, tricks: 1}
 
-  xit 'the 10 just wants to put on a show', =>
+  xit 'the 10 just wants to put on a show', ->
     playerA = ['2', 'A', '7', '8', 'Q', '10']
     playerB = ['3', '4', '5', '6', 'K', '9', 'J']
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 13, tricks: 1}
 
-  xit 'simple loop with decks of 3 cards', =>
+  xit 'simple loop with decks of 3 cards', ->
     playerA = ['J', '2', '3']
     playerB = ['4', 'J', '5']
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'loop', cards: 8, tricks: 3}
 
-  xit 'the story is starting to get a bit complicated', =>
+  xit 'the story is starting to get a bit complicated', ->
     playerA = [
       '2', '6', '6', 'J', '4', 'K', 'Q', '10', 'K', 'J'
       'Q', '2', '3', 'K', '5', '6', 'Q', 'Q', 'A', 'A'
@@ -97,25 +97,25 @@ describe 'Camicia', =>
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 361, tricks: 1}
 
-  xit 'two tricks', =>
+  xit 'two tricks', ->
     playerA = ['J']
     playerB = ['3', 'J']
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 5, tricks: 2}
 
-  xit 'more tricks', =>
+  xit 'more tricks', ->
     playerA = ['J', '2', '4']
     playerB = ['3', 'J', 'A']
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 12, tricks: 4}
 
-  xit 'simple loop with decks of 4 cards', =>
+  xit 'simple loop with decks of 4 cards', ->
     playerA = ['2', '3', 'J', '6']
     playerB = ['K', '5', 'J', '7']
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'loop', cards: 16, tricks: 4}
 
-  xit 'easy card combination', =>
+  xit 'easy card combination', ->
     playerA = [
       '4', '8', '7', '5', '4', '10', '3', '9', '7', '3'
       '10', '10', '6', '8', '2', '8', '5', '4', '5', '9'
@@ -129,7 +129,7 @@ describe 'Camicia', =>
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 40, tricks: 4}
 
-  xit 'easy card combination, inverted decks', =>
+  xit 'easy card combination, inverted decks', ->
     playerA = [
       '3', '3', '5', '7', '3', '2', '10', '7', '6', '7'
       'A', 'A', 'A', 'A', 'K', 'K', 'K', 'K', 'Q', 'Q'
@@ -143,7 +143,7 @@ describe 'Camicia', =>
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 40, tricks: 4}
 
-  xit 'mirrored decks', =>
+  xit 'mirrored decks', ->
     playerA = [
       '2', 'A', '3', 'A', '3', 'K', '4', 'K', '2', 'Q'
       '2', 'Q', '10', 'J', '5', 'J', '6', '10', '2', '9'
@@ -157,7 +157,7 @@ describe 'Camicia', =>
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 59, tricks: 4}
 
-  xit 'opposite decks', =>
+  xit 'opposite decks', ->
     playerA = [
       '4', 'A', '9', 'A', '4', 'K', '9', 'K', '6', 'Q'
       '8', 'Q', '8', 'J', '10', 'J', '9', '8', '4', '6'
@@ -171,7 +171,7 @@ describe 'Camicia', =>
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 151, tricks: 21}
 
-  xit 'random decks #1', =>
+  xit 'random decks #1', ->
     playerA = [
       'K', '10', '9', '8', 'J', '8', '6', '9', '7', 'A'
       'K', '5', '4', '4', 'J', '5', 'J', '4', '3', '5'
@@ -185,7 +185,7 @@ describe 'Camicia', =>
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 542, tricks: 76}
 
-  xit 'random decks #2', =>
+  xit 'random decks #2', ->
     playerA = [
       '8', 'A', '4', '8', '5', 'Q', 'J', '2', '6', '2'
       '9', '7', 'K', 'A', '8', '10', 'K', '8', '10', '9'
@@ -199,7 +199,7 @@ describe 'Camicia', =>
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 327, tricks: 42}
 
-  xit 'Kleber 1999', =>
+  xit 'Kleber 1999', ->
     playerA = [
       '4', '8', '9', 'J', 'Q', '8', '5', '5', 'K', '2'
       'A', '9', '8', '5', '10', 'A', '4', 'J', '3', 'K'
@@ -213,7 +213,7 @@ describe 'Camicia', =>
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 5790, tricks: 805}
 
-  xit 'Collins 2006', =>
+  xit 'Collins 2006', ->
     playerA = [
       'A', '8', 'Q', 'K', '9', '10', '3', '7', '4', '2'
       'Q', '3', '2', '10', '9', 'K', 'A', '8', '7', '7'
@@ -227,7 +227,7 @@ describe 'Camicia', =>
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 6913, tricks: 960}
 
-  xit 'Mann and Wu 2007', =>
+  xit 'Mann and Wu 2007', ->
     playerA = [
       'K', '2', 'K', 'K', '3', '3', '6', '10', 'K', '6'
       'A', '2', '5', '5', '7', '9', 'J', 'A', 'A', '3'
@@ -241,7 +241,7 @@ describe 'Camicia', =>
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 7157, tricks: 1007}
 
-  xit 'Nessler 2012', =>
+  xit 'Nessler 2012', ->
     playerA = [
       '10', '3', '6', '7', 'Q', '2', '9', '8', '2', '8'
       '4', 'A', '10', '6', 'K', '2', '10', 'A', '5', 'A'
@@ -255,7 +255,7 @@ describe 'Camicia', =>
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 7207, tricks: 1015}
 
-  xit 'Anderson 2013', =>
+  xit 'Anderson 2013', ->
     playerA = [
       '6', '7', 'A', '3', 'Q', '3', '5', 'J', '3', '2'
       'J', '7', '4', '5', 'Q', '10', '5', 'A', 'J', '2'
@@ -269,7 +269,7 @@ describe 'Camicia', =>
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 7225, tricks: 1016}
 
-  xit 'Rucklidge 2014', =>
+  xit 'Rucklidge 2014', ->
     playerA = [
       '8', 'J', '2', '9', '4', '4', '5', '8', 'Q', '3'
       '9', '3', '6', '2', '8', 'A', 'A', 'A', '9', '4'
@@ -283,7 +283,7 @@ describe 'Camicia', =>
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 7959, tricks: 1122}
 
-  xit 'Nessler 2021', =>
+  xit 'Nessler 2021', ->
     playerA = [
       '7', '2', '3', '4', 'K', '9', '6', '10', 'A', '8'
       '9', 'Q', '7', 'A', '4', '8', 'J', 'J', 'A', '4'
@@ -297,7 +297,7 @@ describe 'Camicia', =>
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 7972, tricks: 1106}
 
-  xit 'Nessler 2022', =>
+  xit 'Nessler 2022', ->
     playerA = [
       '2', '10', '10', 'A', 'J', '3', '8', 'Q', '2', '5'
       '5', '5', '9', '2', '4', '3', '10', 'Q', 'A', 'K'
@@ -311,7 +311,7 @@ describe 'Camicia', =>
     results = Camicia.simulateGame playerA, playerB
     expect(results).toEqual {status: 'finished', cards: 8344, tricks: 1164}
 
-  xit 'Casella 2024, first infinite game found', =>
+  xit 'Casella 2024, first infinite game found', ->
     playerA = [
       '2', '8', '4', 'K', '5', '2', '3', 'Q', '6', 'K'
       'Q', 'A', 'J', '3', '5', '9', '8', '3', 'A', 'A'

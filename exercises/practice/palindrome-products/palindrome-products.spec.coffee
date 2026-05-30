@@ -63,11 +63,11 @@ describe 'PalindromeProducts', ->
 
   xit 'error result for smallest if min is more than max', ->
     palindromes = new PalindromeProducts({ maxFactor: 1, minFactor: 10000 })
-    expect(() -> palindromes.smallest()).toThrow(new Error('min must be <= max'))
+    expect(-> palindromes.smallest()).toThrow(new Error('min must be <= max'))
 
   xit 'error result for largest if min is more than max', ->
     palindromes = new PalindromeProducts({ maxFactor: 1, minFactor: 2 })
-    expect(() -> palindromes.largest()).toThrow(new Error('min must be <= max'))
+    expect(-> palindromes.largest()).toThrow(new Error('min must be <= max'))
 
   xit 'smallest product does not use the smallest factor', ->
     palindromes = new PalindromeProducts({ maxFactor: 4000, minFactor: 3215 })
