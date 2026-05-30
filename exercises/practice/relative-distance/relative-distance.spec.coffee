@@ -148,7 +148,8 @@ describe 'RelativeDistance', ->
     results = RD.degreesOfSeparation familyTree, 'Lucia', 'Jun'
     expect(results).toEqual 14
 
-  xit 'Complex graph, some shortcuts, cross-down and cross-up, cousins several times removed, with unrelated family tree', ->
+  xit 'Complex graph, some shortcuts, cross-down and cross-up, cousins several times removed, ' +
+      'with unrelated family tree', ->
     familyTree = {
       'Mina': ['Viktor', 'Wang']
       'Olga': ['Yuki']

@@ -44,7 +44,9 @@ describe 'Satellite', ->
   xit 'Reject inconsistent traversals of same length', ->
     preorder = ['x', 'y', 'z']
     inorder = ['a', 'b', 'c']
-    expect(-> Satellite.treeFromTraversals(preorder, inorder)).toThrow new Error 'traversals must have the same elements'
+    expect(-> Satellite.treeFromTraversals(preorder, inorder)).toThrow new Error(
+      'traversals must have the same elements'
+    )
 
   xit 'Reject traversals with repeated items', ->
     preorder = ['a', 'b', 'a']
