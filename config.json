@@ -52,6 +52,22 @@
         "difficulty": 2
       },
       {
+        "slug": "all-your-base",
+        "name": "All Your Base",
+        "uuid": "b3bfbbd9-a0f4-4cbf-848b-f889bb0241a0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
+        "slug": "allergies",
+        "name": "Allergies",
+        "uuid": "fd8a5055-deb0-4a06-a9d5-e6d2f7e2be23",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "anagram",
         "name": "Anagram",
         "uuid": "22fe2f9c-71af-4ce0-b3cb-690a93654fe6",
@@ -123,6 +139,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
+      },
+      {
+        "slug": "circular-buffer",
+        "name": "Circular Buffer",
+        "uuid": "85672148-01f2-4c88-b859-5d9ecc5c1ada",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
       },
       {
         "slug": "clock",
@@ -221,6 +245,14 @@
         "slug": "grains",
         "name": "Grains",
         "uuid": "1244927f-9ff6-422e-a8bc-5e476dc46a90",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "hamming",
+        "name": "Hamming",
+        "uuid": "1bba0e52-fc79-40bc-9f5e-304ff5d86dc5",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
@@ -330,17 +362,17 @@
         ]
       },
       {
-        "slug": "matrix",
-        "name": "Matrix",
-        "uuid": "653ae967-32d2-4789-bb43-289ad1572191",
+        "slug": "matching-brackets",
+        "name": "Matching Brackets",
+        "uuid": "f4231888-c660-46d1-b05e-0dd4e223ea28",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
       },
       {
-        "slug": "matching-brackets",
-        "name": "Matching Brackets",
-        "uuid": "f4231888-c660-46d1-b05e-0dd4e223ea28",
+        "slug": "matrix",
+        "name": "Matrix",
+        "uuid": "653ae967-32d2-4789-bb43-289ad1572191",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
@@ -488,14 +520,6 @@
         "difficulty": 2
       },
       {
-        "slug": "robot-simulator",
-        "name": "Robot Simulator",
-        "uuid": "23b8d924-3493-4bbc-8e7d-7fdef5234833",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
-      },
-      {
         "slug": "reverse-string",
         "name": "Reverse String",
         "uuid": "1b4c8b0f-a7cc-4db1-a0ad-485dc2b320d7",
@@ -507,6 +531,14 @@
         "slug": "rna-transcription",
         "name": "RNA Transcription",
         "uuid": "d47b7ced-f2e6-47fd-b796-9c21448b1c14",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "robot-simulator",
+        "name": "Robot Simulator",
+        "uuid": "23b8d924-3493-4bbc-8e7d-7fdef5234833",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
@@ -544,9 +576,9 @@
         "difficulty": 2
       },
       {
-        "slug": "state-of-tic-tac-toe",
-        "name": "State of Tic-Tac-Toe",
-        "uuid": "76cdad5e-de00-4c48-8532-8c28013d9ef8",
+        "slug": "secret-handshake",
+        "name": "Secret Handshake",
+        "uuid": "b66ba570-f586-4bf1-9cad-c2e7fdd24f65",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
@@ -560,6 +592,14 @@
         "difficulty": 2
       },
       {
+        "slug": "sieve",
+        "name": "Sieve",
+        "uuid": "254aeab6-31e2-482b-9eb1-cca454e13705",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 3
+      },
+      {
         "slug": "space-age",
         "name": "Space Age",
         "uuid": "fb46a981-fc87-4e67-91be-3d9d2a487380",
@@ -571,6 +611,14 @@
         "slug": "square-root",
         "name": "Square Root",
         "uuid": "5407e219-9884-4b36-9b63-fac188ad6853",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "state-of-tic-tac-toe",
+        "name": "State of Tic-Tac-Toe",
+        "uuid": "76cdad5e-de00-4c48-8532-8c28013d9ef8",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
@@ -642,14 +690,6 @@
         "difficulty": 1
       },
       {
-        "slug": "yacht",
-        "name": "Yacht",
-        "uuid": "e032aa32-6dd1-438b-9e74-d6d957d043e9",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
-      },
-      {
         "slug": "word-count",
         "name": "Word Count",
         "uuid": "e80080ca-04a9-40b5-affe-88f1d617dc97",
@@ -663,6 +703,14 @@
           "transforming",
           "variables"
         ]
+      },
+      {
+        "slug": "yacht",
+        "name": "Yacht",
+        "uuid": "e032aa32-6dd1-438b-9e74-d6d957d043e9",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
       },
       {
         "slug": "atbash-cipher",
@@ -706,6 +754,14 @@
         ]
       },
       {
+        "slug": "camicia",
+        "name": "Camicia",
+        "uuid": "3d899e5f-27eb-45bc-aa5e-4a844105f462",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "custom-set",
         "name": "Custom Set",
         "uuid": "560b738f-c20d-43ac-9bc5-4821628adc00",
@@ -717,6 +773,14 @@
         "slug": "diamond",
         "name": "Diamond",
         "uuid": "f1da1920-802f-4165-87a4-2381f530c262",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "grade-school",
+        "name": "Grade School",
+        "uuid": "98f925a2-bc1c-4dc1-b2f4-d06941114250",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
@@ -738,9 +802,25 @@
         "difficulty": 5
       },
       {
+        "slug": "knapsack",
+        "name": "Knapsack",
+        "uuid": "a385b861-22a5-4319-9fc0-c0228640ce26",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 6
+      },
+      {
         "slug": "largest-series-product",
         "name": "Largest Series Product",
         "uuid": "9ae397e6-da06-433a-b4dc-118c01b73a8a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "meetup",
+        "name": "Meetup",
+        "uuid": "398c1590-2e8f-445e-83cb-2b762be63b2b",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
@@ -777,9 +857,25 @@
         "difficulty": 5
       },
       {
+        "slug": "relative-distance",
+        "name": "Relative Distance",
+        "uuid": "4060784f-e4ce-44dc-985a-328d190d4f94",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "run-length-encoding",
         "name": "Run-Length Encoding",
         "uuid": "b496f1b1-c04e-4d13-95bf-507bf3e616a7",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "satellite",
+        "name": "Satellite",
+        "uuid": "b09b1106-6ca1-49e2-8cb6-8dcf86f37675",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
@@ -801,9 +897,25 @@
         "difficulty": 5
       },
       {
+        "slug": "split-second-stopwatch",
+        "name": "Split-Second Stopwatch",
+        "uuid": "f35052c7-02ff-4786-91d6-e1065a90847e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "transpose",
         "name": "Transpose",
         "uuid": "c28e01dc-7d5c-4390-bef1-7831e6111b76",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "two-bucket",
+        "name": "Two Bucket",
+        "uuid": "fa32f8ae-1032-4981-9fa6-5895a549f6a1",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
@@ -823,70 +935,6 @@
         ]
       },
       {
-        "slug": "allergies",
-        "name": "Allergies",
-        "uuid": "fd8a5055-deb0-4a06-a9d5-e6d2f7e2be23",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
-      },
-      {
-        "slug": "circular-buffer",
-        "name": "Circular Buffer",
-        "uuid": "85672148-01f2-4c88-b859-5d9ecc5c1ada",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 3
-      },
-      {
-        "slug": "sieve",
-        "name": "Sieve",
-        "uuid": "254aeab6-31e2-482b-9eb1-cca454e13705",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 3
-      },
-      {
-        "slug": "secret-handshake",
-        "name": "Secret Handshake",
-        "uuid": "b66ba570-f586-4bf1-9cad-c2e7fdd24f65",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
-      },
-      {
-        "slug": "hamming",
-        "name": "Hamming",
-        "uuid": "1bba0e52-fc79-40bc-9f5e-304ff5d86dc5",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
-      },
-      {
-        "slug": "camicia",
-        "name": "Camicia",
-        "uuid": "3d899e5f-27eb-45bc-aa5e-4a844105f462",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
-        "slug": "grade-school",
-        "name": "Grade School",
-        "uuid": "98f925a2-bc1c-4dc1-b2f4-d06941114250",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
-        "slug": "relative-distance",
-        "name": "Relative Distance",
-        "uuid": "4060784f-e4ce-44dc-985a-328d190d4f94",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
         "slug": "change",
         "name": "Change",
         "uuid": "fff0dee7-06d5-4771-8e03-228475204db4",
@@ -903,14 +951,6 @@
         "difficulty": 8
       },
       {
-        "slug": "parallel-letter-frequency",
-        "name": "Parallel Letter Frequency",
-        "uuid": "5b856b54-c8be-4d90-be7c-60a441625fd0",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 8
-      },
-      {
         "slug": "minesweeper",
         "name": "Minesweeper",
         "uuid": "fe341c5e-0292-455f-93be-1ffb8f0b4b3b",
@@ -920,60 +960,20 @@
         "status": "deprecated"
       },
       {
+        "slug": "parallel-letter-frequency",
+        "name": "Parallel Letter Frequency",
+        "uuid": "5b856b54-c8be-4d90-be7c-60a441625fd0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
+      },
+      {
         "slug": "simple-linked-list",
         "name": "Simple Linked List",
         "uuid": "1c96f455-f1d5-4aa1-950c-6e60fc2b09ae",
         "practices": [],
         "prerequisites": [],
         "difficulty": 8
-      },
-      {
-        "slug": "two-bucket",
-        "name": "Two Bucket",
-        "uuid": "fa32f8ae-1032-4981-9fa6-5895a549f6a1",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
-        "slug": "all-your-base",
-        "name": "All Your Base",
-        "uuid": "b3bfbbd9-a0f4-4cbf-848b-f889bb0241a0",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 3
-      },
-      {
-        "slug": "meetup",
-        "name": "Meetup",
-        "uuid": "398c1590-2e8f-445e-83cb-2b762be63b2b",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
-        "slug": "knapsack",
-        "name": "Knapsack",
-        "uuid": "a385b861-22a5-4319-9fc0-c0228640ce26",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 6
-      },
-      {
-        "slug": "satellite",
-        "name": "Satellite",
-        "uuid": "b09b1106-6ca1-49e2-8cb6-8dcf86f37675",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
-        "slug": "split-second-stopwatch",
-        "name": "Split-Second Stopwatch",
-        "uuid": "f35052c7-02ff-4786-91d6-e1065a90847e",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
       }
     ]
   },
