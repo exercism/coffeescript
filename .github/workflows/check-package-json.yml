@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@900f2210b1d28bbbd0bd22d17926b9e224e8f231
 
       - name: Use Node.js
-        uses: actions/setup-node@0355742c943ddb13ca8a6b700f824231caa91e75
+        uses: actions/setup-node@6a61c0375d66246de94630495909f12cf8dac84d
         with:
           node-version: 24
           package-manager-cache: false
