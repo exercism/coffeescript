@@ -108,3 +108,11 @@ describe 'State of Tic-Tac-Toe', ->
   xit 'Invalid board: players kept playing after a win', ->
     board = ['XXX', 'OOO', 'XOX']
     expect(-> gamestate board).toThrow new Error 'Impossible board: game should have ended after the game was won'
+
+  xit 'Invalid board: O kept playing after X wins', ->
+    board = ['OO ', 'XXX', ' O ']
+    expect(-> gamestate board).toThrow new Error 'Impossible board: game should have ended after the game was won'
+
+  xit 'Invalid board: X kept playing after O wins', ->
+    board = ['XX ', 'OOO', ' XX']
+    expect(-> gamestate board).toThrow new Error 'Impossible board: game should have ended after the game was won'
