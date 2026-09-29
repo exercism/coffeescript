@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  schedule:
-    # Weekly.
-    - cron: '0 0 * * 0'
 
 jobs:
   exercises:
