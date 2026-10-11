@@ -57,9 +57,29 @@ describe 'Lineup', ->
     result = Lineup.format 'Washi', 21
     expect(result).toEqual 'Washi, you are the 21st customer we serve today. Thank you!'
 
+  xit 'format exceptional ordinal numeral 22 ending in nd even though it is a multiple of 11', ->
+    result = Lineup.format 'Ingrid', 22
+    expect(result).toEqual 'Ingrid, you are the 22nd customer we serve today. Thank you!'
+
+  xit 'format exceptional ordinal numeral 33 ending in rd even though it is a multiple of 11', ->
+    result = Lineup.format 'Mario', 33
+    expect(result).toEqual 'Mario, you are the 33rd customer we serve today. Thank you!'
+
+  xit 'format exceptional ordinal numeral 52 ending in nd even though it is a multiple of 13', ->
+    result = Lineup.format 'Quentin', 52
+    expect(result).toEqual 'Quentin, you are the 52nd customer we serve today. Thank you!'
+
   xit 'format exceptional ordinal numeral 62', ->
     result = Lineup.format 'Nayra', 62
     expect(result).toEqual 'Nayra, you are the 62nd customer we serve today. Thank you!'
+
+  xit 'format non-exceptional ordinal numeral 72 ending in nd even though it is a multiple of 12', ->
+    result = Lineup.format 'Ugo', 72
+    expect(result).toEqual 'Ugo, you are the 72nd customer we serve today. Thank you!'
+
+  xit 'format exceptional ordinal numeral 91 ending in st even though it is a multiple of 13', ->
+    result = Lineup.format 'Boris', 91
+    expect(result).toEqual 'Boris, you are the 91st customer we serve today. Thank you!'
 
   xit 'format exceptional ordinal numeral 100', ->
     result = Lineup.format 'John', 100
@@ -76,3 +96,7 @@ describe 'Lineup', ->
   xit 'format exceptional ordinal numeral 123', ->
     result = Lineup.format 'Yma', 123
     expect(result).toEqual 'Yma, you are the 123rd customer we serve today. Thank you!'
+
+  xit 'format large number 972 ending in nd even though it is a multiple of 12', ->
+    result = Lineup.format 'Elias', 972
+    expect(result).toEqual 'Elias, you are the 972nd customer we serve today. Thank you!'
