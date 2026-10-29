@@ -1,191 +1,90 @@
-allYourBase = require './all-your-base'
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/all-your-base/canonical-data.json
+# File last updated on 2026-10-29T04:39:31+00:00
 
-describe "AllYourBase", ->
+AllYourBase = require './all-your-base'
+
+describe "All Your Base", ->
   it "single bit one to decimal", ->
-    actual = allYourBase {
-      inputBase: 2,
-      outputBase: 10,
-      digits: [1]
-    }
-    expected = [1]
-    expect(actual).toEqual expected
+    input = { "inputBase": 2, "digits": [1], "outputBase": 10 }
+    expect(AllYourBase input).toEqual [1]
 
   xit "binary to single decimal", ->
-    actual = allYourBase {
-      inputBase: 2,
-      outputBase: 10,
-      digits: [1, 0, 1]
-    }
-    expected = [5]
-    expect(actual).toEqual expected
+    input = { "inputBase": 2, "digits": [1, 0, 1], "outputBase": 10 }
+    expect(AllYourBase input).toEqual [5]
 
   xit "single decimal to binary", ->
-    actual = allYourBase {
-      inputBase: 10,
-      outputBase: 2,
-      digits: [5]
-    }
-    expected = [1, 0, 1]
-    expect(actual).toEqual expected
+    input = { "inputBase": 10, "digits": [5], "outputBase": 2 }
+    expect(AllYourBase input).toEqual [1, 0, 1]
 
   xit "binary to multiple decimal", ->
-    actual = allYourBase {
-      inputBase: 2,
-      outputBase: 10,
-      digits: [1, 0, 1, 0, 1, 0]
-    }
-    expected = [4, 2]
-    expect(actual).toEqual expected
+    input = { "inputBase": 2, "digits": [1, 0, 1, 0, 1, 0], "outputBase": 10 }
+    expect(AllYourBase input).toEqual [4, 2]
 
   xit "decimal to binary", ->
-    actual = allYourBase {
-      inputBase: 10,
-      outputBase: 2,
-      digits: [4, 2]
-    }
-    expected = [1, 0, 1, 0, 1, 0]
-    expect(actual).toEqual expected
+    input = { "inputBase": 10, "digits": [4, 2], "outputBase": 2 }
+    expect(AllYourBase input).toEqual [1, 0, 1, 0, 1, 0]
 
   xit "trinary to hexadecimal", ->
-    actual = allYourBase {
-      inputBase: 3,
-      outputBase: 16,
-      digits: [1, 1, 2, 0]
-    }
-    expected = [2, 10]
-    expect(actual).toEqual expected
+    input = { "inputBase": 3, "digits": [1, 1, 2, 0], "outputBase": 16 }
+    expect(AllYourBase input).toEqual [2, 10]
 
   xit "hexadecimal to trinary", ->
-    actual = allYourBase {
-      inputBase: 16,
-      outputBase: 3,
-      digits: [2, 10]
-    }
-    expected = [1, 1, 2, 0]
-    expect(actual).toEqual expected
+    input = { "inputBase": 16, "digits": [2, 10], "outputBase": 3 }
+    expect(AllYourBase input).toEqual [1, 1, 2, 0]
 
   xit "15-bit integer", ->
-    actual = allYourBase {
-      inputBase: 97,
-      outputBase: 73,
-      digits: [3, 46, 60]
-    }
-    expected = [6, 10, 45]
-    expect(actual).toEqual expected
+    input = { "inputBase": 97, "digits": [3, 46, 60], "outputBase": 73 }
+    expect(AllYourBase input).toEqual [6, 10, 45]
 
   xit "empty list", ->
-    actual = allYourBase {
-      inputBase: 2,
-      outputBase: 10,
-      digits: []
-    }
-    expected = [0]
-    expect(actual).toEqual expected
+    input = { "inputBase": 2, "digits": [], "outputBase": 10 }
+    expect(AllYourBase input).toEqual [0]
 
   xit "single zero", ->
-    actual = allYourBase {
-      inputBase: 10,
-      outputBase: 2,
-      digits: [0]
-    }
-    expected = [0]
-    expect(actual).toEqual expected
+    input = { "inputBase": 10, "digits": [0], "outputBase": 2 }
+    expect(AllYourBase input).toEqual [0]
 
   xit "multiple zeros", ->
-    actual = allYourBase {
-      inputBase: 10,
-      outputBase: 2,
-      digits: [0, 0, 0]
-    }
-    expected = [0]
-    expect(actual).toEqual expected
+    input = { "inputBase": 10, "digits": [0, 0, 0], "outputBase": 2 }
+    expect(AllYourBase input).toEqual [0]
 
   xit "leading zeros", ->
-    actual = allYourBase {
-      inputBase: 7,
-      outputBase: 10,
-      digits: [0, 6, 0]
-    }
-    expected = [4, 2]
-    expect(actual).toEqual expected
+    input = { "inputBase": 7, "digits": [0, 6, 0], "outputBase": 10 }
+    expect(AllYourBase input).toEqual [4, 2]
 
   xit "input base is one", ->
-    expect ->
-      allYourBase {
-        inputBase: 1,
-        outputBase: 10,
-        digits: [0]
-      }
-    .toThrow new Error "input base must be >= 2"
+    input = { "inputBase": 1, "digits": [0], "outputBase": 10 }
+    expect(-> AllYourBase input).toThrow new Error "input base must be >= 2"
 
   xit "input base is zero", ->
-    expect ->
-      allYourBase {
-        inputBase: 0,
-        outputBase: 10,
-        digits: []
-      }
-    .toThrow new Error "input base must be >= 2"
+    input = { "inputBase": 0, "digits": [], "outputBase": 10 }
+    expect(-> AllYourBase input).toThrow new Error "input base must be >= 2"
 
   xit "input base is negative", ->
-    expect ->
-      allYourBase {
-        inputBase: -2,
-        outputBase: 10,
-        digits: [0]
-      }
-    .toThrow new Error "input base must be >= 2"
+    input = { "inputBase": -2, "digits": [1], "outputBase": 10 }
+    expect(-> AllYourBase input).toThrow new Error "input base must be >= 2"
 
   xit "negative digit", ->
-    expect ->
-      allYourBase {
-        inputBase: 2,
-        outputBase: 10,
-        digits: [1, -1, 1, 0, 1, 0]
-      }
-    .toThrow new Error "all digits must satisfy 0 <= d < input base"
+    input = { "inputBase": 2, "digits": [1, -1, 1, 0, 1, 0], "outputBase": 10 }
+    expect(-> AllYourBase input).toThrow new Error "all digits must satisfy 0 <= d < input base"
 
   xit "invalid positive digit", ->
-    expect ->
-      allYourBase {
-        inputBase: 2,
-        outputBase: 10,
-        digits: [1, 2, 1, 0, 1, 0]
-      }
-    .toThrow new Error "all digits must satisfy 0 <= d < input base"
+    input = { "inputBase": 2, "digits": [1, 2, 1, 0, 1, 0], "outputBase": 10 }
+    expect(-> AllYourBase input).toThrow new Error "all digits must satisfy 0 <= d < input base"
 
   xit "output base is one", ->
-    expect ->
-      allYourBase {
-        inputBase: 2,
-        outputBase: 1,
-        digits: [1, 0, 1, 0, 1, 0]
-      }
-    .toThrow new Error "output base must be >= 2"
+    input = { "inputBase": 2, "digits": [1, 0, 1, 0, 1, 0], "outputBase": 1 }
+    expect(-> AllYourBase input).toThrow new Error "output base must be >= 2"
 
   xit "output base is zero", ->
-    expect ->
-      allYourBase {
-        inputBase: 10,
-        outputBase: 0,
-        digits: [7]
-      }
-    .toThrow new Error "output base must be >= 2"
+    input = { "inputBase": 10, "digits": [7], "outputBase": 0 }
+    expect(-> AllYourBase input).toThrow new Error "output base must be >= 2"
 
   xit "output base is negative", ->
-    expect ->
-      allYourBase {
-        inputBase: 2,
-        outputBase: -7,
-        digits: [1]
-      }
-    .toThrow new Error "output base must be >= 2"
+    input = { "inputBase": 2, "digits": [1], "outputBase": -7 }
+    expect(-> AllYourBase input).toThrow new Error "output base must be >= 2"
 
   xit "both bases are negative", ->
-    expect ->
-      allYourBase {
-        inputBase: -2,
-        outputBase: -7,
-        digits: [1]
-      }
-    .toThrow new Error "input base must be >= 2"
+    input = { "inputBase": -2, "digits": [1], "outputBase": -7 }
+    expect(-> AllYourBase input).toThrow new Error "input base must be >= 2"
