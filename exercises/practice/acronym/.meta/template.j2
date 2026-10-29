@@ -1,0 +1,11 @@
+{{ header }}
+
+{{ exercise_name }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    phrase = {{ case["input"]["phrase"] | quote }}
+    expect({{ exercise_name }}.{{ case["property"] }} phrase).toEqual {{ case["expected"] | quote }}
+
+{% endfor %}

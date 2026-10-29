@@ -1,38 +1,42 @@
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/acronym/canonical-data.json
+# File last updated on 2026-10-29T04:39:31+00:00
+
 Acronym = require './acronym'
 
 describe "Acronym", ->
   it "basic", ->
-    result = Acronym.abbreviate "Portable Network Graphics"
-    expect(result).toEqual "PNG"
+    phrase = "Portable Network Graphics"
+    expect(Acronym.abbreviate phrase).toEqual "PNG"
 
   xit "lowercase words", ->
-    result = Acronym.abbreviate "Ruby on Rails"
-    expect(result).toEqual "ROR"
+    phrase = "Ruby on Rails"
+    expect(Acronym.abbreviate phrase).toEqual "ROR"
 
   xit "punctuation", ->
-    result = Acronym.abbreviate "First In, First Out"
-    expect(result).toEqual "FIFO"
+    phrase = "First In, First Out"
+    expect(Acronym.abbreviate phrase).toEqual "FIFO"
 
   xit "all caps word", ->
-    result = Acronym.abbreviate "GNU Image Manipulation Program"
-    expect(result).toEqual "GIMP"
+    phrase = "GNU Image Manipulation Program"
+    expect(Acronym.abbreviate phrase).toEqual "GIMP"
 
   xit "punctuation without whitespace", ->
-    result = Acronym.abbreviate "Complementary metal-oxide semiconductor"
-    expect(result).toEqual "CMOS"
+    phrase = "Complementary metal-oxide semiconductor"
+    expect(Acronym.abbreviate phrase).toEqual "CMOS"
 
   xit "very long abbreviation", ->
-    result = Acronym.abbreviate "Rolling On The Floor Laughing So Hard That My Dogs Came Over And Licked Me"
-    expect(result).toEqual "ROTFLSHTMDCOALM"
+    phrase = "Rolling On The Floor Laughing So Hard That My Dogs Came Over And Licked Me"
+    expect(Acronym.abbreviate phrase).toEqual "ROTFLSHTMDCOALM"
 
   xit "consecutive delimiters", ->
-    result = Acronym.abbreviate "Something - I made up from thin air"
-    expect(result).toEqual "SIMUFTA"
+    phrase = "Something - I made up from thin air"
+    expect(Acronym.abbreviate phrase).toEqual "SIMUFTA"
 
   xit "apostrophes", ->
-    result = Acronym.abbreviate "Halley's Comet"
-    expect(result).toEqual "HC"
+    phrase = "Halley's Comet"
+    expect(Acronym.abbreviate phrase).toEqual "HC"
 
   xit "underscore emphasis", ->
-    result = Acronym.abbreviate "The Road _Not_ Taken"
-    expect(result).toEqual "TRNT"
+    phrase = "The Road _Not_ Taken"
+    expect(Acronym.abbreviate phrase).toEqual "TRNT"
