@@ -1,0 +1,19 @@
+{{ header }}
+
+{{ exercise_name }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for group in groups %}
+  describe {{ group["description"] | quote }}, ->
+  {% for case in group["cases"] %}
+    {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+      allergies = new {{ exercise_name }} {{ case["input"]["score"] | quote }}
+{% if case["property"] == "allergicTo" %}
+      expect(allergies.{{ case["property"] }} {{ case["input"]["item"] | quote }}).toEqual {{ case["expected"] | quote }}
+{% else %}
+      expected = {{ case["expected"] | format_multiline_list(indent=6) }}
+      expect(allergies.{{ case["property"] }}()).toEqual expected
+{% endif %}
+
+{% endfor %}
+{% endfor %}
