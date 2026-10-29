@@ -1,0 +1,25 @@
+{% macro accumulator(expression) -%}
+{%- if expression == '(x) => x * x' -%}
+(x) -> x * x
+{%- elif expression == '(x) => upcase(x)' -%}
+(x) -> x.toUpperCase()
+{%- elif expression == '(x) => reverse(x)' -%}
+(x) -> x.split("").reverse().join("")
+{%- elif expression == '(x) => accumulate(["1", "2", "3"], (y) => x + y)' -%}
+(x) ->
+      ["1", "2", "3"].accumulate (y) -> "#{x}#{y}"
+{%- endif -%}
+{%- endmacro -%}
+{{ header }}
+
+require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    accumulator = {{ accumulator(case["input"]["accumulator"]) }}
+    items = {{ case["input"]["list"] | quote }}
+    expected = {{ case["expected"] | quote }}
+    expect(items.{{ case["property"] }}(accumulator)).toEqual expected
+
+{% endfor %}
