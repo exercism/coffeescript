@@ -1,98 +1,89 @@
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/anagram/canonical-data.json
+# File last updated on 2026-10-30T16:22:32+00:00
+
 Anagram = require './anagram'
 
-###
-  The toContainSameValues matcher defined at the bottom
-  checks if your returned collection has the expected elements
-  regardless of the type of collection (array or set).
-###
-
-describe 'Anagram', ->
-  it 'no matches', ->
-    detector = new Anagram 'diaper'
-    matches = detector.match ['hello', 'world', 'zombies', 'pants']
+describe "Anagram", ->
+  it "no matches", ->
+    detector = new Anagram "diaper"
+    matches = detector.match ["hello", "world", "zombies", "pants"]
     expect(matches).toContainSameValues []
 
-  xit 'detects two anagrams', ->
-    detector = new Anagram 'solemn'
-    matches = detector.match ['lemons', 'cherry', 'melons']
-    expect(matches).toContainSameValues ['lemons', 'melons']
+  xit "detects two anagrams", ->
+    detector = new Anagram "solemn"
+    matches = detector.match ["lemons", "cherry", "melons"]
+    expect(matches).toContainSameValues ["lemons", "melons"]
 
-  xit 'does not detect anagram subsets', ->
-    detector = new Anagram 'good'
-    matches = detector.match ['dog', 'goody']
+  xit "does not detect anagram subsets", ->
+    detector = new Anagram "good"
+    matches = detector.match ["dog", "goody"]
     expect(matches).toContainSameValues []
 
-  xit 'detects anagram', ->
-    detector = new Anagram 'listen'
-    matches = detector.match ['enlists', 'google', 'inlets', 'banana']
-    expect(matches).toContainSameValues ['inlets']
+  xit "detects anagram", ->
+    detector = new Anagram "listen"
+    matches = detector.match ["enlists", "google", "inlets", "banana"]
+    expect(matches).toContainSameValues ["inlets"]
 
-  xit 'detects three anagrams', ->
-    detector = new Anagram 'allergy'
-    matches = detector.match [
-      'gallery'
-      'ballerina'
-      'regally'
-      'clergy'
-      'largely'
-      'leading'
-    ]
-    expect(matches).toContainSameValues ['gallery', 'largely', 'regally']
+  xit "detects three anagrams", ->
+    detector = new Anagram "allergy"
+    matches = detector.match ["gallery", "ballerina", "regally", "clergy", "largely", "leading"]
+    expect(matches).toContainSameValues ["gallery", "regally", "largely"]
 
-  xit 'detects multiple anagrams with different case', ->
-    detector = new Anagram 'nose'
-    matches = detector.match ['Eons', 'ONES']
-    expect(matches).toContainSameValues ['Eons', 'ONES']
+  xit "detects multiple anagrams with different case", ->
+    detector = new Anagram "nose"
+    matches = detector.match ["Eons", "ONES"]
+    expect(matches).toContainSameValues ["Eons", "ONES"]
 
-  xit 'does not detect non-anagrams with identical checksums', ->
-    detector = new Anagram 'mass'
-    matches = detector.match ['last']
+  xit "does not detect non-anagrams with identical checksum", ->
+    detector = new Anagram "mass"
+    matches = detector.match ["last"]
     expect(matches).toContainSameValues []
 
-  xit 'detects anagrams case-insensitively', ->
-    detector = new Anagram 'Orchestra'
-    matches = detector.match ['cashregister', 'Carthorse', 'radishes']
-    expect(matches).toContainSameValues ['Carthorse']
+  xit "detects anagrams case-insensitively", ->
+    detector = new Anagram "Orchestra"
+    matches = detector.match ["cashregister", "Carthorse", "radishes"]
+    expect(matches).toContainSameValues ["Carthorse"]
 
-  xit 'detects anagrams using case-insensitive subject', ->
-    detector = new Anagram 'Orchestra'
-    matches = detector.match ['cashregister', 'carthorse', 'radishes']
-    expect(matches).toContainSameValues ['carthorse']
+  xit "detects anagrams using case-insensitive subject", ->
+    detector = new Anagram "Orchestra"
+    matches = detector.match ["cashregister", "carthorse", "radishes"]
+    expect(matches).toContainSameValues ["carthorse"]
 
-  xit 'detects anagrams using case-insensitive possible matches', ->
-    detector = new Anagram 'Orchestra'
-    matches = detector.match ['cashregister', 'Carthorse', 'radishes']
-    expect(matches).toContainSameValues ['Carthorse']
+  xit "detects anagrams using case-insensitive possible matches", ->
+    detector = new Anagram "orchestra"
+    matches = detector.match ["cashregister", "Carthorse", "radishes"]
+    expect(matches).toContainSameValues ["Carthorse"]
 
-  xit 'does not detect an anagram if the original word is repeated', ->
-    detector = new Anagram 'go'
-    matches = detector.match ['goGoGO']
+  xit "does not detect an anagram if the original word is repeated", ->
+    detector = new Anagram "go"
+    matches = detector.match ["goGoGO"]
     expect(matches).toContainSameValues []
 
-  xit 'anagrams must use all letters exactly once', ->
-    detector = new Anagram 'tapper'
-    matches = detector.match ['patter']
+  xit "anagrams must use all letters exactly once", ->
+    detector = new Anagram "tapper"
+    matches = detector.match ["patter"]
     expect(matches).toContainSameValues []
 
-  xit 'words are not anagrams of themselve', ->
-    detector = new Anagram 'BANANA'
-    matches = detector.match ['BANANA']
+  xit "words are not anagrams of themselves", ->
+    detector = new Anagram "BANANA"
+    matches = detector.match ["BANANA"]
     expect(matches).toContainSameValues []
 
-  xit 'words are not anagrams of themselves even if letter case is partially different', ->
-    detector = new Anagram 'BANANA'
-    matches = detector.match ['Banana']
+  xit "words are not anagrams of themselves even if letter case is partially different", ->
+    detector = new Anagram "BANANA"
+    matches = detector.match ["Banana"]
     expect(matches).toContainSameValues []
 
-  xit 'words are not anagrams of themselves even if letter case is completely different', ->
-    detector = new Anagram 'BANANA'
-    matches = detector.match ['banana']
+  xit "words are not anagrams of themselves even if letter case is completely different", ->
+    detector = new Anagram "BANANA"
+    matches = detector.match ["banana"]
     expect(matches).toContainSameValues []
 
-  xit 'words other than themselves can be anagrams', ->
-    detector = new Anagram 'LISTEN'
-    matches = detector.match ['LISTEN', 'Silent']
-    expect(matches).toContainSameValues ['Silent']
+  xit "words other than themselves can be anagrams", ->
+    detector = new Anagram "LISTEN"
+    matches = detector.match ["LISTEN", "Silent"]
+    expect(matches).toContainSameValues ["Silent"]
 
   beforeEach ->
     @addMatchers
