@@ -1,0 +1,26 @@
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    detector = new {{ exercise_name | remove_spaces }} {{ case["input"]["subject"] | quote }}
+    matches = detector.match {{ case["input"]["candidates"] | quote }}
+    expect(matches).toContainSameValues {{ case["expected"] | quote }}
+
+{% endfor %}
+  beforeEach ->
+    @addMatchers
+      toContainSameValues: (expected) ->
+        if not @actual? or !(Array.isArray(@actual) || @actual instanceof Set)
+          @message = -> "Anagram::match should return an array or set but instead returned #{JSON.stringify @actual}."
+          return false
+
+        matches = Array.from @actual
+        if matches.length != expected.length or not matches.every((value) -> expected.includes value)
+          @message = ->
+            "Expected returned values (#{matches.join(', ')}) to be equal to expected values " +
+              "(#{expected.join(', ')})."
+          return false
+        true
