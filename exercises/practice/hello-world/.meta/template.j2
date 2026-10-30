@@ -1,0 +1,11 @@
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    helloWorld = new {{ exercise_name | remove_spaces }}
+    expect(helloWorld.hello()).toEqual {{ case["expected"] | quote }}
+
+{% endfor %}
