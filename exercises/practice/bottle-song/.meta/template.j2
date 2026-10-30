@@ -1,0 +1,18 @@
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for group in groups %}
+  describe {{ group["description"] | quote }}, ->
+  {% for subgroup in group["groups"] %}
+    describe {{ subgroup["description"] | quote }}, ->
+    {% for case in subgroup["cases"] %}
+      {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+        bottleSong = new {{ exercise_name | remove_spaces }}
+        expected = {{ case["expected"] | format_multiline_list(indent=8) }}
+        expect(bottleSong.recite {{ case["input"]["startBottles"] | quote }}, {{ case["input"]["takeDown"] | quote }}).toEqual expected
+
+    {% endfor %}
+  {% endfor %}
+{% endfor %}
