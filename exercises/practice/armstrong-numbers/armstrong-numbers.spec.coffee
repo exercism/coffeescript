@@ -1,39 +1,33 @@
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/armstrong-numbers/canonical-data.json
+# File last updated on 2026-10-30T16:23:23+00:00
+
 ArmstrongNumbers = require './armstrong-numbers'
 
-describe 'Armstrong Numbers', ->
-  it 'zero is an Armstrong number', ->
-    result = ArmstrongNumbers.isArmstrongNumber 0
-    expect(result).toEqual true
+describe "Armstrong Numbers", ->
+  it "Zero is an Armstrong number", ->
+    expect(ArmstrongNumbers.isArmstrongNumber 0).toEqual true
 
-  xit 'single-digit numbers are Armstrong numbers', ->
-    result = ArmstrongNumbers.isArmstrongNumber 5
-    expect(result).toEqual true
+  xit "Single-digit numbers are Armstrong numbers", ->
+    expect(ArmstrongNumbers.isArmstrongNumber 5).toEqual true
 
-  xit 'there are no two-digit Armstrong numbers', ->
-    result = ArmstrongNumbers.isArmstrongNumber 10
-    expect(result).toEqual false
+  xit "There are no two-digit Armstrong numbers", ->
+    expect(ArmstrongNumbers.isArmstrongNumber 10).toEqual false
 
-  xit 'three-digit number that is an Armstrong number', ->
-    result = ArmstrongNumbers.isArmstrongNumber 153
-    expect(result).toEqual true
+  xit "Three-digit number that is an Armstrong number", ->
+    expect(ArmstrongNumbers.isArmstrongNumber 153).toEqual true
 
-  xit 'three-digit number that is not an Armstrong number', ->
-    result = ArmstrongNumbers.isArmstrongNumber 100
-    expect(result).toEqual false
+  xit "Three-digit number that is not an Armstrong number", ->
+    expect(ArmstrongNumbers.isArmstrongNumber 100).toEqual false
 
-  xit 'four-digit number that is an Armstrong number', ->
-    result = ArmstrongNumbers.isArmstrongNumber 9474
-    expect(result).toEqual true
+  xit "Four-digit number that is an Armstrong number", ->
+    expect(ArmstrongNumbers.isArmstrongNumber 9474).toEqual true
 
-  xit 'four-digit number that is not an Armstrong number', ->
-    result = ArmstrongNumbers.isArmstrongNumber 9475
-    expect(result).toEqual false
+  xit "Four-digit number that is not an Armstrong number", ->
+    expect(ArmstrongNumbers.isArmstrongNumber 9475).toEqual false
 
-  xit 'seven-digit number that is an Armstrong number', ->
-    result = ArmstrongNumbers.isArmstrongNumber 9926315
-    expect(result).toEqual true
+  xit "Seven-digit number that is an Armstrong number", ->
+    expect(ArmstrongNumbers.isArmstrongNumber 9926315).toEqual true
 
-  xit 'seven-digit number that is not an Armstrong number', ->
-    result = ArmstrongNumbers.isArmstrongNumber 9926314
-    expect(result).toEqual false
-
+  xit "Seven-digit number that is not an Armstrong number", ->
+    expect(ArmstrongNumbers.isArmstrongNumber 9926314).toEqual false
