@@ -1,0 +1,34 @@
+{% macro assertion(case) -%}
+{%- if case["property"] == "empty" -%}
+set = new {{ exercise_name | remove_spaces }} {{ case["input"]["set"] | quote }}
+expect(set.empty()).toEqual {{ case["expected"] | quote }}
+{%- elif case["property"] == "contains" -%}
+set = new {{ exercise_name | remove_spaces }} {{ case["input"]["set"] | quote }}
+expect(set.contains {{ case["input"]["element"] | quote }}).toEqual {{ case["expected"] | quote }}
+{%- elif case["property"] == "add" -%}
+set = new {{ exercise_name | remove_spaces }} {{ case["input"]["set"] | quote }}
+set.add {{ case["input"]["element"] | quote }}
+expect(set.values).toEqual {{ case["expected"] | quote }}
+{%- elif case["property"] in ["intersection", "difference", "union"] -%}
+set1 = new {{ exercise_name | remove_spaces }} {{ case["input"]["set1"] | quote }}
+set2 = new {{ exercise_name | remove_spaces }} {{ case["input"]["set2"] | quote }}
+expect(set1.{{ case["property"] }}(set2)).toEqual new {{ exercise_name | remove_spaces }} {{ case["expected"] | quote }}
+{%- else -%}
+set1 = new {{ exercise_name | remove_spaces }} {{ case["input"]["set1"] | quote }}
+set2 = new {{ exercise_name | remove_spaces }} {{ case["input"]["set2"] | quote }}
+expect(set1.{{ case["property"] }} set2).toEqual {{ case["expected"] | quote }}
+{%- endif -%}
+{%- endmacro %}
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for group in groups %}
+  describe {{ group["description"] | quote }}, ->
+  {% for case in group["cases"] %}
+    {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+{{ assertion(case) | indent(6, true) }}
+
+  {% endfor %}
+{% endfor %}
