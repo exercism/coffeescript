@@ -1,45 +1,50 @@
-Atbash = require './atbash-cipher'
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/atbash-cipher/canonical-data.json
+# File last updated on 2026-10-30T16:22:32+00:00
 
-describe 'Atbash', ->
-  it 'encodes yes', ->
-    expect(Atbash.encode('yes')).toBe 'bvh'
+AtbashCipher = require './atbash-cipher'
 
-  xit 'encodes no', ->
-    expect(Atbash.encode('no')).toBe 'ml'
+describe "Atbash Cipher", ->
+  describe "encode", ->
+    it "encode yes", ->
+      expect(AtbashCipher.encode "yes").toEqual "bvh"
 
-  xit 'encodes OMG', ->
-    expect(Atbash.encode('OMG')).toBe 'lnt'
+    xit "encode no", ->
+      expect(AtbashCipher.encode "no").toEqual "ml"
 
-  xit 'encodes O M G', ->
-    expect(Atbash.encode('O M G')).toBe 'lnt'
+    xit "encode OMG", ->
+      expect(AtbashCipher.encode "OMG").toEqual "lnt"
 
-  xit 'encodes a long word', ->
-    expect(Atbash.encode('mindblowingly')).toBe 'nrmwy oldrm tob'
+    xit "encode spaces", ->
+      expect(AtbashCipher.encode "O M G").toEqual "lnt"
 
-  xit 'encodes numbers', ->
-    expect(Atbash.encode('Testing, 1 2 3, testing.')).toBe 'gvhgr mt123 gvhgr mt'
+    xit "encode mindblowingly", ->
+      expect(AtbashCipher.encode "mindblowingly").toEqual "nrmwy oldrm tob"
 
-  xit 'encodes sentence', ->
-    expect(Atbash.encode('Truth is fiction.')).toBe 'gifgs rhurx grlm'
+    xit "encode numbers", ->
+      expect(AtbashCipher.encode "Testing,1 2 3, testing.").toEqual "gvhgr mt123 gvhgr mt"
 
-  xit 'encodes all the things', ->
-    phrase = 'The quick brown fox jumps over the lazy dog.'
-    expect(Atbash.encode(phrase)).toBe 'gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt'
+    xit "encode deep thought", ->
+      expect(AtbashCipher.encode "Truth is fiction.").toEqual "gifgs rhurx grlm"
 
-  xit 'decodes exercism', ->
-    expect(Atbash.decode('vcvix rhn')).toBe 'exercism'
+    xit "encode all the letters", ->
+      expect(AtbashCipher.encode "The quick brown fox jumps over the lazy dog.").toEqual "gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt"
 
-  xit 'decodes a sentence', ->
-    expect(Atbash.decode('zmlyh gzxov rhlug vmzhg vkkrm thglm v')).toBe 'anobstacleisoftenasteppingstone'
+  describe "decode", ->
+    xit "decode exercism", ->
+      expect(AtbashCipher.decode "vcvix rhn").toEqual "exercism"
 
-  xit 'decodes numbers', ->
-    expect(Atbash.decode('gvhgr mt123 gvhgr mt')).toBe 'testing123testing'
+    xit "decode a sentence", ->
+      expect(AtbashCipher.decode "zmlyh gzxov rhlug vmzhg vkkrm thglm v").toEqual "anobstacleisoftenasteppingstone"
 
-  xit 'decodes all the letter', ->
-    expect(Atbash.decode('gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt')).toBe 'thequickbrownfoxjumpsoverthelazydog'
+    xit "decode numbers", ->
+      expect(AtbashCipher.decode "gvhgr mt123 gvhgr mt").toEqual "testing123testing"
 
-  xit 'decodes with too many spaces', ->
-    expect(Atbash.decode('vc vix    r hn')).toBe 'exercism'
+    xit "decode all the letters", ->
+      expect(AtbashCipher.decode "gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt").toEqual "thequickbrownfoxjumpsoverthelazydog"
 
-  xit 'decodes with no spaces', ->
-    expect(Atbash.decode('zmlyhgzxovrhlugvmzhgvkkrmthglmv')).toBe 'anobstacleisoftenasteppingstone'
+    xit "decode with too many spaces", ->
+      expect(AtbashCipher.decode "vc vix    r hn").toEqual "exercism"
+
+    xit "decode with no spaces", ->
+      expect(AtbashCipher.decode "zmlyhgzxovrhlugvmzhgvkkrmthglmv").toEqual "anobstacleisoftenasteppingstone"
