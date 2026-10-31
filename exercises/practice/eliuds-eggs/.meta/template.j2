@@ -1,0 +1,10 @@
+{{ header }}
+
+EliudsEggs = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    expect(EliudsEggs.eggCount {{ case["input"]["number"] | quote }}).toEqual {{ case["expected"] | quote }}
+
+{% endfor %}
