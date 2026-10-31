@@ -1,0 +1,27 @@
+{% macro clock(input) -%}
+new {{ exercise_name | remove_spaces }}({{ input["hour"] | quote }}, {{ input["minute"] | quote }})
+{%- endmacro %}
+{% macro assertion(case) -%}
+{% set input = case["input"] %}
+{% if case["property"] == "create" %}
+expect({{ clock(input) }}.toString()).toEqual {{ case["expected"] | quote }}
+{% elif case["property"] == "add" %}
+expect({{ clock(input) }}.plus({{ input["value"] | quote }}).toString()).toEqual {{ case["expected"] | quote }}
+{% elif case["property"] == "subtract" %}
+expect({{ clock(input) }}.minus({{ input["value"] | quote }}).toString()).toEqual {{ case["expected"] | quote }}
+{% else %}
+expect({{ clock(input["clock1"]) }}.equals({{ clock(input["clock2"]) }})).toEqual {{ case["expected"] | quote }}
+{% endif -%}
+{%- endmacro %}
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for group in groups %}
+  describe {{ group["description"] | quote }}, ->
+  {% for case in group["cases"] %}
+    {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+{{ assertion(case) | indent(6, true) }}
+  {% endfor %}
+{% endfor %}
