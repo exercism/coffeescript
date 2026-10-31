@@ -1,0 +1,26 @@
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+TracedArray = require './traced-array'
+{% set access_counts = {
+  "finds a value in an array with one element": 1,
+  "finds a value in the middle of an array": 1,
+  "finds a value at the beginning of an array": 3,
+  "finds a value at the end of an array": 3,
+  "finds a value in an array of odd length": 2,
+  "finds a value in an array of even length": 1,
+} %}
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    array = new TracedArray{% if case["input"]["array"] %} {{ case["input"]["array"] | map("quote") | join(", ") }}{% endif %}{{ "\n" }}
+    search = new {{ exercise_name | remove_spaces }} array
+{% if case["expect_error"] %}
+    expect(-> search.find {{ case["input"]["value"] | quote }}).toThrow new Error {{ case["expect_error_msg"] | quote }}
+{% else %}
+    expect(search.find {{ case["input"]["value"] | quote }}).toEqual {{ case["expected"] | quote }}
+    expect(array.accessCount).toEqual {{ access_counts[case["description"]] }}
+{% endif %}
+
+{% endfor %}
