@@ -1,0 +1,10 @@
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    expect({{ exercise_name | remove_spaces }}.isIsogram {{ case["input"]["phrase"] | quote }}).toEqual {{ case["expected"] | quote }}
+
+{% endfor %}

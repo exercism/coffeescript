@@ -1,72 +1,48 @@
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/isogram/canonical-data.json
+# File last updated on 2026-10-30T23:09:28+00:00
+
 Isogram = require './isogram'
 
-describe 'Isogram', ->
-  it 'empty string', ->
-    phrase = ''
-    result = Isogram.isIsogram(phrase)
-    expect(result).toEqual true
+describe "Isogram", ->
+  it "empty string", ->
+    expect(Isogram.isIsogram "").toEqual true
 
-  xit 'isogram with only lower case characters', ->
-    phrase = 'isogram'
-    result = Isogram.isIsogram(phrase)
-    expect(result).toEqual true
+  xit "isogram with only lower case characters", ->
+    expect(Isogram.isIsogram "isogram").toEqual true
 
-  xit 'word with one duplicated character', ->
-    phrase = 'eleven'
-    result = Isogram.isIsogram(phrase)
-    expect(result).toEqual false
+  xit "word with one duplicated character", ->
+    expect(Isogram.isIsogram "eleven").toEqual false
 
-  xit 'word with one duplicated character from the end of the alphabet', ->
-    phrase = 'zzyzx'
-    result = Isogram.isIsogram(phrase)
-    expect(result).toEqual false
+  xit "word with one duplicated character from the end of the alphabet", ->
+    expect(Isogram.isIsogram "zzyzx").toEqual false
 
-  xit 'longest reported english isogram', ->
-    phrase = 'subdermatoglyphic'
-    result = Isogram.isIsogram(phrase)
-    expect(result).toEqual true
+  xit "longest reported english isogram", ->
+    expect(Isogram.isIsogram "subdermatoglyphic").toEqual true
 
-  xit 'word with duplicated character in mixed case', ->
-    phrase = 'Alphabet'
-    result = Isogram.isIsogram(phrase)
-    expect(result).toEqual false
+  xit "word with duplicated character in mixed case", ->
+    expect(Isogram.isIsogram "Alphabet").toEqual false
 
-  xit 'word with duplicated character in mixed case, lowercase first', ->
-    phrase = 'alphAbet'
-    result = Isogram.isIsogram(phrase)
-    expect(result).toEqual false
+  xit "word with duplicated character in mixed case, lowercase first", ->
+    expect(Isogram.isIsogram "alphAbet").toEqual false
 
-  xit 'hypothetical isogrammic word with hyphen', ->
-    phrase = 'thumbscrew-japingly'
-    result = Isogram.isIsogram(phrase)
-    expect(result).toEqual true
+  xit "hypothetical isogrammic word with hyphen", ->
+    expect(Isogram.isIsogram "thumbscrew-japingly").toEqual true
 
-  xit 'hypothetical word with duplicated character following hyphen', ->
-    phrase = 'thumbscrew-jappingly'
-    result = Isogram.isIsogram(phrase)
-    expect(result).toEqual false
+  xit "hypothetical word with duplicated character following hyphen", ->
+    expect(Isogram.isIsogram "thumbscrew-jappingly").toEqual false
 
-  xit 'isogram with duplicated hyphen', ->
-    phrase = 'six-year-old'
-    result = Isogram.isIsogram(phrase)
-    expect(result).toEqual true
+  xit "isogram with duplicated hyphen", ->
+    expect(Isogram.isIsogram "six-year-old").toEqual true
 
-  xit 'made-up name that is an isogram', ->
-    phrase = 'Emily Jung Schwartzkopf'
-    result = Isogram.isIsogram(phrase)
-    expect(result).toEqual true
+  xit "made-up name that is an isogram", ->
+    expect(Isogram.isIsogram "Emily Jung Schwartzkopf").toEqual true
 
-  xit 'duplicated character in the middle', ->
-    phrase = 'accentor'
-    result = Isogram.isIsogram(phrase)
-    expect(result).toEqual false
+  xit "duplicated character in the middle", ->
+    expect(Isogram.isIsogram "accentor").toEqual false
 
-  xit 'same first and last characters', ->
-    phrase = 'angola'
-    result = Isogram.isIsogram(phrase)
-    expect(result).toEqual false
+  xit "same first and last characters", ->
+    expect(Isogram.isIsogram "angola").toEqual false
 
-  xit 'word with duplicated character and with two hyphens', ->
-    phrase = 'up-to-date'
-    result = Isogram.isIsogram(phrase)
-    expect(result).toEqual false
+  xit "word with duplicated character and with two hyphens", ->
+    expect(Isogram.isIsogram "up-to-date").toEqual false
