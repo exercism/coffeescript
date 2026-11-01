@@ -12,7 +12,7 @@ class PhoneNumber
     else if @cleanNumber.length == 11
       @cleanNumber = @cleanNumber.slice 1
     else if @cleanNumber.length > 11
-      throw new Error "must not be more than 11 digits"
+      throw new Error "must not be greater than 11 digits"
     if @cleanNumber.length < 10
       throw new Error "must not be fewer than 10 digits"
 
