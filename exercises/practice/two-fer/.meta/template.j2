@@ -1,0 +1,14 @@
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+{% if case["input"]["name"] is none %}
+    expect({{ exercise_name | remove_spaces }}.twoFer()).toEqual {{ case["expected"] | quote }}
+{% else %}
+    expect({{ exercise_name | remove_spaces }}.twoFer {{ case["input"]["name"] | quote }}).toEqual {{ case["expected"] | quote }}
+{% endif %}
+
+{% endfor %}
