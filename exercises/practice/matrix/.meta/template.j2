@@ -1,0 +1,11 @@
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    matrix = new {{ exercise_name | remove_spaces }} {{ case["input"]["string"] | quote }}
+    expect(matrix.{{ case["property"] }} {{ case["input"]["index"] | quote }}).toEqual {{ case["expected"] | quote }}
+
+{% endfor %}
