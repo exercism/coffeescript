@@ -1,37 +1,21 @@
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/resistor-color-duo/canonical-data.json
+# File last updated on 2026-11-04T23:46:27+00:00
+
 ResistorColorDuo = require './resistor-color-duo'
 
-describe 'ResistorColorDuo', ->
-  it 'Brown and black', ->
-    results = ResistorColorDuo.value(['brown', 'black'])
-    expected = 10
-    expect(results).toEqual expected
-
-  xit 'Blue and grey', ->
-    results = ResistorColorDuo.value(['blue', 'grey'])
-    expected = 68
-    expect(results).toEqual expected
-
-  xit 'Yellow and violet', ->
-    results = ResistorColorDuo.value(['yellow', 'violet'])
-    expected = 47
-    expect(results).toEqual expected
-
-  xit 'White and red', ->
-    results = ResistorColorDuo.value(['white', 'red'])
-    expected = 92
-    expect(results).toEqual expected
-
-  xit 'Orange and orange', ->
-    results = ResistorColorDuo.value(['orange', 'orange'])
-    expected = 33
-    expect(results).toEqual expected
-
-  xit 'Ignore additional colors', ->
-    results = ResistorColorDuo.value(['green', 'brown', 'orange'])
-    expected = 51
-    expect(results).toEqual expected
-
-  xit 'Black and brown, one-digit', ->
-    results = ResistorColorDuo.value(['black', 'brown'])
-    expected = 1
-    expect(results).toEqual expected
+describe "Resistor Color Duo", ->
+  it "Brown and black", ->
+    expect(ResistorColorDuo.value ["brown", "black"]).toEqual 10
+  xit "Blue and grey", ->
+    expect(ResistorColorDuo.value ["blue", "grey"]).toEqual 68
+  xit "Yellow and violet", ->
+    expect(ResistorColorDuo.value ["yellow", "violet"]).toEqual 47
+  xit "White and red", ->
+    expect(ResistorColorDuo.value ["white", "red"]).toEqual 92
+  xit "Orange and orange", ->
+    expect(ResistorColorDuo.value ["orange", "orange"]).toEqual 33
+  xit "Ignore additional colors", ->
+    expect(ResistorColorDuo.value ["green", "brown", "orange"]).toEqual 51
+  xit "Black and brown, one-digit", ->
+    expect(ResistorColorDuo.value ["black", "brown"]).toEqual 1
