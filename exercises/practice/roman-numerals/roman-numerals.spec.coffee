@@ -1,137 +1,87 @@
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/roman-numerals/canonical-data.json
+# File last updated on 2026-11-04T23:49:15+00:00
+
 RomanNumerals = require './roman-numerals'
 
-describe 'RomanNumerals', ->
-  it '1 is I', ->
-    results = RomanNumerals.convert(1)
-    expected = "I"
-    expect(results).toEqual expected
+describe "Roman Numerals", ->
+  it "1 is I", ->
+    expect(RomanNumerals.convert 1).toEqual "I"
 
-  xit '2 is II', ->
-    results = RomanNumerals.convert(2)
-    expected = "II"
-    expect(results).toEqual expected
+  xit "2 is II", ->
+    expect(RomanNumerals.convert 2).toEqual "II"
 
-  xit '3 is III', ->
-    results = RomanNumerals.convert(3)
-    expected = "III"
-    expect(results).toEqual expected
+  xit "3 is III", ->
+    expect(RomanNumerals.convert 3).toEqual "III"
 
-  xit '4 is IV', ->
-    results = RomanNumerals.convert(4)
-    expected = "IV"
-    expect(results).toEqual expected
+  xit "4 is IV", ->
+    expect(RomanNumerals.convert 4).toEqual "IV"
 
-  it '5 is V', ->
-    results = RomanNumerals.convert(5)
-    expected = "V"
-    expect(results).toEqual expected
+  xit "5 is V", ->
+    expect(RomanNumerals.convert 5).toEqual "V"
 
-  xit '6 is VI', ->
-    results = RomanNumerals.convert(6)
-    expected = "VI"
-    expect(results).toEqual expected
+  xit "6 is VI", ->
+    expect(RomanNumerals.convert 6).toEqual "VI"
 
-  xit '9 is IX', ->
-    results = RomanNumerals.convert(9)
-    expected = "IX"
-    expect(results).toEqual expected
+  xit "9 is IX", ->
+    expect(RomanNumerals.convert 9).toEqual "IX"
 
-  xit '16 is XVI', ->
-    results = RomanNumerals.convert(16)
-    expected = "XVI"
-    expect(results).toEqual expected
+  xit "16 is XVI", ->
+    expect(RomanNumerals.convert 16).toEqual "XVI"
 
-  xit '27 is XXVII', ->
-    results = RomanNumerals.convert(27)
-    expected = "XXVII"
-    expect(results).toEqual expected
+  xit "27 is XXVII", ->
+    expect(RomanNumerals.convert 27).toEqual "XXVII"
 
-  xit '48 is XLVIII', ->
-    results = RomanNumerals.convert(48)
-    expected = "XLVIII"
-    expect(results).toEqual expected
+  xit "48 is XLVIII", ->
+    expect(RomanNumerals.convert 48).toEqual "XLVIII"
 
-  xit '49 is XLIX', ->
-    results = RomanNumerals.convert(49)
-    expected = "XLIX"
-    expect(results).toEqual expected
+  xit "49 is XLIX", ->
+    expect(RomanNumerals.convert 49).toEqual "XLIX"
 
-  xit '59 is LIX', ->
-    results = RomanNumerals.convert(59)
-    expected = "LIX"
-    expect(results).toEqual expected
+  xit "59 is LIX", ->
+    expect(RomanNumerals.convert 59).toEqual "LIX"
 
-  xit '66 is LXVI', ->
-    results = RomanNumerals.convert(66)
-    expected = "LXVI"
-    expect(results).toEqual expected
+  xit "66 is LXVI", ->
+    expect(RomanNumerals.convert 66).toEqual "LXVI"
 
-  xit '93 is XCIII', ->
-    results = RomanNumerals.convert(93)
-    expected = "XCIII"
-    expect(results).toEqual expected
+  xit "93 is XCIII", ->
+    expect(RomanNumerals.convert 93).toEqual "XCIII"
 
-  xit '141 is CXLI', ->
-    results = RomanNumerals.convert(141)
-    expected = "CXLI"
-    expect(results).toEqual expected
+  xit "141 is CXLI", ->
+    expect(RomanNumerals.convert 141).toEqual "CXLI"
 
-  xit '163 is CLXIII', ->
-    results = RomanNumerals.convert(163)
-    expected = "CLXIII"
-    expect(results).toEqual expected
+  xit "163 is CLXIII", ->
+    expect(RomanNumerals.convert 163).toEqual "CLXIII"
 
-  xit '166 is CLXVI', ->
-    results = RomanNumerals.convert(166)
-    expected = "CLXVI"
-    expect(results).toEqual expected
+  xit "166 is CLXVI", ->
+    expect(RomanNumerals.convert 166).toEqual "CLXVI"
 
-  xit '402 is CDII', ->
-    results = RomanNumerals.convert(402)
-    expected = "CDII"
-    expect(results).toEqual expected
+  xit "402 is CDII", ->
+    expect(RomanNumerals.convert 402).toEqual "CDII"
 
-  xit '575 is DLXXV', ->
-    results = RomanNumerals.convert(575)
-    expected = "DLXXV"
-    expect(results).toEqual expected
+  xit "575 is DLXXV", ->
+    expect(RomanNumerals.convert 575).toEqual "DLXXV"
 
-  xit '666 is DCLXVI', ->
-    results = RomanNumerals.convert(666)
-    expected = "DCLXVI"
-    expect(results).toEqual expected
+  xit "666 is DCLXVI", ->
+    expect(RomanNumerals.convert 666).toEqual "DCLXVI"
 
-  xit '911 is CMXI', ->
-    results = RomanNumerals.convert(911)
-    expected = "CMXI"
-    expect(results).toEqual expected
+  xit "911 is CMXI", ->
+    expect(RomanNumerals.convert 911).toEqual "CMXI"
 
-  xit '1024 is MXXIV', ->
-    results = RomanNumerals.convert(1024)
-    expected = "MXXIV"
-    expect(results).toEqual expected
+  xit "1024 is MXXIV", ->
+    expect(RomanNumerals.convert 1024).toEqual "MXXIV"
 
-  xit '1666 is MDCLXVI', ->
-    results = RomanNumerals.convert(1666)
-    expected = "MDCLXVI"
-    expect(results).toEqual expected
+  xit "1666 is MDCLXVI", ->
+    expect(RomanNumerals.convert 1666).toEqual "MDCLXVI"
 
-  xit '3000 is MMM', ->
-    results = RomanNumerals.convert(3000)
-    expected = "MMM"
-    expect(results).toEqual expected
+  xit "3000 is MMM", ->
+    expect(RomanNumerals.convert 3000).toEqual "MMM"
 
-  xit '3001 is MMMI', ->
-    results = RomanNumerals.convert(3001)
-    expected = "MMMI"
-    expect(results).toEqual expected
+  xit "3001 is MMMI", ->
+    expect(RomanNumerals.convert 3001).toEqual "MMMI"
 
-  xit '3888 is MMMDCCCLXXXVIII', ->
-    results = RomanNumerals.convert(3888)
-    expected = "MMMDCCCLXXXVIII"
-    expect(results).toEqual expected
+  xit "3888 is MMMDCCCLXXXVIII", ->
+    expect(RomanNumerals.convert 3888).toEqual "MMMDCCCLXXXVIII"
 
-  xit '3999 is MMMCMXCIX', ->
-    results = RomanNumerals.convert(3999)
-    expected = "MMMCMXCIX"
-    expect(results).toEqual expected
+  xit "3999 is MMMCMXCIX", ->
+    expect(RomanNumerals.convert 3999).toEqual "MMMCMXCIX"
