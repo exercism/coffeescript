@@ -1,0 +1,19 @@
+{% macro assertion(case) -%}
+{%- if case["expect_error"] %}
+expect(-> {{ exercise_name | remove_spaces }}.square {{ case["input"]["square"] | quote }}).toThrow new Error {{ case["expect_error_msg"] | quote }}
+{%- elif case["property"] == "total" %}
+expect({{ exercise_name | remove_spaces }}.total()).toEqual {{ case["expected"] | quote }}
+{%- else %}
+expect({{ exercise_name | remove_spaces }}.square {{ case["input"]["square"] | quote }}).toEqual {{ case["expected"] | quote }}
+{%- endif -%}
+{%- endmacro %}
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+{{ assertion(case) | indent(4, true) }}
+
+{% endfor %}
