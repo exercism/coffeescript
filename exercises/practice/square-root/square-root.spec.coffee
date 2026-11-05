@@ -1,38 +1,24 @@
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/square-root/canonical-data.json
+# File last updated on 2026-11-04T23:50:34+00:00
+
 SquareRoot = require './square-root'
 
-describe 'SquareRoot', ->
-  it 'root of 1', ->
-    radicand = 1
-    results = SquareRoot.squareRoot(radicand)
-    expected = 1
-    expect(results).toEqual expected
+describe "Square Root", ->
+  it "root of 1", ->
+    expect(SquareRoot.squareRoot 1).toEqual 1
 
-  xit 'root of 4', ->
-    radicand = 4
-    results = SquareRoot.squareRoot(radicand)
-    expected = 2
-    expect(results).toEqual expected
+  xit "root of 4", ->
+    expect(SquareRoot.squareRoot 4).toEqual 2
 
-  xit 'root of 25', ->
-    radicand = 25
-    results = SquareRoot.squareRoot(radicand)
-    expected = 5
-    expect(results).toEqual expected
+  xit "root of 25", ->
+    expect(SquareRoot.squareRoot 25).toEqual 5
 
-  xit 'root of 81', ->
-    radicand = 81
-    results = SquareRoot.squareRoot(radicand)
-    expected = 9
-    expect(results).toEqual expected
+  xit "root of 81", ->
+    expect(SquareRoot.squareRoot 81).toEqual 9
 
-  xit 'root of 196', ->
-    radicand = 196
-    results = SquareRoot.squareRoot(radicand)
-    expected = 14
-    expect(results).toEqual expected
+  xit "root of 196", ->
+    expect(SquareRoot.squareRoot 196).toEqual 14
 
-  xit 'root of 65025', ->
-    radicand = 65025
-    results = SquareRoot.squareRoot(radicand)
-    expected = 255
-    expect(results).toEqual expected
+  xit "root of 65025", ->
+    expect(SquareRoot.squareRoot 65025).toEqual 255
