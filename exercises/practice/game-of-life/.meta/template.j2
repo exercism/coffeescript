@@ -1,0 +1,12 @@
+{{ header }}
+
+GameOfLife = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    game = new GameOfLife {{ case["input"]["matrix"] | format_multiline_list(4) }}
+    game.tick()
+    expect(game.matrix).toEqual {{ case["expected"] | format_multiline_list(4) }}
+
+{% endfor %}

@@ -1,12 +1,16 @@
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/game-of-life/canonical-data.json
+# File last updated on 2026-11-05T16:03:53+00:00
+
 GameOfLife = require './game-of-life'
 
-describe 'Game Of Life', ->
-  it 'Empty matrix', ->
+describe "Conway's Game of Life", ->
+  it "empty matrix", ->
     game = new GameOfLife []
     game.tick()
     expect(game.matrix).toEqual []
 
-  xit 'Live cells with zero live neighbors die', ->
+  xit "live cells with zero live neighbors die", ->
     game = new GameOfLife [
       [0, 0, 0]
       [0, 1, 0]
@@ -19,7 +23,7 @@ describe 'Game Of Life', ->
       [0, 0, 0]
     ]
 
-  xit 'Live cells with only one live neighbor die', ->
+  xit "live cells with only one live neighbor die", ->
     game = new GameOfLife [
       [0, 0, 0]
       [0, 1, 0]
@@ -32,7 +36,7 @@ describe 'Game Of Life', ->
       [0, 0, 0]
     ]
 
-  xit 'Live cells with two live neighbors stay alive', ->
+  xit "live cells with two live neighbors stay alive", ->
     game = new GameOfLife [
       [1, 0, 1]
       [1, 0, 1]
@@ -45,7 +49,7 @@ describe 'Game Of Life', ->
       [0, 0, 0]
     ]
 
-  xit 'Live cells with three live neighbors stay alive', ->
+  xit "live cells with three live neighbors stay alive", ->
     game = new GameOfLife [
       [0, 1, 0]
       [1, 0, 0]
@@ -58,7 +62,7 @@ describe 'Game Of Life', ->
       [1, 1, 0]
     ]
 
-  xit 'Dead cells with three live neighbors become alive', ->
+  xit "dead cells with three live neighbors become alive", ->
     game = new GameOfLife [
       [1, 1, 0]
       [0, 0, 0]
@@ -71,7 +75,7 @@ describe 'Game Of Life', ->
       [0, 0, 0]
     ]
 
-  xit 'Live cells with four or more neighbors die', ->
+  xit "live cells with four or more neighbors die", ->
     game = new GameOfLife [
       [1, 1, 1]
       [1, 1, 1]
@@ -84,7 +88,7 @@ describe 'Game Of Life', ->
       [1, 0, 1]
     ]
 
-  xit 'Bigger matrix', ->
+  xit "bigger matrix", ->
     game = new GameOfLife [
       [1, 1, 0, 1, 1, 0, 0, 0]
       [1, 0, 1, 1, 0, 0, 0, 0]
