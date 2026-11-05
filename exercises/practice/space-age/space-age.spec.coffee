@@ -1,42 +1,30 @@
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/space-age/canonical-data.json
+# File last updated on 2026-11-05T00:03:00+00:00
+
 SpaceAge = require './space-age'
 
-describe 'SpaceAge', ->
-  it 'age on earth', ->
-    results = SpaceAge.onEarth 1000000000
-    expected = 31.69
-    expect(results).toBeCloseTo expected
+describe "Space Age", ->
+  it "age on Earth", ->
+    expect(SpaceAge.onEarth 1000000000).toBeCloseTo 31.69
 
-  xit 'age on Mercury', ->
-    results = SpaceAge.onMercury 2134835688
-    expected = 280.88
-    expect(results).toBeCloseTo expected
+  xit "age on Mercury", ->
+    expect(SpaceAge.onMercury 2134835688).toBeCloseTo 280.88
 
-  xit 'age on Venus', ->
-    results = SpaceAge.onVenus 189839836
-    expected = 9.78
-    expect(results).toBeCloseTo expected
+  xit "age on Venus", ->
+    expect(SpaceAge.onVenus 189839836).toBeCloseTo 9.78
 
-  xit 'age on Mars', ->
-    results = SpaceAge.onMars 2129871239
-    expected = 35.88
-    expect(results).toBeCloseTo expected
+  xit "age on Mars", ->
+    expect(SpaceAge.onMars 2129871239).toBeCloseTo 35.88
 
-  xit 'age on Jupiter', ->
-    results = SpaceAge.onJupiter 901876382
-    expected = 2.41
-    expect(results).toBeCloseTo expected
+  xit "age on Jupiter", ->
+    expect(SpaceAge.onJupiter 901876382).toBeCloseTo 2.41
 
-  xit 'age on Saturn', ->
-    results = SpaceAge.onSaturn 2000000000
-    expected = 2.15
-    expect(results).toBeCloseTo expected
+  xit "age on Saturn", ->
+    expect(SpaceAge.onSaturn 2000000000).toBeCloseTo 2.15
 
-  xit 'age on Uranus', ->
-    results = SpaceAge.onUranus 1210123456
-    expected = 0.46
-    expect(results).toBeCloseTo expected
+  xit "age on Uranus", ->
+    expect(SpaceAge.onUranus 1210123456).toBeCloseTo 0.46
 
-  xit 'age on Neptune', ->
-    results = SpaceAge.onNeptune 1821023456
-    expected = 0.35
-    expect(results).toBeCloseTo expected
+  xit "age on Neptune", ->
+    expect(SpaceAge.onNeptune 1821023456).toBeCloseTo 0.35
