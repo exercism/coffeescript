@@ -132,6 +132,13 @@ def filter_quote(data) -> str:
     return json.dumps(data)
 
 
+def filter_format_arguments(data) -> str:
+    """Render a value or list of values as CoffeeScript arguments."""
+    if not isinstance(data, list):
+        return filter_quote(data)
+    return ", ".join(filter_quote(value) for value in data)
+
+
 def filter_remove_spaces(data: str) -> str:
     """Remove spaces for use as an identifier."""
     return data.replace(" ", "")
@@ -157,6 +164,7 @@ def jinja_env(exercise: pathlib.Path) -> jinja2.Environment:
     env.filters["tojson"] = filter_tojson
     # CoffeeScript literal formatting.
     env.filters["quote"] = filter_quote
+    env.filters["format_arguments"] = filter_format_arguments
     env.filters["remove_spaces"] = filter_remove_spaces
     env.filters["format_multiline_list"] = filter_format_multiline_list
     # String escaping, ANSI-C style.
