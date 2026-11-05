@@ -1,26 +1,24 @@
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/reverse-string/canonical-data.json
+# File last updated on 2026-11-04T23:50:32+00:00
+
 ReverseString = require './reverse-string'
 
-describe 'ReverseString', ->
-  it 'An empty string', ->
-    reversed = ReverseString.reverse("")
-    expect(reversed).toEqual("")
+describe "Reverse String", ->
+  it "an empty string", ->
+    expect(ReverseString.reverse "").toEqual ""
 
-  xit 'A word', ->
-    reversed = ReverseString.reverse("robot")
-    expect(reversed).toEqual("tobor")
+  xit "a word", ->
+    expect(ReverseString.reverse "robot").toEqual "tobor"
 
-  xit 'A capitalized word', ->
-    reversed = ReverseString.reverse("Ramen")
-    expect(reversed).toEqual("nemaR")
+  xit "a capitalized word", ->
+    expect(ReverseString.reverse "Ramen").toEqual "nemaR"
 
-  xit 'A sentence with punctuation', ->
-    reversed = ReverseString.reverse("I'm hungry!")
-    expect(reversed).toEqual("!yrgnuh m'I")
+  xit "a sentence with punctuation", ->
+    expect(ReverseString.reverse "I'm hungry!").toEqual "!yrgnuh m'I"
 
-  xit 'A palindrome', ->
-    reversed = ReverseString.reverse("racecar")
-    expect(reversed).toEqual("racecar")
+  xit "a palindrome", ->
+    expect(ReverseString.reverse "racecar").toEqual "racecar"
 
-  xit 'An even-sized word', ->
-    reversed = ReverseString.reverse("drawer")
-    expect(reversed).toEqual("reward")
+  xit "an even-sized word", ->
+    expect(ReverseString.reverse "drawer").toEqual "reward"
