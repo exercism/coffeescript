@@ -1,50 +1,54 @@
-SumOfMultiples = require './sum-of-multiples'
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/sum-of-multiples/canonical-data.json
+# File last updated on 2026-11-04T23:50:34+00:00
 
-describe 'Sum of Multiples', ->
-  it 'no multiples within limit', ->
-    expect(SumOfMultiples.sum [3, 5], 1).toEqual 0
+SumofMultiples = require './sum-of-multiples'
 
-  xit 'one factor has multiples within limit', ->
-    expect(SumOfMultiples.sum [3, 5], 4).toEqual 3
+describe "Sum of Multiples", ->
+  it "no multiples within limit", ->
+    expect(SumofMultiples.sum [3, 5], 1).toEqual 0
 
-  xit 'more than one multiple within limit', ->
-    expect(SumOfMultiples.sum [3], 7).toEqual 9
+  xit "one factor has multiples within limit", ->
+    expect(SumofMultiples.sum [3, 5], 4).toEqual 3
 
-  xit 'more than one factor with multiples within limit', ->
-    expect(SumOfMultiples.sum [3, 5], 10).toEqual 23
+  xit "more than one multiple within limit", ->
+    expect(SumofMultiples.sum [3], 7).toEqual 9
 
-  xit 'each multiple is only counted once', ->
-    expect(SumOfMultiples.sum [3, 5], 100).toEqual 2318
+  xit "more than one factor with multiples within limit", ->
+    expect(SumofMultiples.sum [3, 5], 10).toEqual 23
 
-  xit 'a much larger limit', ->
-    expect(SumOfMultiples.sum [3, 5], 1000).toEqual 233168
+  xit "each multiple is only counted once", ->
+    expect(SumofMultiples.sum [3, 5], 100).toEqual 2318
 
-  xit 'three factors', ->
-    expect(SumOfMultiples.sum [7, 13, 17], 20).toEqual 51
+  xit "a much larger limit", ->
+    expect(SumofMultiples.sum [3, 5], 1000).toEqual 233168
 
-  xit 'factors not relatively prime', ->
-    expect(SumOfMultiples.sum [4, 6], 15).toEqual 30
+  xit "three factors", ->
+    expect(SumofMultiples.sum [7, 13, 17], 20).toEqual 51
 
-  xit 'some pairs of factors relatively prime and some not', ->
-    expect(SumOfMultiples.sum [5, 6, 8], 150).toEqual 4419
+  xit "factors not relatively prime", ->
+    expect(SumofMultiples.sum [4, 6], 15).toEqual 30
 
-  xit 'one factor is a multiple of another', ->
-    expect(SumOfMultiples.sum [5, 25], 51).toEqual 275
+  xit "some pairs of factors relatively prime and some not", ->
+    expect(SumofMultiples.sum [5, 6, 8], 150).toEqual 4419
 
-  xit 'much larger factors', ->
-    expect(SumOfMultiples.sum [43, 47], 10000).toEqual 2203160
+  xit "one factor is a multiple of another", ->
+    expect(SumofMultiples.sum [5, 25], 51).toEqual 275
 
-  xit 'all numbers are multiples of 1', ->
-    expect(SumOfMultiples.sum [1], 100).toEqual 4950
+  xit "much larger factors", ->
+    expect(SumofMultiples.sum [43, 47], 10000).toEqual 2203160
 
-  xit 'no factors means an empty sum', ->
-    expect(SumOfMultiples.sum [], 10000).toEqual 0
+  xit "all numbers are multiples of 1", ->
+    expect(SumofMultiples.sum [1], 100).toEqual 4950
 
-  xit 'the only multiple of 0 is 0', ->
-    expect(SumOfMultiples.sum [0], 1).toEqual 0
+  xit "no factors means an empty sum", ->
+    expect(SumofMultiples.sum [], 10000).toEqual 0
 
-  xit 'the factor 0 does not affect the sum of multiples of other factors', ->
-    expect(SumOfMultiples.sum [3, 0], 4).toEqual 3
+  xit "the only multiple of 0 is 0", ->
+    expect(SumofMultiples.sum [0], 1).toEqual 0
 
-  xit 'solutions using include-exclude must extend to cardinality greater than 3', ->
-    expect(SumOfMultiples.sum [2, 3, 5, 7, 11], 10000).toEqual 39614537
+  xit "the factor 0 does not affect the sum of multiples of other factors", ->
+    expect(SumofMultiples.sum [3, 0], 4).toEqual 3
+
+  xit "solutions using include-exclude must extend to cardinality greater than 3", ->
+    expect(SumofMultiples.sum [2, 3, 5, 7, 11], 10000).toEqual 39614537
