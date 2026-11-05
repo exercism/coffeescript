@@ -1,47 +1,33 @@
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/hamming/canonical-data.json
+# File last updated on 2026-11-01T03:29:44+00:00
+
 Hamming = require './hamming'
 
 describe "Hamming", ->
   it "empty strands", ->
-    result = Hamming.distance "", ""
-    expect(result).toEqual 0
+    expect(Hamming.distance "", "").toEqual 0
 
   xit "single letter identical strands", ->
-    result = Hamming.distance "A", "A"
-    expect(result).toEqual 0
+    expect(Hamming.distance "A", "A").toEqual 0
 
   xit "single letter different strands", ->
-    result = Hamming.distance "G", "T"
-    expect(result).toEqual 1
+    expect(Hamming.distance "G", "T").toEqual 1
 
   xit "long identical strands", ->
-    result = Hamming.distance "GGACTGAAATCTG", "GGACTGAAATCTG"
-    expect(result).toEqual 0
+    expect(Hamming.distance "GGACTGAAATCTG", "GGACTGAAATCTG").toEqual 0
 
   xit "long different strands", ->
-    result = Hamming.distance "GGACGGATTCTG", "AGGACGGATTCT"
-    expect(result).toEqual 9
+    expect(Hamming.distance "GGACGGATTCTG", "AGGACGGATTCT").toEqual 9
 
   xit "disallow first strand longer", ->
-    expect ->
-      Hamming.distance "AATG", "AAA"
-    .toThrow new Error "strands must be of equal length"
+    expect(-> Hamming.distance "AATG", "AAA").toThrow new Error "strands must be of equal length"
 
   xit "disallow second strand longer", ->
-    expect ->
-      Hamming.distance "ATA", "AGTG"
-    .toThrow new Error "strands must be of equal length"
-
-  xit "disallow second strand longer", ->
-    expect ->
-      Hamming.distance "ATA", "AGTG"
-    .toThrow new Error "strands must be of equal length"
+    expect(-> Hamming.distance "ATA", "AGTG").toThrow new Error "strands must be of equal length"
 
   xit "disallow empty first strand", ->
-    expect ->
-      Hamming.distance "", "G"
-    .toThrow new Error "strands must be of equal length"
+    expect(-> Hamming.distance "", "G").toThrow new Error "strands must be of equal length"
 
   xit "disallow empty second strand", ->
-    expect ->
-      Hamming.distance "G", ""
-    .toThrow new Error "strands must be of equal length"
+    expect(-> Hamming.distance "G", "").toThrow new Error "strands must be of equal length"
