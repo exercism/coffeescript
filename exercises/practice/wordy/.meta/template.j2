@@ -1,0 +1,22 @@
+{% macro assertion(case) -%}
+problem = new {{ exercise_name | remove_spaces }} {{ case["input"]["question"] | quote }}{{ "\n" -}}
+{%- if case["expect_error"] -%}
+{%- if case["expected"]["error"] == "unknown operation" -%}
+expect(-> problem.answer()).toThrow problem.ERROR.unknownOperation
+{%- else -%}
+expect(-> problem.answer()).toThrow problem.ERROR.syntaxError
+{%- endif -%}
+{%- else -%}
+expect(problem.answer()).toEqual {{ case["expected"] | quote }}
+{%- endif -%}
+{%- endmacro %}
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+{{ assertion(case) | indent(4, true) }}
+
+{% endfor %}
