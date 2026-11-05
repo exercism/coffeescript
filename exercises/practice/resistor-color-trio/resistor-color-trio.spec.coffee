@@ -1,42 +1,36 @@
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/resistor-color-trio/canonical-data.json
+# File last updated on 2026-11-05T15:46:34+00:00
+
 ResistorColorTrio = require './resistor-color-trio'
 
-describe 'ResistorColorTrio', ->
-  it 'Orange and orange and black', ->
-    results = ResistorColorTrio.label ['orange', 'orange', 'black']
-    expect(results).toEqual '33 ohms'
+describe "Resistor Color Trio", ->
+  it "Orange and orange and black", ->
+    expect(ResistorColorTrio.label ["orange", "orange", "black"]).toEqual "33 ohms"
 
-  xit 'Blue and grey and brown', ->
-    results = ResistorColorTrio.label ['blue', 'grey', 'brown']
-    expect(results).toEqual '680 ohms'
+  xit "Blue and grey and brown", ->
+    expect(ResistorColorTrio.label ["blue", "grey", "brown"]).toEqual "680 ohms"
 
-  xit 'Red and black and red', ->
-    results = ResistorColorTrio.label ['red', 'black', 'red']
-    expect(results).toEqual '2 kiloohms'
+  xit "Red and black and red", ->
+    expect(ResistorColorTrio.label ["red", "black", "red"]).toEqual "2 kiloohms"
 
-  xit 'Green and brown and orange', ->
-    results = ResistorColorTrio.label ['green', 'brown', 'orange']
-    expect(results).toEqual '51 kiloohms'
+  xit "Green and brown and orange", ->
+    expect(ResistorColorTrio.label ["green", "brown", "orange"]).toEqual "51 kiloohms"
 
-  xit 'Yellow and violet and yellow', ->
-    results = ResistorColorTrio.label ['yellow', 'violet', 'yellow']
-    expect(results).toEqual '470 kiloohms'
+  xit "Yellow and violet and yellow", ->
+    expect(ResistorColorTrio.label ["yellow", "violet", "yellow"]).toEqual "470 kiloohms"
 
-  xit 'Blue and violet and blue', ->
-    results = ResistorColorTrio.label ['blue', 'violet', 'blue']
-    expect(results).toEqual '67 megaohms'
+  xit "Blue and violet and blue", ->
+    expect(ResistorColorTrio.label ["blue", "violet", "blue"]).toEqual "67 megaohms"
 
-  xit 'Minimum possible value', ->
-    results = ResistorColorTrio.label ['black', 'black', 'black']
-    expect(results).toEqual '0 ohms'
+  xit "Minimum possible value", ->
+    expect(ResistorColorTrio.label ["black", "black", "black"]).toEqual "0 ohms"
 
-  xit 'Maximum possible value', ->
-    results = ResistorColorTrio.label ['white', 'white', 'white']
-    expect(results).toEqual '99 gigaohms'
+  xit "Maximum possible value", ->
+    expect(ResistorColorTrio.label ["white", "white", "white"]).toEqual "99 gigaohms"
 
-  xit 'First two colors make an invalid octal number', ->
-    results = ResistorColorTrio.label ['black', 'grey', 'black']
-    expect(results).toEqual '8 ohms'
+  xit "First two colors make an invalid octal number", ->
+    expect(ResistorColorTrio.label ["black", "grey", "black"]).toEqual "8 ohms"
 
-  xit 'Ignore extra colors', ->
-    results = ResistorColorTrio.label ['blue', 'green', 'yellow', 'orange']
-    expect(results).toEqual '650 kiloohms'
+  xit "Ignore extra colors", ->
+    expect(ResistorColorTrio.label ["blue", "green", "yellow", "orange"]).toEqual "650 kiloohms"
