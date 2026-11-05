@@ -1,0 +1,13 @@
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    cipher = new {{ exercise_name | remove_spaces }} {{ case["input"]["shiftKey"] | quote }}
+    result = cipher.rotate {{ case["input"]["text"] | quote }}
+    expected = {{ case["expected"] | quote }}
+    expect(result).toEqual expected
+
+{% endfor %}
