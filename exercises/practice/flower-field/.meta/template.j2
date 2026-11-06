@@ -1,0 +1,12 @@
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    garden = {{ case["input"]["garden"] | format_multiline_list(indent=4) }}
+    expected = {{ case["expected"] | format_multiline_list(indent=4) }}
+    expect({{ exercise_name | remove_spaces }}.annotate garden).toEqual expected
+
+{% endfor %}
