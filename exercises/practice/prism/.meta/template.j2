@@ -1,0 +1,13 @@
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    start = {{ case["input"]["start"] | quote }}
+    prisms = {{ case["input"]["prisms"] | format_multiline_list(indent=4) }}
+    result = {{ exercise_name | remove_spaces }}.findSequence start, prisms
+    expect(result).toEqual {{ case["expected"]["sequence"] | format_multiline_list(indent=4, columns=10) }}
+
+{% endfor %}
