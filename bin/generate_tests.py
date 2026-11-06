@@ -144,11 +144,16 @@ def filter_remove_spaces(data: str) -> str:
     return data.replace(" ", "")
 
 
-def filter_format_multiline_list(data: list, indent: int = 0) -> str:
-    """Render a CoffeeScript list with one item per line."""
+def filter_format_multiline_list(data: list, indent: int = 0, columns: int = 1) -> str:
+    """Render a CoffeeScript list with a fixed number of values per line."""
+    if not data:
+        return filter_quote(data)
+
     lines = ["["]
-    for datum in data:
-        lines.append(f"  {' ' * indent}{filter_quote(datum)}")
+    for start in range(0, len(data), columns):
+        row = data[start:start + columns]
+        values = ", ".join(filter_quote(datum) for datum in row)
+        lines.append(f"  {' ' * indent}{values}")
     lines.append(" " * indent + "]")
     return "\n".join(lines)
 
