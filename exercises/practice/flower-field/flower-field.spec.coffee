@@ -1,136 +1,169 @@
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/flower-field/canonical-data.json
+# File last updated on 2026-11-06T03:02:10+00:00
+
 FlowerField = require './flower-field'
 
-describe 'Flower Field', ->
-  it 'no rows', ->
+describe "Flower Field", ->
+  it "no rows", ->
     garden = []
-    expect(FlowerField.annotate garden).toEqual []
+    expected = []
+    expect(FlowerField.annotate garden).toEqual expected
 
-  xit 'no columns', ->
-    garden = ['']
-    expect(FlowerField.annotate garden).toEqual ['']
-
-  xit 'no flowers', ->
+  xit "no columns", ->
     garden = [
-      '   '
-      '   '
-      '   '
+      ""
     ]
-    expect(FlowerField.annotate garden).toEqual [
-      '   '
-      '   '
-      '   '
+    expected = [
+      ""
     ]
+    expect(FlowerField.annotate garden).toEqual expected
 
-  xit 'garden full of flowers', ->
+  xit "no flowers", ->
     garden = [
-      '***'
-      '***'
-      '***'
+      "   "
+      "   "
+      "   "
     ]
-    expect(FlowerField.annotate garden).toEqual [
-      '***'
-      '***'
-      '***'
+    expected = [
+      "   "
+      "   "
+      "   "
     ]
+    expect(FlowerField.annotate garden).toEqual expected
 
-  xit 'flower surrounded by spaces', ->
+  xit "garden full of flowers", ->
     garden = [
-      '   '
-      ' * '
-      '   '
+      "***"
+      "***"
+      "***"
     ]
-    expect(FlowerField.annotate garden).toEqual [
-      '111'
-      '1*1'
-      '111'
+    expected = [
+      "***"
+      "***"
+      "***"
     ]
+    expect(FlowerField.annotate garden).toEqual expected
 
-  xit 'space surrounded by flowers', ->
+  xit "flower surrounded by spaces", ->
     garden = [
-      '***'
-      '* *'
-      '***'
+      "   "
+      " * "
+      "   "
     ]
-    expect(FlowerField.annotate garden).toEqual [
-      '***'
-      '*8*'
-      '***'
+    expected = [
+      "111"
+      "1*1"
+      "111"
     ]
+    expect(FlowerField.annotate garden).toEqual expected
 
-  xit 'horizontal line', ->
-    garden = [' * * ']
-    expect(FlowerField.annotate garden).toEqual ['1*2*1']
-
-  xit 'horizontal line, flowers at edges', ->
-    garden = ['*   *']
-    expect(FlowerField.annotate garden).toEqual ['*1 1*']
-
-  xit 'vertical line', ->
+  xit "space surrounded by flowers", ->
     garden = [
-      ' '
-      '*'
-      ' '
-      '*'
-      ' '
+      "***"
+      "* *"
+      "***"
     ]
-    expect(FlowerField.annotate garden).toEqual [
-      '1'
-      '*'
-      '2'
-      '*'
-      '1'
+    expected = [
+      "***"
+      "*8*"
+      "***"
     ]
+    expect(FlowerField.annotate garden).toEqual expected
 
-  xit 'vertical line, flowers at edges', ->
+  xit "horizontal line", ->
     garden = [
-      '*'
-      ' '
-      ' '
-      ' '
-      '*'
+      " * * "
     ]
-    expect(FlowerField.annotate garden).toEqual [
-      '*'
-      '1'
-      ' '
-      '1'
-      '*'
+    expected = [
+      "1*2*1"
     ]
+    expect(FlowerField.annotate garden).toEqual expected
 
-  xit 'cross', ->
+  xit "horizontal line, flowers at edges", ->
     garden = [
-      '  *  '
-      '  *  '
-      '*****'
-      '  *  '
-      '  *  '
+      "*   *"
     ]
-    expect(FlowerField.annotate garden).toEqual [
-      ' 2*2 '
-      '25*52'
-      '*****'
-      '25*52'
-      ' 2*2 '
+    expected = [
+      "*1 1*"
     ]
+    expect(FlowerField.annotate garden).toEqual expected
 
-  xit 'large garden', ->
+  xit "vertical line", ->
     garden = [
-      ' *  * '
-      '  *   '
-      '    * '
-      '   * *'
-      ' *  * '
-      '      '
+      " "
+      "*"
+      " "
+      "*"
+      " "
     ]
-    expect(FlowerField.annotate garden).toEqual [
-      '1*22*1'
-      '12*322'
-      ' 123*2'
-      '112*4*'
-      '1*22*2'
-      '111111'
+    expected = [
+      "1"
+      "*"
+      "2"
+      "*"
+      "1"
     ]
+    expect(FlowerField.annotate garden).toEqual expected
 
-  xit 'multiple adjacent flowers', ->
-    garden = [' ** ']
-    expect(FlowerField.annotate garden).toEqual ['1**1']
+  xit "vertical line, flowers at edges", ->
+    garden = [
+      "*"
+      " "
+      " "
+      " "
+      "*"
+    ]
+    expected = [
+      "*"
+      "1"
+      " "
+      "1"
+      "*"
+    ]
+    expect(FlowerField.annotate garden).toEqual expected
+
+  xit "cross", ->
+    garden = [
+      "  *  "
+      "  *  "
+      "*****"
+      "  *  "
+      "  *  "
+    ]
+    expected = [
+      " 2*2 "
+      "25*52"
+      "*****"
+      "25*52"
+      " 2*2 "
+    ]
+    expect(FlowerField.annotate garden).toEqual expected
+
+  xit "large garden", ->
+    garden = [
+      " *  * "
+      "  *   "
+      "    * "
+      "   * *"
+      " *  * "
+      "      "
+    ]
+    expected = [
+      "1*22*1"
+      "12*322"
+      " 123*2"
+      "112*4*"
+      "1*22*2"
+      "111111"
+    ]
+    expect(FlowerField.annotate garden).toEqual expected
+
+  xit "multiple adjacent flowers", ->
+    garden = [
+      " ** "
+    ]
+    expected = [
+      "1**1"
+    ]
+    expect(FlowerField.annotate garden).toEqual expected
