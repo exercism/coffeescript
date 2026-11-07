@@ -1,132 +1,148 @@
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/minesweeper/canonical-data.json
+# File last updated on 2026-11-06T03:02:12+00:00
+
 Minesweeper = require './minesweeper'
 
-describe 'Minesweeper', ->
-  it 'no rows', ->
+describe "Minesweeper", ->
+  it "no rows", ->
     minefield = []
     expect(Minesweeper.annotate minefield).toEqual []
 
-  xit 'no columns', ->
-    minefield = ['']
-    expect(Minesweeper.annotate minefield).toEqual ['']
-
-  xit 'no mines', ->
+  xit "no columns", ->
     minefield = [
-      '   '
-      '   '
-      '   '
+      ""
     ]
     expect(Minesweeper.annotate minefield).toEqual [
-      '   '
-      '   '
-      '   '
+      ""
     ]
 
-  xit 'minefield with only mines', ->
+  xit "no mines", ->
     minefield = [
-      '***'
-      '***'
-      '***'
+      "   "
+      "   "
+      "   "
     ]
     expect(Minesweeper.annotate minefield).toEqual [
-      '***'
-      '***'
-      '***'
+      "   "
+      "   "
+      "   "
     ]
 
-  xit 'mine surrounded by spaces', ->
+  xit "minefield with only mines", ->
     minefield = [
-      '   '
-      ' * '
-      '   '
+      "***"
+      "***"
+      "***"
     ]
     expect(Minesweeper.annotate minefield).toEqual [
-      '111'
-      '1*1'
-      '111'
+      "***"
+      "***"
+      "***"
     ]
 
-  xit 'space surrounded by mines', ->
+  xit "mine surrounded by spaces", ->
     minefield = [
-      '***'
-      '* *'
-      '***'
+      "   "
+      " * "
+      "   "
     ]
     expect(Minesweeper.annotate minefield).toEqual [
-      '***'
-      '*8*'
-      '***'
+      "111"
+      "1*1"
+      "111"
     ]
 
-  xit 'horizontal line', ->
-    minefield = [' * * ']
-    expect(Minesweeper.annotate minefield).toEqual ['1*2*1']
-
-  xit 'horizontal line, mines at edges', ->
-    minefield = ['*   *']
-    expect(Minesweeper.annotate minefield).toEqual ['*1 1*']
-
-  xit 'vertical line', ->
+  xit "space surrounded by mines", ->
     minefield = [
-      ' '
-      '*'
-      ' '
-      '*'
-      ' '
+      "***"
+      "* *"
+      "***"
     ]
     expect(Minesweeper.annotate minefield).toEqual [
-      '1'
-      '*'
-      '2'
-      '*'
-      '1'
+      "***"
+      "*8*"
+      "***"
     ]
 
-  xit 'vertical line, mines at edges', ->
+  xit "horizontal line", ->
     minefield = [
-      '*'
-      ' '
-      ' '
-      ' '
-      '*'
+      " * * "
     ]
     expect(Minesweeper.annotate minefield).toEqual [
-      '*'
-      '1'
-      ' '
-      '1'
-      '*'
+      "1*2*1"
     ]
 
-  xit 'cross', ->
+  xit "horizontal line, mines at edges", ->
     minefield = [
-      '  *  '
-      '  *  '
-      '*****'
-      '  *  '
-      '  *  '
+      "*   *"
     ]
     expect(Minesweeper.annotate minefield).toEqual [
-      ' 2*2 '
-      '25*52'
-      '*****'
-      '25*52'
-      ' 2*2 '
+      "*1 1*"
     ]
 
-  xit 'large minefield', ->
+  xit "vertical line", ->
     minefield = [
-      ' *  * '
-      '  *   '
-      '    * '
-      '   * *'
-      ' *  * '
-      '      '
+      " "
+      "*"
+      " "
+      "*"
+      " "
     ]
     expect(Minesweeper.annotate minefield).toEqual [
-      '1*22*1'
-      '12*322'
-      ' 123*2'
-      '112*4*'
-      '1*22*2'
-      '111111'
+      "1"
+      "*"
+      "2"
+      "*"
+      "1"
+    ]
+
+  xit "vertical line, mines at edges", ->
+    minefield = [
+      "*"
+      " "
+      " "
+      " "
+      "*"
+    ]
+    expect(Minesweeper.annotate minefield).toEqual [
+      "*"
+      "1"
+      " "
+      "1"
+      "*"
+    ]
+
+  xit "cross", ->
+    minefield = [
+      "  *  "
+      "  *  "
+      "*****"
+      "  *  "
+      "  *  "
+    ]
+    expect(Minesweeper.annotate minefield).toEqual [
+      " 2*2 "
+      "25*52"
+      "*****"
+      "25*52"
+      " 2*2 "
+    ]
+
+  xit "large minefield", ->
+    minefield = [
+      " *  * "
+      "  *   "
+      "    * "
+      "   * *"
+      " *  * "
+      "      "
+    ]
+    expect(Minesweeper.annotate minefield).toEqual [
+      "1*22*1"
+      "12*322"
+      " 123*2"
+      "112*4*"
+      "1*22*2"
+      "111111"
     ]
