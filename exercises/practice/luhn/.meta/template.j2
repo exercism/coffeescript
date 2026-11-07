@@ -1,0 +1,11 @@
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    luhn = new {{ exercise_name | remove_spaces }} {{ case["input"]["value"] | quote }}
+    expect(luhn.valid()).toEqual {{ case["expected"] | quote }}
+
+{% endfor %}
