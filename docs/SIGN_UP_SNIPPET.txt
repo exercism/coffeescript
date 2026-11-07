@@ -1,0 +1,7 @@
+mostCommonWord = (text) ->
+  counts = {}
+  best = ""
+  for word in text.toLowerCase().split(" ")
+    counts[word] = (counts[word] ? 0) + 1
+    best = word if counts[word] > (counts[best] ? 0)
+  "\"#{best}\" appears #{counts[best]} times"
