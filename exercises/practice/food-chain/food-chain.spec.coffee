@@ -1,14 +1,18 @@
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/food-chain/canonical-data.json
+# File last updated on 2026-11-08T05:16:18+00:00
+
 FoodChain = require './food-chain'
 
-describe 'Food Chain', ->
-  it 'fly', ->
+describe "Food Chain", ->
+  it "fly", ->
     expected = [
       "I know an old lady who swallowed a fly."
       "I don't know why she swallowed the fly. Perhaps she'll die."
     ].join "\n"
     expect(FoodChain.recite 1, 1).toEqual expected
 
-  xit 'spider', ->
+  xit "spider", ->
     expected = [
       "I know an old lady who swallowed a spider."
       "It wriggled and jiggled and tickled inside her."
@@ -17,7 +21,7 @@ describe 'Food Chain', ->
     ].join "\n"
     expect(FoodChain.recite 2, 2).toEqual expected
 
-  xit 'bird', ->
+  xit "bird", ->
     expected = [
       "I know an old lady who swallowed a bird."
       "How absurd to swallow a bird!"
@@ -27,7 +31,7 @@ describe 'Food Chain', ->
     ].join "\n"
     expect(FoodChain.recite 3, 3).toEqual expected
 
-  xit 'cat', ->
+  xit "cat", ->
     expected = [
       "I know an old lady who swallowed a cat."
       "Imagine that, to swallow a cat!"
@@ -38,7 +42,7 @@ describe 'Food Chain', ->
     ].join "\n"
     expect(FoodChain.recite 4, 4).toEqual expected
 
-  xit 'dog', ->
+  xit "dog", ->
     expected = [
       "I know an old lady who swallowed a dog."
       "What a hog, to swallow a dog!"
@@ -50,7 +54,7 @@ describe 'Food Chain', ->
     ].join "\n"
     expect(FoodChain.recite 5, 5).toEqual expected
 
-  xit 'goat', ->
+  xit "goat", ->
     expected = [
       "I know an old lady who swallowed a goat."
       "Just opened her throat and swallowed a goat!"
@@ -63,7 +67,7 @@ describe 'Food Chain', ->
     ].join "\n"
     expect(FoodChain.recite 6, 6).toEqual expected
 
-  xit 'cow', ->
+  xit "cow", ->
     expected = [
       "I know an old lady who swallowed a cow."
       "I don't know how she swallowed a cow!"
@@ -77,14 +81,14 @@ describe 'Food Chain', ->
     ].join "\n"
     expect(FoodChain.recite 7, 7).toEqual expected
 
-  xit 'horse', ->
+  xit "horse", ->
     expected = [
       "I know an old lady who swallowed a horse."
       "She's dead, of course!"
     ].join "\n"
     expect(FoodChain.recite 8, 8).toEqual expected
 
-  xit 'multiple verses', ->
+  xit "multiple verses", ->
     expected = [
       "I know an old lady who swallowed a fly."
       "I don't know why she swallowed the fly. Perhaps she'll die."
@@ -102,7 +106,7 @@ describe 'Food Chain', ->
     ].join "\n"
     expect(FoodChain.recite 1, 3).toEqual expected
 
-  xit 'full song', ->
+  xit "full song", ->
     expected = [
       "I know an old lady who swallowed a fly."
       "I don't know why she swallowed the fly. Perhaps she'll die."
@@ -156,4 +160,3 @@ describe 'Food Chain', ->
       "She's dead, of course!"
     ].join "\n"
     expect(FoodChain.recite 1, 8).toEqual expected
-

@@ -1,0 +1,11 @@
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    expected = {{ case["expected"] | format_multiline_list(indent=4) }}.join "\n"
+    expect({{ exercise_name | remove_spaces }}.recite {{ case["input"]["startVerse"] | quote }}, {{ case["input"]["endVerse"] | quote }}).toEqual expected
+
+{% endfor %}
