@@ -1,0 +1,22 @@
+{% macro predicate(case) -%}
+{% if case["input"]["predicate"] == "fn(x) -> starts_with(x, 'z')" -%}
+(value) -> value[0] == "z"
+{%- elif case["input"]["predicate"] == "fn(x) -> contains(x, 5)" -%}
+(value) -> 5 in value
+{%- else -%}
+{{ case["input"]["predicate"] | replace("fn(x) -> ", "(x) -> ") }}
+{%- endif -%}
+{%- endmacro %}
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    data = {{ case["input"]["list"] | quote }}
+    result = {{ exercise_name | remove_spaces }}.{{ case["property"] }} data, {{ predicate(case) }}
+    expected = {{ case["expected"] | quote }}
+    expect(result).toEqual expected
+
+{% endfor %}
