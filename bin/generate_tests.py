@@ -129,7 +129,7 @@ def filter_quote(data) -> str:
         return "false"
     if data is None:
         return "null"
-    return json.dumps(data)
+    return json.dumps(data, ensure_ascii=False)
 
 
 def filter_format_arguments(data) -> str:
