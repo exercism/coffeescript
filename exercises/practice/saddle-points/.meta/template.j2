@@ -1,0 +1,12 @@
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    matrix = {{ case["input"]["matrix"] | format_multiline_list(indent=4) }}
+    results = {{ exercise_name | remove_spaces }} matrix
+    expect(results.sort()).toEqual {{ case["expected"] | format_multiline_list(indent=4) }}
+
+{% endfor %}
