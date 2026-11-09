@@ -1,50 +1,42 @@
-Microblog = require './micro-blog'
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/micro-blog/canonical-data.json
+# File last updated on 2026-11-09T05:38:03+00:00
 
-describe 'Micro Blog', ->
-  it 'English language short', ->
-    result = Microblog.truncate 'Hi'
-    expect(result).toEqual 'Hi'
+MicroBlog = require './micro-blog'
 
-  xit 'English language long', ->
-    result = Microblog.truncate 'Hello there'
-    expect(result).toEqual 'Hello'
+describe "Micro Blog", ->
+  it "English language short", ->
+    expect(MicroBlog.truncate "Hi").toEqual "Hi"
 
-  xit 'German language short (broth)', ->
-    result = Microblog.truncate 'brühe'
-    expect(result).toEqual 'brühe'
+  xit "English language long", ->
+    expect(MicroBlog.truncate "Hello there").toEqual "Hello"
 
-  xit 'German language long (bear carpet → beards)', ->
-    result = Microblog.truncate 'Bärteppich'
-    expect(result).toEqual 'Bärte'
+  xit "German language short (broth)", ->
+    expect(MicroBlog.truncate "brühe").toEqual "brühe"
 
-  xit 'Bulgarian language short (good)', ->
-    result = Microblog.truncate 'Добър'
-    expect(result).toEqual 'Добър'
+  xit "German language long (bear carpet → beards)", ->
+    expect(MicroBlog.truncate "Bärteppich").toEqual "Bärte"
 
-  xit 'Greek language short (health)', ->
-    result = Microblog.truncate 'υγειά'
-    expect(result).toEqual 'υγειά'
+  xit "Bulgarian language short (good)", ->
+    expect(MicroBlog.truncate "Добър").toEqual "Добър"
 
-  xit 'Maths short', ->
-    result = Microblog.truncate 'a=πr²'
-    expect(result).toEqual 'a=πr²'
+  xit "Greek language short (health)", ->
+    expect(MicroBlog.truncate "υγειά").toEqual "υγειά"
 
-  xit 'Maths long', ->
-    result = Microblog.truncate '∅⊊ℕ⊊ℤ⊊ℚ⊊ℝ⊊ℂ'
-    expect(result).toEqual '∅⊊ℕ⊊ℤ'
+  xit "Maths short", ->
+    expect(MicroBlog.truncate "a=πr²").toEqual "a=πr²"
 
-  xit 'English and emoji short', ->
-    result = Microblog.truncate 'Fly 🛫'
-    expect(result).toEqual 'Fly 🛫'
+  xit "Maths long", ->
+    expect(MicroBlog.truncate "∅⊊ℕ⊊ℤ⊊ℚ⊊ℝ⊊ℂ").toEqual "∅⊊ℕ⊊ℤ"
 
-  xit 'Emoji short', ->
-    result = Microblog.truncate '💇'
-    expect(result).toEqual '💇'
+  xit "English and emoji short", ->
+    expect(MicroBlog.truncate "Fly 🛫").toEqual "Fly 🛫"
 
-  xit 'Emoji long', ->
-    result = Microblog.truncate '❄🌡🤧🤒🏥🕰😀'
-    expect(result).toEqual '❄🌡🤧🤒🏥'
+  xit "Emoji short", ->
+    expect(MicroBlog.truncate "💇").toEqual "💇"
 
-  xit 'Royal Flush?', ->
-    result = Microblog.truncate '🃎🂸🃅🃋🃍🃁🃊'
-    expect(result).toEqual '🃎🂸🃅🃋🃍'
+  xit "Emoji long", ->
+    expect(MicroBlog.truncate "❄🌡🤧🤒🏥🕰😀").toEqual "❄🌡🤧🤒🏥"
+
+  xit "Royal Flush?", ->
+    expect(MicroBlog.truncate "🃎🂸🃅🃋🃍🃁🃊").toEqual "🃎🂸🃅🃋🃍"
