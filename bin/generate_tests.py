@@ -146,7 +146,7 @@ def filter_remove_spaces(data: str) -> str:
 
 def filter_format_multiline_list(data: list, indent: int = 0, columns: int = 1) -> str:
     """Render a CoffeeScript list with a fixed number of values per line."""
-    if not data:
+    if len(data) <= columns:
         return filter_quote(data)
 
     lines = ["["]
