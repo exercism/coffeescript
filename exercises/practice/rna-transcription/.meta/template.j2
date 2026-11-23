@@ -5,6 +5,7 @@
 describe {{ exercise_name | quote }}, ->
 {% for case in cases %}
   {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
-    expect({{ exercise_name | remove_spaces }}.toRna {{ case["input"]["dna"] | quote }}).toEqual {{ case["expected"] | quote }}
+    strand = new {{ exercise_name | remove_spaces }} {{ case["input"]["dna"] | quote }}
+    expect(strand.toRna()).toEqual {{ case["expected"] | quote }}
 
 {% endfor %}

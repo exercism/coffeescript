@@ -1,24 +1,30 @@
 # These tests are auto-generated with test data from:
 # https://github.com/exercism/problem-specifications/blob/main/exercises/rna-transcription/canonical-data.json
-# File last updated on 2026-11-04T23:50:32+00:00
+# File last updated on 2026-11-23T01:25:07+00:00
 
 RNATranscription = require './rna-transcription'
 
 describe "RNA Transcription", ->
   it "Empty RNA sequence", ->
-    expect(RNATranscription.toRna "").toEqual ""
+    strand = new RNATranscription ""
+    expect(strand.toRna()).toEqual ""
 
   xit "RNA complement of cytosine is guanine", ->
-    expect(RNATranscription.toRna "C").toEqual "G"
+    strand = new RNATranscription "C"
+    expect(strand.toRna()).toEqual "G"
 
   xit "RNA complement of guanine is cytosine", ->
-    expect(RNATranscription.toRna "G").toEqual "C"
+    strand = new RNATranscription "G"
+    expect(strand.toRna()).toEqual "C"
 
   xit "RNA complement of thymine is adenine", ->
-    expect(RNATranscription.toRna "T").toEqual "A"
+    strand = new RNATranscription "T"
+    expect(strand.toRna()).toEqual "A"
 
   xit "RNA complement of adenine is uracil", ->
-    expect(RNATranscription.toRna "A").toEqual "U"
+    strand = new RNATranscription "A"
+    expect(strand.toRna()).toEqual "U"
 
   xit "RNA complement", ->
-    expect(RNATranscription.toRna "ACGTGGTCTTAA").toEqual "UGCACCAGAAUU"
+    strand = new RNATranscription "ACGTGGTCTTAA"
+    expect(strand.toRna()).toEqual "UGCACCAGAAUU"
