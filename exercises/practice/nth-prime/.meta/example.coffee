@@ -1,6 +1,6 @@
 module.exports = class Prime
   @nth: (nthPrime) ->
-    throw "Prime is not possible" if nthPrime == 0
+    throw "there is no zeroth prime" if nthPrime == 0
     @generatePrimes(200000)
     @realPrimes[nthPrime - 1]
 
