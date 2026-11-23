@@ -1,0 +1,13 @@
+{% macro assertion(case) -%}
+expect(new {{ exercise_name | remove_spaces }}({{ case["input"]["binary"] | quote }}).toDecimal()).toEqual {{ 0 if case["expected"] is none else case["expected"] | quote }}
+{%- endmacro %}
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+{{ assertion(case) | indent(4, true) }}
+
+{% endfor %}

@@ -1,8 +1,8 @@
 module.exports = class Binary
 
-  constructor: (binary) -> @binary = parseInt binary, 2
+  constructor: (binary) -> @binary = binary.split('').map Number
 
   toDecimal: ->
-    out = Number @binary.toString 10
-    return 0 if isNaN out
-    out
+    return 0 unless @binary.every (digit) -> digit < 2
+
+    @binary.reduce ((decimal, digit) -> decimal * 2 + digit), 0
