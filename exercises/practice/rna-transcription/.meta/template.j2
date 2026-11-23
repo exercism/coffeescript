@@ -1,0 +1,11 @@
+{{ header }}
+
+{{ exercise_name | remove_spaces }} = require './{{ exercise_slug }}'
+
+describe {{ exercise_name | quote }}, ->
+{% for case in cases %}
+  {{ case["test_keyword"] }} {{ case["description"] | quote }}, ->
+    strand = new {{ exercise_name | remove_spaces }} {{ case["input"]["dna"] | quote }}
+    expect(strand.toRna()).toEqual {{ case["expected"] | quote }}
+
+{% endfor %}
