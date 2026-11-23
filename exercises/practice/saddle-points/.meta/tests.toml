@@ -29,6 +29,8 @@ description = "Can identify saddle point in bottom right corner"
 
 [5b9499ca-fcea-4195-830a-9c4584a0ee79]
 description = "Can identify saddle points in a non square matrix"
+include = false
+comment = "Replaced by test with expected ordered by row, then column."
 
 [ee99ccd2-a1f1-4283-ad39-f8c70f0cf594]
 description = "Can identify that saddle points in a single column matrix are those with the minimum value"
