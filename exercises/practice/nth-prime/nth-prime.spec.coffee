@@ -1,22 +1,21 @@
-Prime = require './nth-prime'
+# These tests are auto-generated with test data from:
+# https://github.com/exercism/problem-specifications/blob/main/exercises/nth-prime/canonical-data.json
+# File last updated on 2026-11-05T02:15:42+00:00
 
-describe 'Prime', ->
+NthPrime = require './nth-prime'
 
-  it 'first prime', ->
-    prime = Prime.nth(1)
-    expect(prime).toEqual(2)
+describe "Nth Prime", ->
+  it "first prime", ->
+    expect(NthPrime.nth 1).toEqual 2
 
-  xit 'second prime', ->
-    prime = Prime.nth(2)
-    expect(prime).toEqual(3)
+  xit "second prime", ->
+    expect(NthPrime.nth 2).toEqual 3
 
-  xit 'sixth prime', ->
-    prime = Prime.nth(6)
-    expect(prime).toEqual(13)
+  xit "sixth prime", ->
+    expect(NthPrime.nth 6).toEqual 13
 
-  xit 'big prime', ->
-    prime = Prime.nth(10001)
-    expect(prime).toEqual(104743)
+  xit "big prime", ->
+    expect(NthPrime.nth 10001).toEqual 104743
 
-  xit 'there is no zeroth prime', ->
-    expect(-> Prime.nth(0)).toThrow('Prime is not possible')
+  xit "there is no zeroth prime", ->
+    expect(-> NthPrime.nth 0).toThrow "there is no zeroth prime"
